@@ -1,0 +1,3984 @@
+{
+  "items": [
+    {
+      "engine": "Unity",
+      "language": "C#",
+      "license": "Free / Subscription",
+      "form": "Editor (2D/3D)",
+      "focus": "Cross-platform, mobile, indie/AA",
+      "release_date": "2005-06-08",
+      "last_update": "Unity 6 (2024-10)",
+      "share": "~45-50% (Desktop) / ~70% (Mobile)",
+      "games": "Hollow Knight, Genshin Impact, Cuphead, Subnautica",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android",
+        "Web",
+        "Switch",
+        "PS5",
+        "Xbox",
+        "VR/XR"
+      ],
+      "url": "https://unity.com",
+      "paradigm": "Component / OOP & DOTS (ECS)",
+      "install_size": "~5 - 15 GB",
+      "console_feasibility": "Native / Direct Tier 1",
+      "pedigree": "Founded in Copenhagen (2004) originally to make the Mac game GooBall; evolved into global dominant cross-platform engine.",
+      "graphics_apis": [
+        "DirectX 12",
+        "Vulkan",
+        "Metal",
+        "WebGPU",
+        "DirectX 11",
+        "OpenGL ES"
+      ],
+      "physics": "PhysX / Havok (DOTS) / Box2D",
+      "networking": "Netcode for GameObjects / Entities & Relay",
+      "ecosystem": "Unity Asset Store & UPM",
+      "console_friction": "Turnkey / First-Party Tier 1",
+      "console_model": {
+        "badge": "Tier 1 (Native)",
+        "class": "console-tier1",
+        "desc": "Native direct first-party SDK or turnkey module.",
+        "detail": "Native / Direct Tier 1"
+      },
+      "network_model": {
+        "badge": "AAA Server",
+        "class": "net-aaa",
+        "tier": "Dedicated / Server Authoritative",
+        "raw": "Netcode for GameObjects / Entities & Relay"
+      },
+      "memory_model": "Managed Generational GC + Span<T> / Native Memory (DOTS/Burst unmanaged)",
+      "threading_model": "Multi-Threaded Job System / Fiber-based Task Scheduler",
+      "rollback_support": "Native Client-Side Prediction, Server Reconciliation & Replay Subsystems"
+    },
+    {
+      "engine": "Unreal Engine",
+      "language": "C++, Blueprints",
+      "license": "Free (5% >$1M)",
+      "form": "Editor (3D)",
+      "focus": "High-end 3D, AAA, Nanite/Lumen",
+      "release_date": "1998-05-22",
+      "last_update": "UE 5.5 (2024-11)",
+      "share": "~25-30% (Steam releases) / ~31% (Revenue)",
+      "games": "Fortnite, Black Myth: Wukong, Palworld, Tekken 8",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android",
+        "Switch",
+        "PS5",
+        "Xbox",
+        "VR/XR"
+      ],
+      "url": "https://unrealengine.com",
+      "paradigm": "OOP / Actor-Component & Blueprints",
+      "install_size": "~40 - 120 GB",
+      "console_feasibility": "Native / Direct Tier 1",
+      "pedigree": "Created by Tim Sweeney for Unreal (1998); powerhouse behind major AAA titles and film virtual production.",
+      "graphics_apis": [
+        "DirectX 12",
+        "Vulkan",
+        "Metal",
+        "DirectX 11"
+      ],
+      "physics": "Chaos Physics (formerly PhysX)",
+      "networking": "Replication & Dedicated Server (AAA standard)",
+      "ecosystem": "Fab (Unreal Marketplace) & Plugins",
+      "console_friction": "Turnkey / First-Party Tier 1",
+      "console_model": {
+        "badge": "Tier 1 (Native)",
+        "class": "console-tier1",
+        "desc": "Native direct first-party SDK or turnkey module.",
+        "detail": "Native / Direct Tier 1"
+      },
+      "network_model": {
+        "badge": "AAA Server",
+        "class": "net-aaa",
+        "tier": "Dedicated / Server Authoritative",
+        "raw": "Replication & Dedicated Server (AAA standard)"
+      },
+      "memory_model": "Manual RAII & Custom Arena Allocators (Zero GC)",
+      "threading_model": "Multi-Threaded Job System / Fiber-based Task Scheduler",
+      "rollback_support": "Native Client-Side Prediction, Server Reconciliation & Replay Subsystems"
+    },
+    {
+      "engine": "Godot",
+      "language": "GDScript, C#, C++",
+      "license": "Free (MIT)",
+      "form": "Editor (2D/3D)",
+      "focus": "Lightweight, indie, open-source",
+      "release_date": "2014-01-14",
+      "last_update": "Godot 4.3 (2024-08)",
+      "share": "~7-8% (Steam) / ~15% (Game Jams)",
+      "games": "Brotato, Dome Keeper, Cassette Beasts, Slay the Spire 2",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android",
+        "Web"
+      ],
+      "url": "https://godotengine.org",
+      "paradigm": "Node / Scene Tree & OOP",
+      "install_size": "~50 - 120 MB",
+      "console_feasibility": "Third-Party / Porting Partner (W4 Games)",
+      "pedigree": "Developed by Juan Linietsky & Ariel Manzur in 2007 as in-house Argentine studio tech; open-sourced under MIT in 2014.",
+      "graphics_apis": [
+        "Vulkan",
+        "Direct3D 12",
+        "Metal (via MoltenVK)",
+        "OpenGL 3 / WebGL 2"
+      ],
+      "physics": "Godot Physics (Jolt available via addon)",
+      "networking": "High-Level Multiplayer RPCs & ENet/WebSockets",
+      "ecosystem": "Godot Asset Library & GDExtension",
+      "console_friction": "Medium (W4 Games / Commercial Porting)",
+      "console_model": {
+        "badge": "Tier 2 (Partner)",
+        "class": "console-tier2",
+        "desc": "Established commercial porting house or official foundation pipeline.",
+        "detail": "Third-Party / Porting Partner (W4 Games)"
+      },
+      "network_model": {
+        "badge": "High-Level RPC",
+        "class": "net-rpc",
+        "tier": "High-Level RPCs & Replication",
+        "raw": "High-Level Multiplayer RPCs & ENet/WebSockets"
+      },
+      "memory_model": "Manual RAII & Custom Arena Allocators (Zero GC)",
+      "threading_model": "Thread-Safe Server Architecture (Separate Render/Physics Threads)",
+      "rollback_support": "Deterministic Tick Support; Rollback addons available (e.g. Godot-Rollback-Netcode)"
+    },
+    {
+      "engine": "CryEngine",
+      "language": "C++, C#",
+      "license": "Free (5% >$5K)",
+      "form": "Editor (3D)",
+      "focus": "Dense visuals, FPS",
+      "release_date": "2002-05-02",
+      "last_update": "CryEngine 5.7 (2022-04)",
+      "share": "<1%",
+      "games": "Crysis series, Hunt: Showdown, Kingdom Come: Deliverance",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "PS5",
+        "Xbox"
+      ],
+      "url": "https://cryengine.com",
+      "paradigm": "OOP & Flow Graph (Visual)",
+      "install_size": "~15 - 30 GB",
+      "console_feasibility": "Native / Direct Tier 1",
+      "pedigree": "Created by Crytek in Germany for Far Cry (2004); famed for photorealistic vegetation, lighting, and GPU benchmarking.",
+      "graphics_apis": [
+        "DirectX 12",
+        "Vulkan",
+        "DirectX 11"
+      ],
+      "physics": "CryPhysics",
+      "networking": "Built-in Client-Server & Headless Dedicated Server",
+      "ecosystem": "CryEngine Marketplace & Plugins",
+      "console_friction": "Turnkey / First-Party Tier 1",
+      "console_model": {
+        "badge": "Tier 1 (Native)",
+        "class": "console-tier1",
+        "desc": "Native direct first-party SDK or turnkey module.",
+        "detail": "Native / Direct Tier 1"
+      },
+      "network_model": {
+        "badge": "AAA Server",
+        "class": "net-aaa",
+        "tier": "Dedicated / Server Authoritative",
+        "raw": "Built-in Client-Server & Headless Dedicated Server"
+      },
+      "memory_model": "Manual RAII & Custom Arena Allocators (Zero GC)",
+      "threading_model": "Multi-Threaded Job System / Fiber-based Task Scheduler",
+      "rollback_support": "Native Client-Side Prediction, Server Reconciliation & Replay Subsystems"
+    },
+    {
+      "engine": "Flax Engine",
+      "language": "C#, C++",
+      "license": "Free (4% >$250K)",
+      "form": "Editor (3D)",
+      "focus": "Unity alternative, C++ core",
+      "release_date": "2020-12-16",
+      "last_update": "Flax 1.9 (2024-10)",
+      "share": "<0.5%",
+      "games": "Indie titles, custom enterprise sims",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android",
+        "Switch",
+        "PS5",
+        "Xbox"
+      ],
+      "url": "https://flaxengine.com",
+      "paradigm": "Actor-Component & C# / C++ OOP",
+      "install_size": "~2 - 5 GB",
+      "console_feasibility": "Native / Direct Tier 1",
+      "pedigree": "Started in 2012 by Wojciech Toman; designed as a lightweight, lightning-fast C++ alternative to heavy modern editors.",
+      "graphics_apis": [
+        "DirectX 12",
+        "DirectX 11",
+        "Vulkan",
+        "Metal"
+      ],
+      "physics": "PhysX 4 / 5",
+      "networking": "High-Level Network Replication & RPCs",
+      "ecosystem": "Flax Store & C#/C++ Plugins",
+      "console_friction": "Turnkey / First-Party Tier 1",
+      "console_model": {
+        "badge": "Tier 1 (Native)",
+        "class": "console-tier1",
+        "desc": "Native direct first-party SDK or turnkey module.",
+        "detail": "Native / Direct Tier 1"
+      },
+      "network_model": {
+        "badge": "High-Level RPC",
+        "class": "net-rpc",
+        "tier": "High-Level RPCs & Replication",
+        "raw": "High-Level Network Replication & RPCs"
+      },
+      "memory_model": "Manual RAII & Custom Arena Allocators (Zero GC)",
+      "threading_model": "Multi-Threaded Job System / Fiber-based Task Scheduler",
+      "rollback_support": "Deterministic Tick Support; Rollback addons available (e.g. Godot-Rollback-Netcode)"
+    },
+    {
+      "engine": "Stride",
+      "language": "C#",
+      "license": "Free (MIT)",
+      "form": "Editor (3D)",
+      "focus": "Pure .NET/C# modular 3D",
+      "release_date": "2014-07-28",
+      "last_update": "Stride 4.2 (2023-11)",
+      "share": "<0.5%",
+      "games": "Indie VR, architectural visualizers",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "url": "https://stride3d.net",
+      "paradigm": "Entity-Component-System (ECS) & OOP",
+      "install_size": "~3 - 6 GB",
+      "console_feasibility": "Community / DIY",
+      "pedigree": "Originally developed as 'Paradox' by Silicon Studio Japan, later rebranded 'Xenko', open-sourced as Stride under .NET Foundation.",
+      "graphics_apis": [
+        "DirectX 12",
+        "DirectX 11",
+        "Vulkan",
+        "OpenGL ES"
+      ],
+      "physics": "Bullet Physics (.NET bindings)",
+      "networking": "Low-level .NET Sockets & DIY",
+      "ecosystem": "NuGet Package Manager & Stride Plugins",
+      "console_friction": "High / Community DIY",
+      "console_model": {
+        "badge": "Tier 3 (DIY)",
+        "class": "console-tier3",
+        "desc": "Open-source / DIY custom porting or manual NDA SDK integration required.",
+        "detail": "Community / DIY"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "Low-level .NET Sockets & DIY"
+      },
+      "memory_model": "Managed Generational GC + Span<T> / Native Memory (DOTS/Burst unmanaged)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Unigine",
+      "language": "C++, C#",
+      "license": "Free / Sub",
+      "form": "Editor (3D)",
+      "focus": "Simulators, massive terrain, enterprise",
+      "release_date": "2005-04-18",
+      "last_update": "Unigine 2.19 (2024-09)",
+      "share": "<0.5%",
+      "games": "Oil Rush, professional aerospace & maritime simulators",
+      "platforms": [
+        "Windows",
+        "Linux"
+      ],
+      "url": "https://unigine.com",
+      "paradigm": "Node-Hierarchy & OOP (C++/C#)",
+      "install_size": "~10 - 25 GB",
+      "console_feasibility": "Not Practical / N/A",
+      "pedigree": "Created in 2005 in Tomsk, Russia; heavily optimized for double-precision 64-bit coordinates, earth-scale terrains, and flight sims.",
+      "graphics_apis": [
+        "DirectX 12",
+        "DirectX 11",
+        "Vulkan",
+        "OpenGL 4.5"
+      ],
+      "physics": "Custom High-Precision 64-bit Physics Engine",
+      "networking": "Multi-Channel Synchronization & CIGI Protocol",
+      "ecosystem": "Add-On Store & Enterprise SDK",
+      "console_friction": "N/A (Enterprise / Desktop Sim Focus)",
+      "console_model": {
+        "badge": "N/A",
+        "class": "console-na",
+        "desc": "Not practical for consoles (web or desktop utility focus).",
+        "detail": "Not Practical / N/A"
+      },
+      "network_model": {
+        "badge": "AAA Server",
+        "class": "net-aaa",
+        "tier": "Dedicated / Server Authoritative",
+        "raw": "Multi-Channel Synchronization & CIGI Protocol"
+      },
+      "memory_model": "Manual RAII & Custom Arena Allocators (Zero GC)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "O3DE",
+      "language": "C++, Lua, Python",
+      "license": "Free (Apache 2.0)",
+      "form": "Editor (3D)",
+      "focus": "Cloud-native AAA open-source",
+      "release_date": "2021-07-06",
+      "last_update": "O3DE 23.10 (2023-10)",
+      "share": "<0.5%",
+      "games": "New World (precursor engine), simulation projects",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS",
+        "iOS",
+        "Android"
+      ],
+      "url": "https://o3de.org",
+      "paradigm": "Entity-Component (Atom Render) & Lua/Python",
+      "install_size": "~20 - 40 GB",
+      "console_feasibility": "Third-Party / Custom SDK",
+      "pedigree": "Direct successor to Amazon Lumberyard (which licensed CryEngine 3 in 2015); open-sourced under Linux Foundation in 2021.",
+      "graphics_apis": [
+        "Vulkan",
+        "DirectX 12",
+        "Metal"
+      ],
+      "physics": "PhysX 5 / NVIDIA Blast",
+      "networking": "AWS GameLift Integration & AzNetworking",
+      "ecosystem": "Gems System & Linux Foundation Repo",
+      "console_friction": "Medium (Custom SDK Build Required)",
+      "console_model": {
+        "badge": "N/A",
+        "class": "console-na",
+        "desc": "Not practical for consoles (web or desktop utility focus).",
+        "detail": "Third-Party / Custom SDK"
+      },
+      "network_model": {
+        "badge": "AAA Server",
+        "class": "net-aaa",
+        "tier": "Dedicated / Server Authoritative",
+        "raw": "AWS GameLift Integration & AzNetworking"
+      },
+      "memory_model": "Manual RAII & Custom Arena Allocators (Zero GC)",
+      "threading_model": "Multi-Threaded Job System / Fiber-based Task Scheduler",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Torque 3D",
+      "language": "C++, TorqueScript",
+      "license": "Free (MIT)",
+      "form": "Editor (3D)",
+      "focus": "Open-source classic 3D FPS",
+      "release_date": "2012-09-20",
+      "last_update": "Torque 3D 4.0 (2022-04)",
+      "share": "<0.5%",
+      "games": "Tribes 2, Marble Blast Ultra, Blockland",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "url": "https://torque3d.org",
+      "paradigm": "SimObject / OOP Hierarchy",
+      "install_size": "~1 - 3 GB",
+      "console_feasibility": "Community / DIY",
+      "pedigree": "Derived from Dynamix's Tribes 2 engine; sold by GarageGames in early 2000s indie era, fully open-sourced in 2012.",
+      "graphics_apis": [
+        "DirectX 11",
+        "OpenGL 3.3"
+      ],
+      "physics": "PhysX / Bullet Physics",
+      "networking": "Torque Network Architecture (Ghosting / Client Prediction)",
+      "ecosystem": "Torque Community Resources",
+      "console_friction": "High / DIY Port",
+      "console_model": {
+        "badge": "Tier 3 (DIY)",
+        "class": "console-tier3",
+        "desc": "Open-source / DIY custom porting or manual NDA SDK integration required.",
+        "detail": "Community / DIY"
+      },
+      "network_model": {
+        "badge": "AAA Server",
+        "class": "net-aaa",
+        "tier": "Dedicated / Server Authoritative",
+        "raw": "Torque Network Architecture (Ghosting / Client Prediction)"
+      },
+      "memory_model": "Manual RAII & Custom Arena Allocators (Zero GC)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Leadwerks",
+      "language": "C++, Lua",
+      "license": "Paid",
+      "form": "Editor (3D)",
+      "focus": "Rapid forward-rendered 3D",
+      "release_date": "2006-08-01",
+      "last_update": "Leadwerks 4.6 (2019-12)",
+      "share": "<0.2%",
+      "games": "The Cursed Forest, indie PC horror",
+      "platforms": [
+        "Windows",
+        "Linux"
+      ],
+      "url": "https://leadwerks.com",
+      "paradigm": "OOP & Lua Scripting",
+      "install_size": "~2 - 4 GB",
+      "console_feasibility": "Not Practical / N/A",
+      "pedigree": "Created by Josh Klint in 2006, famous for forward+ lighting, simple C++/Lua workflow, and Steam Workshop integration.",
+      "graphics_apis": [
+        "OpenGL 4.0"
+      ],
+      "physics": "Newton Game Dynamics",
+      "networking": "Basic Sockets / Steamworks P2P",
+      "ecosystem": "Steam Workshop & Leadwerks Workshop",
+      "console_friction": "N/A (PC/Linux only)",
+      "console_model": {
+        "badge": "N/A",
+        "class": "console-na",
+        "desc": "Not practical for consoles (web or desktop utility focus).",
+        "detail": "Not Practical / N/A"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "Basic Sockets / Steamworks P2P"
+      },
+      "memory_model": "Manual RAII & Custom Arena Allocators (Zero GC)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Ultra Engine",
+      "language": "C++, Lua",
+      "license": "Paid",
+      "form": "Editor (3D)",
+      "focus": "High-speed Vulkan 3D/VR",
+      "release_date": "2023-03-01",
+      "last_update": "Ultra Engine 1.0 (2023-07)",
+      "share": "<0.1%",
+      "games": "Indie VR, simulation benchmarks",
+      "platforms": [
+        "Windows",
+        "Linux"
+      ],
+      "url": "https://ultraengine.com",
+      "paradigm": "Fast OOP & Vulkan-first",
+      "install_size": "~1 - 2 GB",
+      "console_feasibility": "Community / Custom",
+      "pedigree": "Next-gen rewrite of Leadwerks built from scratch for Vulkan to deliver up to 10x CPU/GPU rendering draw call performance.",
+      "graphics_apis": [
+        "Vulkan 1.3"
+      ],
+      "physics": "Newton Game Dynamics 4",
+      "networking": "Steamworks P2P & Sockets",
+      "ecosystem": "Community Plugins & Ultra App Store",
+      "console_friction": "High / In-Development",
+      "console_model": {
+        "badge": "Tier 3 (DIY)",
+        "class": "console-tier3",
+        "desc": "Open-source / DIY custom porting or manual NDA SDK integration required.",
+        "detail": "Community / Custom"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "Steamworks P2P & Sockets"
+      },
+      "memory_model": "Manual RAII & Custom Arena Allocators (Zero GC)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "CopperCube",
+      "language": "JavaScript",
+      "license": "Free / Paid",
+      "form": "Editor (3D)",
+      "focus": "Low-spec 3D, web games",
+      "release_date": "2009-02-01",
+      "last_update": "CopperCube 6.6 (2023-01)",
+      "share": "<0.2%",
+      "games": "Retro 3D, educational projects, web games",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Web",
+        "Android"
+      ],
+      "url": "https://ambiera.com/coppercube",
+      "paradigm": "No-Code Behaviors & JS",
+      "install_size": "~50 MB",
+      "console_feasibility": "Not Practical / N/A",
+      "pedigree": "Developed by Ambiera (Nikolaus Gebhardt, creator of Irrlicht 3D); optimized for ultra-low specs and instant web 3D.",
+      "graphics_apis": [
+        "Direct3D 9/11",
+        "OpenGL",
+        "WebGL"
+      ],
+      "physics": "Built-in Simple Collision & Gravity",
+      "networking": "HTTP / WebSockets via JavaScript",
+      "ecosystem": "Ambiera Plugin Library",
+      "console_friction": "N/A (Desktop/Web/Android)",
+      "console_model": {
+        "badge": "N/A",
+        "class": "console-na",
+        "desc": "Not practical for consoles (web or desktop utility focus).",
+        "detail": "Not Practical / N/A"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "HTTP / WebSockets via JavaScript"
+      },
+      "memory_model": "JVM Managed Generational Tracing GC (G1/ZGC)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Esenthel",
+      "language": "C++",
+      "license": "Free / Paid",
+      "form": "Editor (3D)",
+      "focus": "High-performance MMO/Action",
+      "release_date": "2010-06-01",
+      "last_update": "Esenthel 2.0 (2024-03)",
+      "share": "<0.1%",
+      "games": "Ragnarok Online 2 (early tests), indie MMOs",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android"
+      ],
+      "url": "https://esenthel.com",
+      "paradigm": "OOP & Pure C++",
+      "install_size": "~1 - 2 GB",
+      "console_feasibility": "Community / DIY",
+      "pedigree": "Developed single-handedly by Grzegorz Slazinski starting in 2007; focuses on blazing fast multi-threaded MMO/RPG capabilities.",
+      "graphics_apis": [
+        "DirectX 11",
+        "DirectX 10",
+        "OpenGL",
+        "OpenGL ES"
+      ],
+      "physics": "PhysX",
+      "networking": "Built-in High-Capacity MMO Client/Server",
+      "ecosystem": "Esenthel Store",
+      "console_friction": "High / DIY Port",
+      "console_model": {
+        "badge": "Tier 3 (DIY)",
+        "class": "console-tier3",
+        "desc": "Open-source / DIY custom porting or manual NDA SDK integration required.",
+        "detail": "Community / DIY"
+      },
+      "network_model": {
+        "badge": "AAA Server",
+        "class": "net-aaa",
+        "tier": "Dedicated / Server Authoritative",
+        "raw": "Built-in High-Capacity MMO Client/Server"
+      },
+      "memory_model": "Manual RAII & Custom Arena Allocators (Zero GC)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "NeoAxis",
+      "language": "C#",
+      "license": "Free (Apache 2.0)",
+      "form": "Editor (3D)",
+      "focus": ".NET 3D & arch-viz",
+      "release_date": "2006-11-01",
+      "last_update": "NeoAxis 2023.2 (2023-11)",
+      "share": "<0.1%",
+      "games": "Industrial & architectural visualizations",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "url": "https://neoaxis.com",
+      "paradigm": "Component / C# OOP",
+      "install_size": "~1 - 3 GB",
+      "console_feasibility": "Community / DIY",
+      "pedigree": "Long-running Russian 3D engine started in 2006; evolved into an open-source .NET all-in-one 3D simulation and CAD platform.",
+      "graphics_apis": [
+        "DirectX 11",
+        "OpenGL"
+      ],
+      "physics": "Bullet Physics & PhysX",
+      "networking": "Built-in Client-Server Synchronization",
+      "ecosystem": "NeoAxis Store & .NET NuGet",
+      "console_friction": "High / DIY Port",
+      "console_model": {
+        "badge": "Tier 3 (DIY)",
+        "class": "console-tier3",
+        "desc": "Open-source / DIY custom porting or manual NDA SDK integration required.",
+        "detail": "Community / DIY"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "Built-in Client-Server Synchronization"
+      },
+      "memory_model": "Managed Generational GC + Span<T> / Native Memory (DOTS/Burst unmanaged)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Panda3D",
+      "language": "Python, C++",
+      "license": "Free (BSD)",
+      "form": "Framework",
+      "focus": "Python-first 3D development",
+      "release_date": "2002-05-28",
+      "last_update": "Panda3D 1.10.14 (2024-01)",
+      "share": "<0.5%",
+      "games": "Toontown Online, Pirates of the Caribbean Online",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "url": "https://panda3d.org",
+      "paradigm": "Scene Graph & Python OOP",
+      "install_size": "~200 MB",
+      "console_feasibility": "Community / DIY",
+      "pedigree": "Developed by Disney Interactive & Carnegie Mellon University for Disney's Toontown Online and theme park simulators.",
+      "graphics_apis": [
+        "OpenGL",
+        "DirectX 9",
+        "DirectX 11"
+      ],
+      "physics": "Bullet Physics & Built-in Collision",
+      "networking": "High-Level Distributed Object System & Sockets",
+      "ecosystem": "PyPI (pip) & Panda3D Community",
+      "console_friction": "High / DIY Port",
+      "console_model": {
+        "badge": "Tier 3 (DIY)",
+        "class": "console-tier3",
+        "desc": "Open-source / DIY custom porting or manual NDA SDK integration required.",
+        "detail": "Community / DIY"
+      },
+      "network_model": {
+        "badge": "High-Level RPC",
+        "class": "net-rpc",
+        "tier": "High-Level RPCs & Replication",
+        "raw": "High-Level Distributed Object System & Sockets"
+      },
+      "memory_model": "Manual RAII & Custom Arena Allocators (Zero GC)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "jMonkeyEngine",
+      "language": "Java",
+      "license": "Free (BSD)",
+      "form": "Editor/Lib",
+      "focus": "Java-based cross-platform 3D",
+      "release_date": "2004-01-01",
+      "last_update": "jMonkeyEngine 3.6.1 (2023-08)",
+      "share": "<0.5%",
+      "games": "Mythruna, Lightspeed Frontier",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android"
+      ],
+      "url": "https://jmonkeyengine.org",
+      "paradigm": "Scene Graph & Java OOP",
+      "install_size": "~500 MB",
+      "console_feasibility": "Community / DIY",
+      "pedigree": "Premier 3D engine in Java world, created in 2003; provides pure modern shaders, desktop stability, and NetBeans-based IDE.",
+      "graphics_apis": [
+        "OpenGL 3",
+        "OpenGL ES 2/3"
+      ],
+      "physics": "Bullet Physics (jme3-bullet / Minie)",
+      "networking": "SpiderMonkey (Built-in Java networking)",
+      "ecosystem": "Maven / Gradle & JME Hub",
+      "console_friction": "High / DIY Port",
+      "console_model": {
+        "badge": "Tier 3 (DIY)",
+        "class": "console-tier3",
+        "desc": "Open-source / DIY custom porting or manual NDA SDK integration required.",
+        "detail": "Community / DIY"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "SpiderMonkey (Built-in Java networking)"
+      },
+      "memory_model": "JVM Managed Generational Tracing GC (G1/ZGC)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Castle Game Engine",
+      "language": "Pascal",
+      "license": "Free (LGPL)",
+      "form": "Editor (2D/3D)",
+      "focus": "Modern Pascal, glTF",
+      "release_date": "2006-09-01",
+      "last_update": "Castle 7.0 (2024-05)",
+      "share": "<0.1%",
+      "games": "The Unholy Society, Escape from the Dark",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android",
+        "Switch"
+      ],
+      "url": "https://castle-engine.io",
+      "paradigm": "Object Pascal & Scene Graph",
+      "install_size": "~300 MB",
+      "console_feasibility": "Third-Party / Porting Partner",
+      "pedigree": "Crafted by Michalis Kamburelis over two decades; proves modern Object Pascal is viable, fast, and glTF 2.0-native.",
+      "graphics_apis": [
+        "OpenGL 2/3",
+        "OpenGLES 2/3"
+      ],
+      "physics": "Kraft Physics & Built-in Collision",
+      "networking": "FPC Networking / Sockets",
+      "ecosystem": "GitHub / Pascal Packages",
+      "console_friction": "Medium (Switch Port via partner)",
+      "console_model": {
+        "badge": "Tier 2 (Partner)",
+        "class": "console-tier2",
+        "desc": "Established commercial porting house or official foundation pipeline.",
+        "detail": "Third-Party / Porting Partner"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "FPC Networking / Sockets"
+      },
+      "memory_model": "Manual RAII & Custom Arena Allocators (Zero GC)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Wicked Engine",
+      "language": "C++, HLSL",
+      "license": "Free (MIT)",
+      "form": "Lib + Tools",
+      "focus": "DX12/Vulkan rendering showcase",
+      "release_date": "2017-08-01",
+      "last_update": "Wicked Engine 0.71 (2024-08)",
+      "share": "<0.1%",
+      "games": "Graphics demos, research engines",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "Xbox"
+      ],
+      "url": "https://wickedengine.net",
+      "paradigm": "Entity-Component-System (ECS)",
+      "install_size": "~200 MB (Source/Repo)",
+      "console_feasibility": "Native (Xbox/UWP) / DIY",
+      "pedigree": "Open-source research engine by J\u00e1nos Tur\u00e1nszki demonstrating state-of-the-art DirectX 12/Vulkan raytracing and compute shaders.",
+      "graphics_apis": [
+        "DirectX 12",
+        "Vulkan"
+      ],
+      "physics": "Bullet Physics & Custom Compute Physics",
+      "networking": "Sockets (Minimal)",
+      "ecosystem": "GitHub Source & Community Shaders",
+      "console_friction": "Low (Xbox Native via UWP/GDK)",
+      "console_model": {
+        "badge": "Tier 3 (DIY)",
+        "class": "console-tier3",
+        "desc": "Open-source / DIY custom porting or manual NDA SDK integration required.",
+        "detail": "Native (Xbox/UWP) / DIY"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "Sockets (Minimal)"
+      },
+      "memory_model": "Manual RAII & Custom Arena Allocators (Zero GC)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Armory3D",
+      "language": "Haxe",
+      "license": "Free (zlib)",
+      "form": "Blender Addon",
+      "focus": "Direct Blender-to-engine pipeline",
+      "release_date": "2019-03-01",
+      "last_update": "Armory3D 2024.08 (2024-08)",
+      "share": "<0.1%",
+      "games": "Interactive 3D web demos, Blender art games",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web",
+        "iOS",
+        "Android"
+      ],
+      "url": "https://armory3d.org",
+      "paradigm": "Node Logic / Haxe OOP inside Blender",
+      "install_size": "~100 MB (Blender addon)",
+      "console_feasibility": "Community / DIY",
+      "pedigree": "Created by Lubos Lenco; embeds directly inside Blender to turn 3D models and scenes directly into interactive games.",
+      "graphics_apis": [
+        "WebGPU",
+        "WebGL 2",
+        "DirectX 11/12",
+        "Vulkan",
+        "Metal"
+      ],
+      "physics": "OimoPhysics / Bullet (via Iron)",
+      "networking": "WebSockets / Sockets",
+      "ecosystem": "Blender Addons & Armory Community",
+      "console_friction": "High / DIY Port",
+      "console_model": {
+        "badge": "Tier 3 (DIY)",
+        "class": "console-tier3",
+        "desc": "Open-source / DIY custom porting or manual NDA SDK integration required.",
+        "detail": "Community / DIY"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "WebSockets / Sockets"
+      },
+      "memory_model": "Engine-Managed Hybrid Runtime",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "GameMaker",
+      "language": "GML, Visual",
+      "license": "Free / Paid",
+      "form": "Editor (2D)",
+      "focus": "Rapid 2D, pixel art",
+      "release_date": "1999-11-15",
+      "last_update": "GameMaker 2024.8 (2024-08)",
+      "share": "~3-4% (Steam)",
+      "games": "Undertale, Hotline Miami, Katana Zero, Risk of Rain",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android",
+        "Web",
+        "Switch",
+        "PS5",
+        "Xbox"
+      ],
+      "url": "https://gamemaker.io",
+      "paradigm": "Event-Driven & GML Scripting",
+      "install_size": "~500 MB",
+      "console_feasibility": "Native / Direct Tier 1",
+      "pedigree": "Created in 1999 by Mark Overmars to teach programming; acquired by YoYo Games, now owned by Opera; king of 2D indies.",
+      "graphics_apis": [
+        "Direct3D 11",
+        "Metal",
+        "OpenGL ES",
+        "WebGL"
+      ],
+      "physics": "Box2D (2D Physics built-in)",
+      "networking": "Built-in Asynchronous TCP/UDP Sockets & WebSockets",
+      "ecosystem": "GameMaker Marketplace & GitHub extensions",
+      "console_friction": "Turnkey / First-Party Tier 1",
+      "console_model": {
+        "badge": "Tier 1 (Native)",
+        "class": "console-tier1",
+        "desc": "Native direct first-party SDK or turnkey module.",
+        "detail": "Native / Direct Tier 1"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "Built-in Asynchronous TCP/UDP Sockets & WebSockets"
+      },
+      "memory_model": "Engine-Managed Hybrid Runtime",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Defold",
+      "language": "Lua",
+      "license": "Free (Source-available)",
+      "form": "Editor (2D)",
+      "focus": "Lightweight web/mobile 2D",
+      "release_date": "2016-08-01",
+      "last_update": "Defold 1.9 (2024-09)",
+      "share": "~0.5-1%",
+      "games": "Family Island, Monkey Mart, Fates of Ort",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android",
+        "Web",
+        "Switch",
+        "PS5"
+      ],
+      "url": "https://defold.com",
+      "paradigm": "Data-Driven / Message Passing & Lua",
+      "install_size": "~150 MB",
+      "console_feasibility": "Native / Official Foundation Extensions",
+      "pedigree": "Built by King (Candy Crush makers) for high-efficiency mobile games; later spun off into an independent foundation.",
+      "graphics_apis": [
+        "Vulkan",
+        "Metal",
+        "OpenGL ES",
+        "WebGL 2"
+      ],
+      "physics": "Box2D (2D) & Bullet (3D)",
+      "networking": "Built-in Lua Socket & HTTP client",
+      "ecosystem": "Defold Asset Portal & Extensions Library",
+      "console_friction": "Low (Official Foundation Console SDKs)",
+      "console_model": {
+        "badge": "Tier 2 (Partner)",
+        "class": "console-tier2",
+        "desc": "Established commercial porting house or official foundation pipeline.",
+        "detail": "Native / Official Foundation Extensions"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "Built-in Lua Socket & HTTP client"
+      },
+      "memory_model": "Automatic Tracing Garbage Collector (Reference Counting / Mark-and-Sweep)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Cocos Creator",
+      "language": "TypeScript, JS",
+      "license": "Free (Custom Open)",
+      "form": "Editor (2D/3D)",
+      "focus": "Mobile, HTML5 instant games",
+      "release_date": "2016-03-01",
+      "last_update": "Cocos Creator 3.8 (2023-08)",
+      "share": "~10-15% (Asian Mobile/Mini-games)",
+      "games": "AFK Arena, Top War, Badland Kids",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "iOS",
+        "Android",
+        "Web",
+        "Mini-Games (WeChat/TikTok)"
+      ],
+      "url": "https://cocos.com",
+      "paradigm": "Component / Entity & TypeScript OOP",
+      "install_size": "~1 - 2 GB",
+      "console_feasibility": "Community / DIY",
+      "pedigree": "Evolved from Cocos2d-x (C++ C-framework); pivoted into full TypeScript visual editor dominating Asian instant gaming.",
+      "graphics_apis": [
+        "Vulkan",
+        "Metal",
+        "WebGPU",
+        "WebGL 2",
+        "DirectX 11"
+      ],
+      "physics": "Box2D, Cannon.js, PhysX (3D)",
+      "networking": "WebSockets, HTTP & Socket.io",
+      "ecosystem": "Cocos Store & npm ecosystem",
+      "console_friction": "High / DIY Port",
+      "console_model": {
+        "badge": "Tier 3 (DIY)",
+        "class": "console-tier3",
+        "desc": "Open-source / DIY custom porting or manual NDA SDK integration required.",
+        "detail": "Community / DIY"
+      },
+      "network_model": {
+        "badge": "P2P / WebRTC",
+        "class": "net-p2p",
+        "tier": "WebSockets & WebRTC",
+        "raw": "WebSockets, HTTP & Socket.io"
+      },
+      "memory_model": "Browser / V8 Generational Mark-and-Sweep GC",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Construct 3",
+      "language": "Visual, JS",
+      "license": "Subscription",
+      "form": "Web Editor (2D)",
+      "focus": "Browser-based visual 2D",
+      "release_date": "2017-10-04",
+      "last_update": "Construct r400+ (Rolling 2024)",
+      "share": "~1-2%",
+      "games": "Airscape, The Next Penelope, web mini-games",
+      "platforms": [
+        "Web",
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android"
+      ],
+      "url": "https://construct.net",
+      "paradigm": "Event Sheet (Visual No-Code)",
+      "install_size": "Zero (Browser/PWA)",
+      "console_feasibility": "Third-Party / Wrapper (Web-to-Console)",
+      "pedigree": "Created by brothers Tom & Ashley Gullen in UK; pioneering browser-native game creation running entirely in WebAssembly/JS.",
+      "graphics_apis": [
+        "WebGL 2",
+        "WebGPU"
+      ],
+      "physics": "Box2D (via WebAssembly asm.js)",
+      "networking": "WebRTC Multiplayer with Signaling Server & WebSockets",
+      "ecosystem": "Construct Community Addons & Scirra Store",
+      "console_friction": "Medium (Web wrapper / Porting House)",
+      "console_model": {
+        "badge": "Tier 2 (Partner)",
+        "class": "console-tier2",
+        "desc": "Established commercial porting house or official foundation pipeline.",
+        "detail": "Third-Party / Wrapper (Web-to-Console)"
+      },
+      "network_model": {
+        "badge": "High-Level RPC",
+        "class": "net-rpc",
+        "tier": "High-Level RPCs & Replication",
+        "raw": "WebRTC Multiplayer with Signaling Server & WebSockets"
+      },
+      "memory_model": "Engine-Managed Hybrid Runtime",
+      "threading_model": "Single-Threaded Event Loop (Web Workers for off-thread compute)",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "GDevelop",
+      "language": "Visual, JS",
+      "license": "Free (MIT)",
+      "form": "Editor (2D/3D)",
+      "focus": "No-code event sheet",
+      "release_date": "2008-08-11",
+      "last_update": "GDevelop 5.4 (2024-09)",
+      "share": "~0.5-1%",
+      "games": "Lil BUB's HELLO EARTH, mobile hypercasual",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web",
+        "iOS",
+        "Android"
+      ],
+      "url": "https://gdevelop.io",
+      "paradigm": "Event-Driven Visual Logic",
+      "install_size": "~150 MB / Browser",
+      "console_feasibility": "Third-Party / Wrapper",
+      "pedigree": "Open-source project started by Florian Rival in 2008; emphasizes rapid no-code game logic and community asset library.",
+      "graphics_apis": [
+        "WebGL 2",
+        "WebGPU",
+        "Canvas 2D"
+      ],
+      "physics": "Box2D (2D) & Ammo.js (3D experimental)",
+      "networking": "P2P (WebRTC) & Cloud Multiplayer Service",
+      "ecosystem": "Built-in Asset Store & Community Extensions",
+      "console_friction": "Medium (Capacitor/Electron wrapper)",
+      "console_model": {
+        "badge": "Tier 2 (Partner)",
+        "class": "console-tier2",
+        "desc": "Established commercial porting house or official foundation pipeline.",
+        "detail": "Third-Party / Wrapper"
+      },
+      "network_model": {
+        "badge": "High-Level RPC",
+        "class": "net-rpc",
+        "tier": "High-Level RPCs & Replication",
+        "raw": "P2P (WebRTC) & Cloud Multiplayer Service"
+      },
+      "memory_model": "Engine-Managed Hybrid Runtime",
+      "threading_model": "Single-Threaded Event Loop (Web Workers for off-thread compute)",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Solar2D",
+      "language": "Lua",
+      "license": "Free (MIT)",
+      "form": "Framework",
+      "focus": "Fast 2D mobile apps",
+      "release_date": "2009-12-01",
+      "last_update": "Solar2D 2024.3705 (2024-07)",
+      "share": "~0.5%",
+      "games": "Gunman Clive, Zip Zap, The Lost City",
+      "platforms": [
+        "iOS",
+        "Android",
+        "macOS",
+        "Windows",
+        "Linux",
+        "Web"
+      ],
+      "url": "https://solar2d.com",
+      "paradigm": "Event-Driven & Lua Scripting",
+      "install_size": "~100 MB",
+      "console_feasibility": "Not Practical / N/A",
+      "pedigree": "Originally Corona SDK by Walter Luh (ex-Apple); open-sourced in 2020 by lead engineer Vlad Shcherban under Solar2D.",
+      "graphics_apis": [
+        "OpenGL ES 2/3",
+        "Metal"
+      ],
+      "physics": "Box2D",
+      "networking": "LuaSocket & Network HTTP library",
+      "ecosystem": "Solar2D Plugins Directory",
+      "console_friction": "N/A (Mobile & PC only)",
+      "console_model": {
+        "badge": "N/A",
+        "class": "console-na",
+        "desc": "Not practical for consoles (web or desktop utility focus).",
+        "detail": "Not Practical / N/A"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "LuaSocket & Network HTTP library"
+      },
+      "memory_model": "Automatic Tracing Garbage Collector (Reference Counting / Mark-and-Sweep)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "DragonRuby GTK",
+      "language": "Ruby",
+      "license": "Free / Paid",
+      "form": "Framework",
+      "focus": "Ultra-fast pure Ruby 2D",
+      "release_date": "2019-06-01",
+      "last_update": "DragonRuby 5.17 (2024-08)",
+      "share": "<0.2%",
+      "games": "A Dark Room (Switch port), indie game jam games",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web",
+        "iOS",
+        "Android",
+        "Switch",
+        "Xbox"
+      ],
+      "url": "https://dragonruby.org",
+      "paradigm": "Functional / Pure Data Hashes (Ruby)",
+      "install_size": "~50 MB",
+      "console_feasibility": "Native / Direct Tier 1 (Commercial tiers)",
+      "pedigree": "Built by Amir Rajan (A Dark Room) and Ryan Gordon (Icculus, prolific Linux/console porter); compiles Ruby straight to C.",
+      "graphics_apis": [
+        "SDL2 / Metal / DirectX 11 / OpenGL"
+      ],
+      "physics": "Pure Math AABB & Spatial Hash (or DIY)",
+      "networking": "HTTP / WebSockets & Headless Sockets",
+      "ecosystem": "DragonRuby Packages & Ruby ecosystem",
+      "console_friction": "Turnkey / First-Party Tier 1",
+      "console_model": {
+        "badge": "Tier 1 (Native)",
+        "class": "console-tier1",
+        "desc": "Native direct first-party SDK or turnkey module.",
+        "detail": "Native / Direct Tier 1 (Commercial tiers)"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "HTTP / WebSockets & Headless Sockets"
+      },
+      "memory_model": "Automatic Tracing Garbage Collector (Reference Counting / Mark-and-Sweep)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "MicroStudio",
+      "language": "microScript, Python, Lua",
+      "license": "Free (MIT)",
+      "form": "Web Editor",
+      "focus": "Web game jams, education",
+      "release_date": "2020-04-01",
+      "last_update": "microStudio 0.9 (2024-06)",
+      "share": "<0.1%",
+      "games": "Indie educational games and retro browser titles",
+      "platforms": [
+        "Web",
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "url": "https://microstudio.dev",
+      "paradigm": "Imperative Scripting (microScript/Python)",
+      "install_size": "Zero (Browser) / ~100 MB",
+      "console_feasibility": "Not Practical / N/A",
+      "pedigree": "Independent cloud game creation environment created by Gilles Pommereuil; combines sprite, map, sound, and code editors in one.",
+      "graphics_apis": [
+        "HTML5 Canvas 2D / WebGL"
+      ],
+      "physics": "Built-in Simple Arcade Physics",
+      "networking": "Built-in Multiplayer Server & WebSockets",
+      "ecosystem": "In-Editor Community Library & Asset Explorer",
+      "console_friction": "N/A (Browser & Export to PC)",
+      "console_model": {
+        "badge": "N/A",
+        "class": "console-na",
+        "desc": "Not practical for consoles (web or desktop utility focus).",
+        "detail": "Not Practical / N/A"
+      },
+      "network_model": {
+        "badge": "High-Level RPC",
+        "class": "net-rpc",
+        "tier": "High-Level RPCs & Replication",
+        "raw": "Built-in Multiplayer Server & WebSockets"
+      },
+      "memory_model": "Automatic Tracing Garbage Collector (Reference Counting / Mark-and-Sweep)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Clickteam Fusion 2.5",
+      "language": "Visual Event Logic",
+      "license": "Paid",
+      "form": "Editor (2D)",
+      "focus": "Logic-driven 2D/arcade",
+      "release_date": "2013-12-04",
+      "last_update": "Fusion 2.5+ (2023-02)",
+      "share": "~0.5%",
+      "games": "Five Nights at Freddy's (1-4), The Escapists, Baba Is You",
+      "platforms": [
+        "Windows",
+        "iOS",
+        "Android",
+        "Web",
+        "Switch",
+        "PS4",
+        "Xbox"
+      ],
+      "url": "https://clickteam.com",
+      "paradigm": "Event Matrix / Grid Visual Logic",
+      "install_size": "~300 MB",
+      "console_feasibility": "Native / Direct Console DLC Modules",
+      "pedigree": "Legendary lineage starting with Klik & Play (1994), Click & Create, and Multimedia Fusion; birthed early FNAF titles.",
+      "graphics_apis": [
+        "Direct3D 9/11",
+        "OpenGL ES",
+        "Canvas 2D"
+      ],
+      "physics": "Box2D (Movement Extensions)",
+      "networking": "Lacewing (High-performance multiplayer extension)",
+      "ecosystem": "Clickteam Extension Manager & Community",
+      "console_friction": "Low (Direct Console Exporter Addons)",
+      "console_model": {
+        "badge": "Tier 2 (Partner)",
+        "class": "console-tier2",
+        "desc": "Established commercial porting house or official foundation pipeline.",
+        "detail": "Native / Direct Console DLC Modules"
+      },
+      "network_model": {
+        "badge": "High-Level RPC",
+        "class": "net-rpc",
+        "tier": "High-Level RPCs & Replication",
+        "raw": "Lacewing (High-performance multiplayer extension)"
+      },
+      "memory_model": "Engine-Managed Hybrid Runtime",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Stencyl",
+      "language": "Blocks, Haxe",
+      "license": "Free / Sub",
+      "form": "Editor (2D)",
+      "focus": "Scratch-style visual coding",
+      "release_date": "2011-05-01",
+      "last_update": "Stencyl 4.1 (2023-04)",
+      "share": "<0.5%",
+      "games": "Ghost Song, Lakeview Cabin, Impossible Pixel",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android",
+        "Web"
+      ],
+      "url": "https://stencyl.com",
+      "paradigm": "Block-based Visual Scripting (Scratch-like)",
+      "install_size": "~350 MB",
+      "console_feasibility": "Third-Party / Porting Partner",
+      "pedigree": "Started by Jonathan Chung in 2011; translates MIT Scratch-style puzzle blocks into fast Haxe code.",
+      "graphics_apis": [
+        "OpenGL ES",
+        "WebGL",
+        "DirectX"
+      ],
+      "physics": "Box2D",
+      "networking": "WebSockets / HTTP (via Haxe)",
+      "ecosystem": "StencylForge Asset Sharing",
+      "console_friction": "Medium (Porting House Required)",
+      "console_model": {
+        "badge": "Tier 2 (Partner)",
+        "class": "console-tier2",
+        "desc": "Established commercial porting house or official foundation pipeline.",
+        "detail": "Third-Party / Porting Partner"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "WebSockets / HTTP (via Haxe)"
+      },
+      "memory_model": "Engine-Managed Hybrid Runtime",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Ren'Py",
+      "language": "Python, Ren'Py Script",
+      "license": "Free (MIT)",
+      "form": "Script Editor",
+      "focus": "Visual novels, dating sims",
+      "release_date": "2004-08-24",
+      "last_update": "Ren'Py 8.3 (2024-08)",
+      "share": "~2-3% (Steam)",
+      "games": "Doki Doki Literature Club!, Slay the Princess, Katawa Shoujo",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android",
+        "Web",
+        "Switch",
+        "PS5"
+      ],
+      "url": "https://renpy.org",
+      "paradigm": "Declarative Script & Python",
+      "install_size": "~150 MB",
+      "console_feasibility": "Third-Party / Porting Partner (Ratalaika, etc.)",
+      "pedigree": "Created by PyTom (Tom Rothamel) in 2004; undisputed global standard for 2D visual novels and narrative games.",
+      "graphics_apis": [
+        "OpenGL 2/3",
+        "DirectX 9/11 (via ANGLE)",
+        "Metal"
+      ],
+      "physics": "N/A (2D Transform & Matrix Transitions)",
+      "networking": "Python `urllib` / `requests` / Sockets",
+      "ecosystem": "Lemmasoft Forums, GitHub & PyPI",
+      "console_friction": "Medium (Ratalaika Games / Porting Partner)",
+      "console_model": {
+        "badge": "Tier 2 (Partner)",
+        "class": "console-tier2",
+        "desc": "Established commercial porting house or official foundation pipeline.",
+        "detail": "Third-Party / Porting Partner (Ratalaika, etc.)"
+      },
+      "network_model": {
+        "badge": "Offline Focus",
+        "class": "net-offline",
+        "tier": "Offline / Narrative Focus",
+        "raw": "Python `urllib` / `requests` / Sockets"
+      },
+      "memory_model": "Automatic Tracing Garbage Collector (Reference Counting / Mark-and-Sweep)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "TyranoBuilder",
+      "language": "Visual, JS",
+      "license": "Paid",
+      "form": "Editor (2D)",
+      "focus": "Visual novels for beginners",
+      "release_date": "2015-03-27",
+      "last_update": "TyranoBuilder 2.1 (2022-09)",
+      "share": "<0.5%",
+      "games": "Indie Japanese & Western visual novels",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Web",
+        "iOS",
+        "Android"
+      ],
+      "url": "https://tyranobuilder.com",
+      "paradigm": "Drag-and-Drop Visual & Tag Script",
+      "install_size": "~250 MB",
+      "console_feasibility": "Not Practical / N/A",
+      "pedigree": "Developed by StrikeWorks in Japan; designed for creators who want to build visual novels without programming.",
+      "graphics_apis": [
+        "WebGL / HTML5 Canvas"
+      ],
+      "physics": "N/A (Visual Transitions)",
+      "networking": "HTTP / WebSockets via JavaScript",
+      "ecosystem": "TyranoBuilder Marketplace & GitHub plugins",
+      "console_friction": "N/A (PC/Mobile/Web only)",
+      "console_model": {
+        "badge": "N/A",
+        "class": "console-na",
+        "desc": "Not practical for consoles (web or desktop utility focus).",
+        "detail": "Not Practical / N/A"
+      },
+      "network_model": {
+        "badge": "Offline Focus",
+        "class": "net-offline",
+        "tier": "Offline / Narrative Focus",
+        "raw": "HTTP / WebSockets via JavaScript"
+      },
+      "memory_model": "Engine-Managed Hybrid Runtime",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Visual Novel Maker",
+      "language": "Visual, JS",
+      "license": "Paid",
+      "form": "Editor (2D)",
+      "focus": "Japanese visual novel maker",
+      "release_date": "2017-11-16",
+      "last_update": "VN Maker 1.0.12 (2021-12)",
+      "share": "<0.2%",
+      "games": "Indie story-driven VN projects",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Web",
+        "iOS",
+        "Android"
+      ],
+      "url": "https://visualnovelmaker.com",
+      "paradigm": "Visual Logic & JavaScript OOP",
+      "install_size": "~1.5 GB",
+      "console_feasibility": "Not Practical / N/A",
+      "pedigree": "Published by Degica / Gotcha Gotcha Games (RPG Maker publisher) to bring RPG Maker's polished editor UX to narrative games.",
+      "graphics_apis": [
+        "WebGL / Canvas 2D"
+      ],
+      "physics": "N/A (Animation Easing)",
+      "networking": "HTTP via JavaScript",
+      "ecosystem": "Steam Workshop & Degica Store",
+      "console_friction": "N/A (PC/Mac/Mobile/Web)",
+      "console_model": {
+        "badge": "N/A",
+        "class": "console-na",
+        "desc": "Not practical for consoles (web or desktop utility focus).",
+        "detail": "Not Practical / N/A"
+      },
+      "network_model": {
+        "badge": "Offline Focus",
+        "class": "net-offline",
+        "tier": "Offline / Narrative Focus",
+        "raw": "HTTP via JavaScript"
+      },
+      "memory_model": "Engine-Managed Hybrid Runtime",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Twine",
+      "language": "HTML/CSS/JS",
+      "license": "Free (GPL)",
+      "form": "Node Editor",
+      "focus": "Interactive text fiction",
+      "release_date": "2009-10-01",
+      "last_update": "Twine 2.8.1 (2024-03)",
+      "share": "~1% (Narrative/Itch)",
+      "games": "Depression Quest, Bandersnatch (prototyping), The Temple of No",
+      "platforms": [
+        "Web",
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "url": "https://twinery.org",
+      "paradigm": "Nonlinear Node Graph & HTML/CSS",
+      "install_size": "Zero (Web) / ~80 MB",
+      "console_feasibility": "Not Practical / N/A",
+      "pedigree": "Created by Chris Klimas in 2009; revolutionised interactive fiction, text games, and branching video game narrative design.",
+      "graphics_apis": [
+        "DOM / HTML5 / CSS3"
+      ],
+      "physics": "N/A (Text / Hypertext)",
+      "networking": "Fetch / WebSockets via JavaScript",
+      "ecosystem": "Story Formats (Harlowe, SugarCube, Chapbook)",
+      "console_friction": "N/A (Web & Desktop)",
+      "console_model": {
+        "badge": "N/A",
+        "class": "console-na",
+        "desc": "Not practical for consoles (web or desktop utility focus).",
+        "detail": "Not Practical / N/A"
+      },
+      "network_model": {
+        "badge": "Offline Focus",
+        "class": "net-offline",
+        "tier": "Offline / Narrative Focus",
+        "raw": "Fetch / WebSockets via JavaScript"
+      },
+      "memory_model": "Engine-Managed Hybrid Runtime",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Bitsy",
+      "language": "Visual",
+      "license": "Free (MIT)",
+      "form": "Web Editor",
+      "focus": "Tiny lo-fi walking simulators",
+      "release_date": "2016-10-01",
+      "last_update": "Bitsy 9.1 (2024-01)",
+      "share": "<0.5% (Itch/Jams)",
+      "games": "MOSS, A Museum of Dubious Splendors",
+      "platforms": [
+        "Web"
+      ],
+      "url": "https://bitsy.org",
+      "paradigm": "Minimal Tile/Dialogue Constraints",
+      "install_size": "Zero (Browser)",
+      "console_feasibility": "Not Practical / N/A",
+      "pedigree": "Crafted by Adam Le Doux; intentional extreme restriction (3 colors, 8x8 sprites, walking & dialogue) to inspire storytelling.",
+      "graphics_apis": [
+        "HTML5 2D Canvas (128x128)"
+      ],
+      "physics": "Grid-based Tile Collision",
+      "networking": "Offline / None",
+      "ecosystem": "Bitsy Hacks (GitHub) & itch.io Community",
+      "console_friction": "N/A (Web Browser)",
+      "console_model": {
+        "badge": "N/A",
+        "class": "console-na",
+        "desc": "Not practical for consoles (web or desktop utility focus).",
+        "detail": "Not Practical / N/A"
+      },
+      "network_model": {
+        "badge": "Offline Focus",
+        "class": "net-offline",
+        "tier": "Offline / Narrative Focus",
+        "raw": "Offline / None"
+      },
+      "memory_model": "Engine-Managed Hybrid Runtime",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "RPG Maker (MZ/MV)",
+      "language": "JS, Visual",
+      "license": "Paid",
+      "form": "Editor (2D)",
+      "focus": "Grid-based turn-based JRPGs",
+      "release_date": "2020-08-20",
+      "last_update": "RPG Maker MZ 1.8 (2024-06)",
+      "share": "~1-2% (Steam)",
+      "games": "To the Moon, Omori, Fear & Hunger, Lisa: The Painful",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android",
+        "Web",
+        "Switch",
+        "PS4"
+      ],
+      "url": "https://rpgmakerweb.com",
+      "paradigm": "Event-Driven & JavaScript Plugins",
+      "install_size": "~1 - 2 GB",
+      "console_feasibility": "Commercial Porting House / Publisher",
+      "pedigree": "Lineage dates back to ASCII / Enterbrain in Japan (1992); the bedrock of indie JRPGs and horror classics like Omori.",
+      "graphics_apis": [
+        "WebGL 2 / PixiJS backend"
+      ],
+      "physics": "Tile-based Grid Collision",
+      "networking": "Node.js / WebSockets via Community Plugins",
+      "ecosystem": "Yanfly / VisuStella Plugins & Degica Store",
+      "console_friction": "Medium (Commercial Porting / Publisher)",
+      "console_model": {
+        "badge": "Tier 2 (Partner)",
+        "class": "console-tier2",
+        "desc": "Established commercial porting house or official foundation pipeline.",
+        "detail": "Commercial Porting House / Publisher"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "Node.js / WebSockets via Community Plugins"
+      },
+      "memory_model": "Engine-Managed Hybrid Runtime",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Wolf RPG Editor",
+      "language": "Visual",
+      "license": "Free",
+      "form": "Editor (2D)",
+      "focus": "Japanese indie 2D RPGs",
+      "release_date": "2008-04-12",
+      "last_update": "Wolf RPG 3.30 (2023-12)",
+      "share": "<0.5%",
+      "games": "Mad Father, The Witch's House, LiEat",
+      "platforms": [
+        "Windows"
+      ],
+      "url": "https://silversecond.com/WolfRPGEditor",
+      "paradigm": "Visual Events & Variable Arithmetic",
+      "install_size": "~50 MB",
+      "console_feasibility": "Third-Party / Porting Partner",
+      "pedigree": "Created by Japanese indie developer SmokingWOLF; renowned for deeper low-level variable manipulation than RPG Maker.",
+      "graphics_apis": [
+        "DirectX 9"
+      ],
+      "physics": "Tile Grid Collision & Variable Checks",
+      "networking": "Offline / None",
+      "ecosystem": "Japanese Community BBS & VIPRPG Repository",
+      "console_friction": "Medium (Porting House Required)",
+      "console_model": {
+        "badge": "Tier 2 (Partner)",
+        "class": "console-tier2",
+        "desc": "Established commercial porting house or official foundation pipeline.",
+        "detail": "Third-Party / Porting Partner"
+      },
+      "network_model": {
+        "badge": "Offline Focus",
+        "class": "net-offline",
+        "tier": "Offline / Narrative Focus",
+        "raw": "Offline / None"
+      },
+      "memory_model": "Engine-Managed Hybrid Runtime",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "RPG in a Box",
+      "language": "Visual / Bauxite",
+      "license": "Paid",
+      "form": "Editor (Voxel)",
+      "focus": "Grid voxel RPGs & adventures",
+      "release_date": "2022-12-10",
+      "last_update": "RPG in a Box 1.2 (2024-07)",
+      "share": "<0.1%",
+      "games": "Indie voxel dungeon crawlers",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "url": "https://rpginabox.com",
+      "paradigm": "Voxel Grid & Bauxite Visual Scripting",
+      "install_size": "~300 MB",
+      "console_feasibility": "Community / DIY (built on Godot)",
+      "pedigree": "Created by Justin Arnold, built on top of Godot Engine; dedicated to 3D voxel-based RPG and adventure creation.",
+      "graphics_apis": [
+        "OpenGL 3.3 / GLES 3 (via Godot)"
+      ],
+      "physics": "Godot Voxel / AABB Grid Collision",
+      "networking": "Offline / Experimental Sockets",
+      "ecosystem": "Itch.io Community & Built-in Asset Store",
+      "console_friction": "High / DIY Port",
+      "console_model": {
+        "badge": "Tier 3 (DIY)",
+        "class": "console-tier3",
+        "desc": "Open-source / DIY custom porting or manual NDA SDK integration required.",
+        "detail": "Community / DIY (built on Godot)"
+      },
+      "network_model": {
+        "badge": "Offline Focus",
+        "class": "net-offline",
+        "tier": "Offline / Narrative Focus",
+        "raw": "Offline / Experimental Sockets"
+      },
+      "memory_model": "Engine-Managed Hybrid Runtime",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Bakin (RPG Developer)",
+      "language": "Visual",
+      "license": "Paid",
+      "form": "Editor (3D)",
+      "focus": "No-code 3D JRPGs",
+      "release_date": "2022-10-17",
+      "last_update": "Bakin 1.8 (2024-08)",
+      "share": "<0.1%",
+      "games": "Indie 3D Japanese-style RPGs",
+      "platforms": [
+        "Windows"
+      ],
+      "url": "https://rpgbakin.com",
+      "paradigm": "No-Code 3D Events & Modern Shaders",
+      "install_size": "~3 - 5 GB",
+      "console_feasibility": "Under development / Future",
+      "pedigree": "Developed by SmileBoom (creators of Smile Game Builder & Petit Computer); lets anyone build modern 3D HD-2D style JRPGs.",
+      "graphics_apis": [
+        "DirectX 11"
+      ],
+      "physics": "Built-in Character Controller & Collision Mesh",
+      "networking": "Offline Focus",
+      "ecosystem": "Steam DLC & SmileBoom Community",
+      "console_friction": "High / In-Development",
+      "console_model": {
+        "badge": "Tier 3 (DIY)",
+        "class": "console-tier3",
+        "desc": "Open-source / DIY custom porting or manual NDA SDK integration required.",
+        "detail": "Under development / Future"
+      },
+      "network_model": {
+        "badge": "Offline Focus",
+        "class": "net-offline",
+        "tier": "Offline / Narrative Focus",
+        "raw": "Offline Focus"
+      },
+      "memory_model": "Engine-Managed Hybrid Runtime",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "AGS (Adventure Game Studio)",
+      "language": "AGS Script",
+      "license": "Free (Artistic 2.0)",
+      "form": "Editor (2D)",
+      "focus": "Point-and-click adventures",
+      "release_date": "1997-02-01",
+      "last_update": "AGS 3.6.1 (2024-03)",
+      "share": "<0.5%",
+      "games": "Blackwell series, Gemini Rue, Kathy Rain",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS",
+        "Android",
+        "Web"
+      ],
+      "url": "https://adventuregamestudio.co.uk",
+      "paradigm": "Event & C-like AGS Scripting",
+      "install_size": "~50 MB",
+      "console_feasibility": "Third-Party / Community Ports",
+      "pedigree": "Created by Chris Jones in 1997 to emulate Sierra and LucasArts 90s adventure games; vibrant community for over 25 years.",
+      "graphics_apis": [
+        "Direct3D 9",
+        "OpenGL",
+        "Software 8-bit/16-bit"
+      ],
+      "physics": "Walkable Walkbehinds & Vector Pathfinding",
+      "networking": "HTTP / Sockets (via Community Plugins)",
+      "ecosystem": "AGS Community Forums & Module Repository",
+      "console_friction": "Medium (Community Porting Partners)",
+      "console_model": {
+        "badge": "N/A",
+        "class": "console-na",
+        "desc": "Not practical for consoles (web or desktop utility focus).",
+        "detail": "Third-Party / Community Ports"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "HTTP / Sockets (via Community Plugins)"
+      },
+      "memory_model": "Engine-Managed Hybrid Runtime",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Visionaire Studio",
+      "language": "Visual, Lua",
+      "license": "Paid",
+      "form": "Editor (2D/3D)",
+      "focus": "High-res adventure games",
+      "release_date": "2007-06-01",
+      "last_update": "Visionaire 5.2 (2023-10)",
+      "share": "<0.2%",
+      "games": "Deponia series, The Pillars of the Earth, Ken Follett's",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android"
+      ],
+      "url": "https://visionaire-studio.net",
+      "paradigm": "Action Logic & Lua Scripting",
+      "install_size": "~300 MB",
+      "console_feasibility": "Commercial Porting House",
+      "pedigree": "German adventure game engine behind Daedalic Entertainment's award-winning Deponia series and Pillars of the Earth.",
+      "graphics_apis": [
+        "OpenGL 3",
+        "DirectX 11"
+      ],
+      "physics": "Walkable Area Pathfinding & 2D Collision",
+      "networking": "Offline Focus",
+      "ecosystem": "Visionaire Forums & Template Library",
+      "console_friction": "Medium (Daedalic / Commercial Porting)",
+      "console_model": {
+        "badge": "Tier 2 (Partner)",
+        "class": "console-tier2",
+        "desc": "Established commercial porting house or official foundation pipeline.",
+        "detail": "Commercial Porting House"
+      },
+      "network_model": {
+        "badge": "Offline Focus",
+        "class": "net-offline",
+        "tier": "Offline / Narrative Focus",
+        "raw": "Offline Focus"
+      },
+      "memory_model": "Automatic Tracing Garbage Collector (Reference Counting / Mark-and-Sweep)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "PICO-8",
+      "language": "Lua",
+      "license": "Paid ($15)",
+      "form": "Fantasy Console",
+      "focus": "128x128 retro pixel games",
+      "release_date": "2015-04-01",
+      "last_update": "PICO-8 0.2.6 (2023-12)",
+      "share": "~1-2% (Itch/Jams)",
+      "games": "Celeste (original prototype), Slipways, Just One Boss",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Raspberry Pi",
+        "Web"
+      ],
+      "url": "https://lexaloffle.com/pico-8.php",
+      "paradigm": "Cooperative Multitasking & Lua Scripting",
+      "install_size": "~15 MB",
+      "console_feasibility": "DIY / Porting required (e.g. Celeste remade in C#)",
+      "pedigree": "Invented by Joseph White (zep) in 2015; coined the term 'Fantasy Console' with strict 128x128 16-color limits.",
+      "graphics_apis": [
+        "Software 8-bit Renderer (128x128 16-color)"
+      ],
+      "physics": "Simple Bounding Box / DIY Bitwise Math",
+      "networking": "BBS Cartridge Streaming & Serial I/O",
+      "ecosystem": "Lexaloffle BBS & Splore In-Engine Browser",
+      "console_friction": "High (Requires code rewrite, e.g. Celeste)",
+      "console_model": {
+        "badge": "Tier 3 (DIY)",
+        "class": "console-tier3",
+        "desc": "Open-source / DIY custom porting or manual NDA SDK integration required.",
+        "detail": "DIY / Porting required (e.g. Celeste remade in C#)"
+      },
+      "network_model": {
+        "badge": "Offline Focus",
+        "class": "net-offline",
+        "tier": "Offline / Narrative Focus",
+        "raw": "BBS Cartridge Streaming & Serial I/O"
+      },
+      "memory_model": "Automatic Tracing Garbage Collector (Reference Counting / Mark-and-Sweep)",
+      "threading_model": "Deterministic Single-Threaded Cycle Loop (60 Hz Hardware Tick)",
+      "rollback_support": "Fully Deterministic Byte-State Memory Snapshots (Emulation Save States)"
+    },
+    {
+      "engine": "TIC-80",
+      "language": "Lua, JS, Wren, Moonscript",
+      "license": "Free / Paid",
+      "form": "Fantasy Console",
+      "focus": "Open-source tiny computer",
+      "release_date": "2017-03-25",
+      "last_update": "TIC-80 1.1 (2023-11)",
+      "share": "<0.5%",
+      "games": "Indie retro pixel games, demoscene",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "Raspberry Pi",
+        "Web"
+      ],
+      "url": "https://tic80.com",
+      "paradigm": "Multi-language Procedural Scripting",
+      "install_size": "~25 MB",
+      "console_feasibility": "Community / Retro handhelds",
+      "pedigree": "Created by Vadim Dyachenko as an open-source alternative to PICO-8, adding support for Lua, JS, Wren, and Moonscript.",
+      "graphics_apis": [
+        "Software 8-bit Renderer (240x136 16-color)"
+      ],
+      "physics": "DIY Tile Collision",
+      "networking": "HTTP Fetch & BBS Sharing",
+      "ecosystem": "TIC-80 Website Cartridge Library",
+      "console_friction": "Low (Runs on retro handhelds like Miyoo/Anbernic)",
+      "console_model": {
+        "badge": "Tier 3 (DIY)",
+        "class": "console-tier3",
+        "desc": "Open-source / DIY custom porting or manual NDA SDK integration required.",
+        "detail": "Community / Retro handhelds"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "HTTP Fetch & BBS Sharing"
+      },
+      "memory_model": "Automatic Tracing Garbage Collector (Reference Counting / Mark-and-Sweep)",
+      "threading_model": "Deterministic Single-Threaded Cycle Loop (60 Hz Hardware Tick)",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "GB Studio",
+      "language": "Visual",
+      "license": "Free (MIT)",
+      "form": "Editor (2D)",
+      "focus": "Authentic Game Boy ROMs",
+      "release_date": "2019-04-11",
+      "last_update": "GB Studio 3.2 (2023-09)",
+      "share": "<0.5% (Homebrew)",
+      "games": "Deadeus, The Dragonborne, indie Game Boy homebrew",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "url": "https://gbstudio.dev",
+      "paradigm": "Visual Logic (Compiles to GBDK C/ASM)",
+      "install_size": "~150 MB",
+      "console_feasibility": "Authentic Game Boy (Plays on real hardware)",
+      "pedigree": "Created by Chris Maltby for Bored Pixels Jam; generates genuine Game Boy `.gb` ROMs playable on original 1989 hardware.",
+      "graphics_apis": [
+        "Game Boy DMG / Color Hardware PPU"
+      ],
+      "physics": "Authentic Game Boy 8x8 Tile Collisions",
+      "networking": "Link Cable Serial Communication",
+      "ecosystem": "GB Studio Central & Community Plugins",
+      "console_friction": "Turnkey (Outputs authentic .gb / .gbc ROMs)",
+      "console_model": {
+        "badge": "Tier 1 (Native)",
+        "class": "console-tier1",
+        "desc": "Native direct first-party SDK or turnkey module.",
+        "detail": "Authentic Game Boy (Plays on real hardware)"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "Link Cable Serial Communication"
+      },
+      "memory_model": "Engine-Managed Hybrid Runtime",
+      "threading_model": "Deterministic Single-Threaded Cycle Loop (60 Hz Hardware Tick)",
+      "rollback_support": "Fully Deterministic Byte-State Memory Snapshots (Emulation Save States)"
+    },
+    {
+      "engine": "NESmaker",
+      "language": "Visual, 6502 ASM",
+      "license": "Paid",
+      "form": "Editor (2D)",
+      "focus": "Real NES hardware ROMs",
+      "release_date": "2018-09-01",
+      "last_update": "NESmaker 4.5.9 (2022-05)",
+      "share": "<0.1% (Homebrew)",
+      "games": "Doodle World, Alfonzo's Arctic Adventure",
+      "platforms": [
+        "Windows"
+      ],
+      "url": "https://thenewretro.com",
+      "paradigm": "Visual Module Configuration & 6502 ASM",
+      "install_size": "~200 MB",
+      "console_feasibility": "Authentic NES (Plays on real hardware/flashcarts)",
+      "pedigree": "Created by Joe Granato and The New 8-bit Heroes to let creators produce real Nintendo Entertainment System cartridge ROMs.",
+      "graphics_apis": [
+        "NES PPU (Picture Processing Unit, 256x240)"
+      ],
+      "physics": "6502 ASM Fixed-Point Physics & Tile Bounding",
+      "networking": "Offline / None",
+      "ecosystem": "The New 8-bit Heroes Community & Forums",
+      "console_friction": "Turnkey (Outputs authentic .nes cartridge ROMs)",
+      "console_model": {
+        "badge": "Tier 1 (Native)",
+        "class": "console-tier1",
+        "desc": "Native direct first-party SDK or turnkey module.",
+        "detail": "Authentic NES (Plays on real hardware/flashcarts)"
+      },
+      "network_model": {
+        "badge": "Offline Focus",
+        "class": "net-offline",
+        "tier": "Offline / Narrative Focus",
+        "raw": "Offline / None"
+      },
+      "memory_model": "Engine-Managed Hybrid Runtime",
+      "threading_model": "Deterministic Single-Threaded Cycle Loop (60 Hz Hardware Tick)",
+      "rollback_support": "Fully Deterministic Byte-State Memory Snapshots (Emulation Save States)"
+    },
+    {
+      "engine": "WASM-4",
+      "language": "Rust, C, Go, AssemblyScript",
+      "license": "Free (W3C)",
+      "form": "Fantasy Console",
+      "focus": "WebAssembly micro-games",
+      "release_date": "2021-11-01",
+      "last_update": "WASM-4 2.5 (2023-06)",
+      "share": "<0.1%",
+      "games": "WebAssembly demo games, minimal game jam entries",
+      "platforms": [
+        "Web",
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "url": "https://wasm4.org",
+      "paradigm": "Low-level WebAssembly memory buffer",
+      "install_size": "< 10 MB",
+      "console_feasibility": "Community / Handheld emulators",
+      "pedigree": "Created by Bruno Garcia; virtual fantasy console designed for executing raw 64KB WebAssembly binaries with 4 colors.",
+      "graphics_apis": [
+        "WebAssembly Linear Framebuffer (160x160 4-color)"
+      ],
+      "physics": "DIY Memory-Mapped Collision",
+      "networking": "WebRTC Online Multiplayer (built-in)",
+      "ecosystem": "WASM-4 Hub & Any WebAssembly language toolchain",
+      "console_friction": "Low (Runs in retro emulators & web)",
+      "console_model": {
+        "badge": "Tier 3 (DIY)",
+        "class": "console-tier3",
+        "desc": "Open-source / DIY custom porting or manual NDA SDK integration required.",
+        "detail": "Community / Handheld emulators"
+      },
+      "network_model": {
+        "badge": "High-Level RPC",
+        "class": "net-rpc",
+        "tier": "High-Level RPCs & Replication",
+        "raw": "WebRTC Online Multiplayer (built-in)"
+      },
+      "memory_model": "Ownership & Borrowing (Compile-time lifetimes, Zero GC)",
+      "threading_model": "Deterministic Single-Threaded Cycle Loop (60 Hz Hardware Tick)",
+      "rollback_support": "Fully Deterministic Byte-State Memory Snapshots (Emulation Save States)"
+    },
+    {
+      "engine": "Phaser",
+      "language": "JS, TS",
+      "license": "Free (MIT)",
+      "form": "Framework",
+      "focus": "2D HTML5 canvas/WebGL games",
+      "release_date": "2013-04-12",
+      "last_update": "Phaser 3.85 (2024-08)",
+      "share": "~5-8% (HTML5 web)",
+      "games": "Vampire Survivors (early prototype), mobile web games",
+      "platforms": [
+        "Web (HTML5)",
+        "iOS",
+        "Android (via Cordova/Capacitor)"
+      ],
+      "url": "https://phaser.io",
+      "paradigm": "Object-Oriented & Functional (JS/TS)",
+      "install_size": "Library (< 5 MB)",
+      "console_feasibility": "Not Practical / N/A",
+      "pedigree": "Created by Richard Davey in 2013; standard workhorse library powering thousands of desktop and mobile browser games.",
+      "graphics_apis": [
+        "WebGL 1 / 2",
+        "Canvas 2D fallback"
+      ],
+      "physics": "Arcade Physics (AABB), Matter.js, Ninja Physics",
+      "networking": "WebSockets, WebRTC, Colyseus, Geckos.io",
+      "ecosystem": "npm, Phaser Marketplace & Plugins",
+      "console_friction": "N/A (Web & Mobile Wrappers)",
+      "console_model": {
+        "badge": "N/A",
+        "class": "console-na",
+        "desc": "Not practical for consoles (web or desktop utility focus).",
+        "detail": "Not Practical / N/A"
+      },
+      "network_model": {
+        "badge": "P2P / WebRTC",
+        "class": "net-p2p",
+        "tier": "WebSockets & WebRTC",
+        "raw": "WebSockets, WebRTC, Colyseus, Geckos.io"
+      },
+      "memory_model": "Engine-Managed Hybrid Runtime",
+      "threading_model": "Single-Threaded Event Loop (Web Workers for off-thread compute)",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "PixiJS",
+      "language": "JS, TS",
+      "license": "Free (MIT)",
+      "form": "Library",
+      "focus": "High-speed 2D WebGL renderer",
+      "release_date": "2013-03-01",
+      "last_update": "PixiJS v8.3 (2024-08)",
+      "share": "~5% (Web visuals)",
+      "games": "Web interactives, playable ads, mini-games",
+      "platforms": [
+        "Web (HTML5)",
+        "iOS",
+        "Android"
+      ],
+      "url": "https://pixijs.com",
+      "paradigm": "Scene Graph 2D Rendering Pipeline",
+      "install_size": "Library (< 2 MB)",
+      "console_feasibility": "Not Practical / N/A",
+      "pedigree": "Created by Mat Groves in 2013; laser-focused on ultra-fast 2D WebGL sprite rendering rather than being a full game engine.",
+      "graphics_apis": [
+        "WebGL 2",
+        "WebGPU (Pixi v8)",
+        "Canvas fallback"
+      ],
+      "physics": "None (Bring Your Own: Matter.js, Rapier)",
+      "networking": "None (Bring Your Own: WebSockets/HTTP)",
+      "ecosystem": "npm & PixiJS Community Ecosystem",
+      "console_friction": "N/A (Web Graphics Pipeline)",
+      "console_model": {
+        "badge": "N/A",
+        "class": "console-na",
+        "desc": "Not practical for consoles (web or desktop utility focus).",
+        "detail": "Not Practical / N/A"
+      },
+      "network_model": {
+        "badge": "P2P / WebRTC",
+        "class": "net-p2p",
+        "tier": "WebSockets & WebRTC",
+        "raw": "None (Bring Your Own: WebSockets/HTTP)"
+      },
+      "memory_model": "Engine-Managed Hybrid Runtime",
+      "threading_model": "Single-Threaded Event Loop (Web Workers for off-thread compute)",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Babylon.js",
+      "language": "TS, JS",
+      "license": "Free (Apache 2.0)",
+      "form": "Framework",
+      "focus": "Full-featured 3D web & WebXR",
+      "release_date": "2013-06-01",
+      "last_update": "Babylon.js 7.0 (2024-03)",
+      "share": "~2% (3D Web)",
+      "games": "Minecraft Classic (Web), Microsoft 3D web interactives",
+      "platforms": [
+        "Web (HTML5/WebGPU)",
+        "Windows",
+        "iOS",
+        "Android"
+      ],
+      "url": "https://babylonjs.com",
+      "paradigm": "OOP / Entity Hierarchy & Modern Shaders",
+      "install_size": "Library (< 10 MB)",
+      "console_feasibility": "Not Practical / N/A",
+      "pedigree": "Originated inside Microsoft by David Catuhe; premier full-featured 3D web game engine supporting WebGPU and WebXR.",
+      "graphics_apis": [
+        "WebGPU",
+        "WebGL 2",
+        "WebGL 1"
+      ],
+      "physics": "Havok Physics (WASM), Cannon.js, Ammo.js",
+      "networking": "WebSockets, WebRTC & Colyseus",
+      "ecosystem": "npm, Babylon Playground & Node Material Editor",
+      "console_friction": "N/A (Web & Native via Babylon Native)",
+      "console_model": {
+        "badge": "N/A",
+        "class": "console-na",
+        "desc": "Not practical for consoles (web or desktop utility focus).",
+        "detail": "Not Practical / N/A"
+      },
+      "network_model": {
+        "badge": "P2P / WebRTC",
+        "class": "net-p2p",
+        "tier": "WebSockets & WebRTC",
+        "raw": "WebSockets, WebRTC & Colyseus"
+      },
+      "memory_model": "Engine-Managed Hybrid Runtime",
+      "threading_model": "Single-Threaded Event Loop (Web Workers for off-thread compute)",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "PlayCanvas",
+      "language": "JS, TS",
+      "license": "Free / Sub",
+      "form": "Web Editor",
+      "focus": "Cloud 3D WebGL/WebGPU",
+      "release_date": "2014-06-05",
+      "last_update": "PlayCanvas 2.0 (2024-07)",
+      "share": "~1-2% (3D Web)",
+      "games": "Swooop, Disney interactive web campaigns, casual 3D",
+      "platforms": [
+        "Web (HTML5/WebGPU)",
+        "Mobile Web"
+      ],
+      "url": "https://playcanvas.com",
+      "paradigm": "Entity-Component & TypeScript/JS",
+      "install_size": "Zero (Cloud Editor)",
+      "console_feasibility": "Not Practical / N/A",
+      "pedigree": "Founded by Will Eastcott & Dave Evans in 2011 (acquired by Snap); pioneering real-time collaborative in-browser 3D editor.",
+      "graphics_apis": [
+        "WebGPU",
+        "WebGL 2",
+        "WebGL 1"
+      ],
+      "physics": "Ammo.js (Bullet Physics WASM port)",
+      "networking": "WebSockets & Real-time Collaborative Cloud Sync",
+      "ecosystem": "PlayCanvas Store & npm",
+      "console_friction": "N/A (Browser & WebXR)",
+      "console_model": {
+        "badge": "N/A",
+        "class": "console-na",
+        "desc": "Not practical for consoles (web or desktop utility focus).",
+        "detail": "Not Practical / N/A"
+      },
+      "network_model": {
+        "badge": "P2P / WebRTC",
+        "class": "net-p2p",
+        "tier": "WebSockets & WebRTC",
+        "raw": "WebSockets & Real-time Collaborative Cloud Sync"
+      },
+      "memory_model": "Engine-Managed Hybrid Runtime",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Three.js",
+      "language": "JS",
+      "license": "Free (MIT)",
+      "form": "Library",
+      "focus": "Web 3D graphics baseline",
+      "release_date": "2010-04-24",
+      "last_update": "Three.js r168 (2024-09)",
+      "share": "~15-20% (Web 3D)",
+      "games": "Bruno Simon Portfolio, Google Arts & Culture experiments",
+      "platforms": [
+        "Web (HTML5/WebGL/WebGPU)"
+      ],
+      "url": "https://threejs.org",
+      "paradigm": "Scene Graph & Shader Programming",
+      "install_size": "Library (< 2 MB)",
+      "console_feasibility": "Not Practical / N/A",
+      "pedigree": "Created by Ricardo Cabello (Mr.doob) in 2010; foundational 3D JavaScript library that popularized 3D graphics on the web.",
+      "graphics_apis": [
+        "WebGPU",
+        "WebGL 2",
+        "WebGL 1"
+      ],
+      "physics": "None (Bring Your Own: Rapier, Cannon-es, Ammo.js)",
+      "networking": "None (Bring Your Own: WebSockets, WebRTC)",
+      "ecosystem": "npm & Massive Open-Source 3D Web Ecosystem",
+      "console_friction": "N/A (Web Standard 3D)",
+      "console_model": {
+        "badge": "N/A",
+        "class": "console-na",
+        "desc": "Not practical for consoles (web or desktop utility focus).",
+        "detail": "Not Practical / N/A"
+      },
+      "network_model": {
+        "badge": "P2P / WebRTC",
+        "class": "net-p2p",
+        "tier": "WebSockets & WebRTC",
+        "raw": "None (Bring Your Own: WebSockets, WebRTC)"
+      },
+      "memory_model": "Engine-Managed Hybrid Runtime",
+      "threading_model": "Single-Threaded Event Loop (Web Workers for off-thread compute)",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Wonderland Engine",
+      "language": "JS, TS",
+      "license": "Free / Sub",
+      "form": "Editor (WebXR)",
+      "focus": "Fast WebAssembly WebXR/VR",
+      "release_date": "2021-02-01",
+      "last_update": "Wonderland 1.2 (2024-07)",
+      "share": "<0.2%",
+      "games": "Spatial WebXR games and interactive VR exhibits",
+      "platforms": [
+        "WebXR",
+        "Oculus Quest",
+        "Apple Vision Pro",
+        "Web"
+      ],
+      "url": "https://wonderlandengine.com",
+      "paradigm": "WebAssembly ECS & TypeScript Components",
+      "install_size": "~100 MB",
+      "console_feasibility": "VR / Spatial Headsets Native",
+      "pedigree": "Founded by Jonathan Hale; engineered specifically for zero-overhead WebAssembly VR rendering at 90+ FPS on standalone headsets.",
+      "graphics_apis": [
+        "WebAssembly WebGL 2",
+        "WebGPU"
+      ],
+      "physics": "PhysX (compiled to WebAssembly)",
+      "networking": "WebSockets / PeerJS WebRTC",
+      "ecosystem": "Wonderland Package Manager & npm",
+      "console_friction": "Turnkey (Direct Native APK for Quest/Pico/VisionPro)",
+      "console_model": {
+        "badge": "Tier 1 (Native)",
+        "class": "console-tier1",
+        "desc": "Native direct first-party SDK or turnkey module.",
+        "detail": "VR / Spatial Headsets Native"
+      },
+      "network_model": {
+        "badge": "P2P / WebRTC",
+        "class": "net-p2p",
+        "tier": "WebSockets & WebRTC",
+        "raw": "WebSockets / PeerJS WebRTC"
+      },
+      "memory_model": "Engine-Managed Hybrid Runtime",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Verge3D",
+      "language": "Visual, JS",
+      "license": "Paid",
+      "form": "DCC Addon",
+      "focus": "Web 3D product visualizers",
+      "release_date": "2017-09-01",
+      "last_update": "Verge3D 4.6 (2024-06)",
+      "share": "<0.2%",
+      "games": "Interactive e-commerce product configurators",
+      "platforms": [
+        "Web (HTML5/WebGL)",
+        "iOS",
+        "Android"
+      ],
+      "url": "https://soft8soft.com/verge3d",
+      "paradigm": "Visual 'Puzzles' & JavaScript",
+      "install_size": "~300 MB",
+      "console_feasibility": "Not Practical / N/A",
+      "pedigree": "Created by former Blend4Web developers at Soft8Soft; bridges Blender, 3ds Max, and Maya directly to interactive web apps.",
+      "graphics_apis": [
+        "WebGL 2",
+        "WebGL 1"
+      ],
+      "physics": "Ammo.js (Bullet Physics for Web)",
+      "networking": "WooCommerce / Shopify E-Commerce REST APIs",
+      "ecosystem": "Soft8Soft Plugin Directory & Blender/Max Plugins",
+      "console_friction": "N/A (Web Product Configurator)",
+      "console_model": {
+        "badge": "N/A",
+        "class": "console-na",
+        "desc": "Not practical for consoles (web or desktop utility focus).",
+        "detail": "Not Practical / N/A"
+      },
+      "network_model": {
+        "badge": "P2P / WebRTC",
+        "class": "net-p2p",
+        "tier": "WebSockets & WebRTC",
+        "raw": "WooCommerce / Shopify E-Commerce REST APIs"
+      },
+      "memory_model": "Engine-Managed Hybrid Runtime",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Bevy",
+      "language": "Rust",
+      "license": "Free (MIT/Apache 2.0)",
+      "form": "Framework",
+      "focus": "Modern Rust data-driven ECS",
+      "release_date": "2020-08-10",
+      "last_update": "Bevy 0.14 (2024-07)",
+      "share": "~0.5-1% (Indie code)",
+      "games": "Molecats, emergent indie ECS projects",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web (WASM)",
+        "iOS",
+        "Android"
+      ],
+      "url": "https://bevyengine.org",
+      "paradigm": "Pure Data-Driven ECS (Entity Component System)",
+      "install_size": "Code Crate (Zero Editor)",
+      "console_feasibility": "Community / Experimental",
+      "pedigree": "Created by Carter Anderson (cart) in 2020; leading the modern code-first Rust game engine movement with ergonomic multi-threaded ECS.",
+      "graphics_apis": [
+        "Vulkan",
+        "Metal",
+        "DirectX 12",
+        "WebGPU (via wgpu)"
+      ],
+      "physics": "bevy_rapier / bevy_xpbd (Jolt Physics community)",
+      "networking": "bevy_renet / lightyear / matchbox (WebRTC/UDP)",
+      "ecosystem": "crates.io (Cargo) & Bevy Assets Directory",
+      "console_friction": "High / Experimental (Community DIY)",
+      "console_model": {
+        "badge": "Tier 3 (DIY)",
+        "class": "console-tier3",
+        "desc": "Open-source / DIY custom porting or manual NDA SDK integration required.",
+        "detail": "Community / Experimental"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "bevy_renet / lightyear / matchbox (WebRTC/UDP)"
+      },
+      "memory_model": "Ownership & Borrowing (Compile-time lifetimes, Zero GC)",
+      "threading_model": "Automatic Multi-Threaded Parallel ECS Stages (Rayon/Send+Sync)",
+      "rollback_support": "First-class ECS State Rollback via GGRS (Good Game Rollback System)"
+    },
+    {
+      "engine": "Fyrox",
+      "language": "Rust",
+      "license": "Free (MIT)",
+      "form": "Editor (3D)",
+      "focus": "Full 3D editor written in Rust",
+      "release_date": "2021-03-01",
+      "last_update": "Fyrox 0.34 (2024-08)",
+      "share": "<0.1%",
+      "games": "Station 35, Fish Fiasco",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web (WASM)"
+      ],
+      "url": "https://fyrox.rs",
+      "paradigm": "Scene Graph / Component & Pure Rust",
+      "install_size": "~100 MB (Editor built in Rust)",
+      "console_feasibility": "Community / Experimental",
+      "pedigree": "Formerly rg3d, developed by Dmitry Stepanov; unique in providing a full visual 3D scene editor written entirely in Rust.",
+      "graphics_apis": [
+        "OpenGL 3.3 / OpenGL ES 3.0"
+      ],
+      "physics": "Rapier (2D and 3D built-in)",
+      "networking": "Fyrox Sockets / DIY Rust networking",
+      "ecosystem": "crates.io (Cargo) & Fyrox Editor Plugins",
+      "console_friction": "High / Experimental",
+      "console_model": {
+        "badge": "Tier 3 (DIY)",
+        "class": "console-tier3",
+        "desc": "Open-source / DIY custom porting or manual NDA SDK integration required.",
+        "detail": "Community / Experimental"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "Fyrox Sockets / DIY Rust networking"
+      },
+      "memory_model": "Ownership & Borrowing (Compile-time lifetimes, Zero GC)",
+      "threading_model": "Automatic Multi-Threaded Parallel ECS Stages (Rayon/Send+Sync)",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Macroquad",
+      "language": "Rust",
+      "license": "Free (MIT/Apache 2.0)",
+      "form": "Library",
+      "focus": "Minimalist 2D/3D Rust library",
+      "release_date": "2020-03-01",
+      "last_update": "Macroquad 0.4.11 (2024-08)",
+      "share": "<0.5%",
+      "games": "Indie game jam projects, tiny Rust games",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web (WASM)",
+        "iOS",
+        "Android"
+      ],
+      "url": "https://macroquad.rs",
+      "paradigm": "Imperative Simple State Machine",
+      "install_size": "Code Crate (Zero Editor)",
+      "console_feasibility": "Community / DIY",
+      "pedigree": "Created by Fedor Logachev; inspired by Raylib to offer the simplest, zero-boilerplate 2D/3D development loop in Rust.",
+      "graphics_apis": [
+        "OpenGL 3 / OpenGL ES / WebGL (via miniquad)"
+      ],
+      "physics": "None (Bring Your Own: Rapier, DIY)",
+      "networking": "macroquad-net / Sockets",
+      "ecosystem": "crates.io (Cargo)",
+      "console_friction": "High / DIY Port",
+      "console_model": {
+        "badge": "Tier 3 (DIY)",
+        "class": "console-tier3",
+        "desc": "Open-source / DIY custom porting or manual NDA SDK integration required.",
+        "detail": "Community / DIY"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "macroquad-net / Sockets"
+      },
+      "memory_model": "Ownership & Borrowing (Compile-time lifetimes, Zero GC)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "GGEZ",
+      "language": "Rust",
+      "license": "Free (MIT/Apache 2.0)",
+      "form": "Library",
+      "focus": "Lightweight 2D Rust engine",
+      "release_date": "2016-12-01",
+      "last_update": "GGEZ 0.9.3 (2023-10)",
+      "share": "<0.2%",
+      "games": "Open-source indie 2D Rust prototypes",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "url": "https://ggez.rs",
+      "paradigm": "Imperative / Event-Loop Pattern",
+      "install_size": "Code Crate (Zero Editor)",
+      "console_feasibility": "Community / DIY",
+      "pedigree": "Community Rust library modeled intentionally after L\u00d6VE (Love2D); provides clean 2D game loops and audio/graphics bindings.",
+      "graphics_apis": [
+        "Vulkan / Metal / DirectX (via wgpu)"
+      ],
+      "physics": "None (Bring Your Own: Rapier)",
+      "networking": "None (Standard Rust std::net / tokio)",
+      "ecosystem": "crates.io (Cargo)",
+      "console_friction": "High / DIY Port",
+      "console_model": {
+        "badge": "Tier 3 (DIY)",
+        "class": "console-tier3",
+        "desc": "Open-source / DIY custom porting or manual NDA SDK integration required.",
+        "detail": "Community / DIY"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "None (Standard Rust std::net / tokio)"
+      },
+      "memory_model": "Ownership & Borrowing (Compile-time lifetimes, Zero GC)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "MonoGame",
+      "language": "C#",
+      "license": "Free (MS-PL)",
+      "form": "Framework",
+      "focus": "XNA successor, code-first 2D/3D",
+      "release_date": "2009-09-01",
+      "last_update": "MonoGame 3.8.2 (2024-04)",
+      "share": "~1-2%",
+      "games": "Celeste, Stardew Valley, Bastion",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android",
+        "Switch",
+        "PS5",
+        "Xbox"
+      ],
+      "url": "https://monogame.net",
+      "paradigm": "Object-Oriented & Imperative C#",
+      "install_size": "SDK (< 100 MB)",
+      "console_feasibility": "Native / Direct Tier 1 (Console NDA access)",
+      "pedigree": "Formed in 2009 as an open-source reimplementation of Microsoft XNA; powered massive indie hits including Celeste and Stardew Valley.",
+      "graphics_apis": [
+        "DirectX 11",
+        "OpenGL 3",
+        "Metal",
+        "Vulkan (via MoltenVK)"
+      ],
+      "physics": "None (Bring Your Own: Aether.Physics2D, BepuPhysics)",
+      "networking": "Lidgren.Network, LiteNetLib, .NET Sockets",
+      "ecosystem": "NuGet Package Manager & MonoGame Extended",
+      "console_friction": "Turnkey / First-Party Tier 1 (Console Access)",
+      "console_model": {
+        "badge": "Tier 1 (Native)",
+        "class": "console-tier1",
+        "desc": "Native direct first-party SDK or turnkey module.",
+        "detail": "Native / Direct Tier 1 (Console NDA access)"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "Lidgren.Network, LiteNetLib, .NET Sockets"
+      },
+      "memory_model": "Managed Generational GC + Span<T> / Native Memory (DOTS/Burst unmanaged)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "FNA",
+      "language": "C#",
+      "license": "Free (MS-PL)",
+      "form": "Framework",
+      "focus": "Accurate PC-focused XNA reimplementation",
+      "release_date": "2014-03-10",
+      "last_update": "FNA 24.09 (2024-09)",
+      "share": "~0.5%",
+      "games": "Terraria (Linux/Mac ports), Fez, Axiom Verge",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS",
+        "Switch",
+        "Xbox"
+      ],
+      "url": "https://fna-xna.github.io",
+      "paradigm": "Object-Oriented C# (Strict XNA 4.0 accuracy)",
+      "install_size": "Library (< 50 MB)",
+      "console_feasibility": "Native / Direct Console Support",
+      "pedigree": "Maintained by Ethan Lee; obsessively accurate, ultra-stable C# porting framework behind Linux and console releases of classic indies.",
+      "graphics_apis": [
+        "Vulkan",
+        "DirectX 11",
+        "Metal",
+        "OpenGL (via FNA3D)"
+      ],
+      "physics": "None (Bring Your Own: Aether.Physics2D)",
+      "networking": "Steamworks.NET, Sockets",
+      "ecosystem": "NuGet & GitHub",
+      "console_friction": "Turnkey / First-Party Tier 1 (Ethan Lee Ports)",
+      "console_model": {
+        "badge": "Tier 1 (Native)",
+        "class": "console-tier1",
+        "desc": "Native direct first-party SDK or turnkey module.",
+        "detail": "Native / Direct Console Support"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "Steamworks.NET, Sockets"
+      },
+      "memory_model": "Managed Generational GC + Span<T> / Native Memory (DOTS/Burst unmanaged)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "FlatRedBall",
+      "language": "C#",
+      "license": "Free (MIT)",
+      "form": "Tool + Lib",
+      "focus": "2D engine atop MonoGame",
+      "release_date": "2012-01-01",
+      "last_update": "FRB 2024 Release (2024-06)",
+      "share": "<0.1%",
+      "games": "Indie 2D platformers, PC game jam entries",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android"
+      ],
+      "url": "https://flatredball.com",
+      "paradigm": "Component / Entity OOP (.NET)",
+      "install_size": "~150 MB",
+      "console_feasibility": "Third-Party / via MonoGame",
+      "pedigree": "Long-running 2D engine built by Victor Chelaru on top of MonoGame; pairs a visual editor with pure C# code generation.",
+      "graphics_apis": [
+        "DirectX 11",
+        "OpenGL (via MonoGame)"
+      ],
+      "physics": "Built-in 2D Shape Collision & Platformer Physics",
+      "networking": "Lidgren.Network & .NET Sockets",
+      "ecosystem": "FlatRedBall Glue Plugins & NuGet",
+      "console_friction": "Medium (via MonoGame pipeline)",
+      "console_model": {
+        "badge": "Tier 2 (Partner)",
+        "class": "console-tier2",
+        "desc": "Established commercial porting house or official foundation pipeline.",
+        "detail": "Third-Party / via MonoGame"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "Lidgren.Network & .NET Sockets"
+      },
+      "memory_model": "Managed Generational GC + Span<T> / Native Memory (DOTS/Burst unmanaged)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Raylib",
+      "language": "C (50+ bindings)",
+      "license": "Free (zlib)",
+      "form": "Library",
+      "focus": "Simple, zero-bloat C coding",
+      "release_date": "2013-11-18",
+      "last_update": "Raylib 5.0 (2023-11)",
+      "share": "~1% (C/Hobbyist)",
+      "games": "Indie game jam entries, retro tools",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web",
+        "Android",
+        "Raspberry Pi"
+      ],
+      "url": "https://raylib.com",
+      "paradigm": "Pure Procedural / Imperative C",
+      "install_size": "Library (< 30 MB)",
+      "console_feasibility": "Community / Custom wrappers",
+      "pedigree": "Created by Ramon Santamaria in 2013 as a teaching tool for game architecture; widely adored for having no external dependencies.",
+      "graphics_apis": [
+        "OpenGL 1.1 / 2.1 / 3.3 / 4.3",
+        "OpenGL ES 2.0"
+      ],
+      "physics": "Physac (2D Physics Header) / DIY",
+      "networking": "raylib-networking / Sockets",
+      "ecosystem": "raylib Extras, GitHub & 50+ language bindings",
+      "console_friction": "High / DIY Community Port",
+      "console_model": {
+        "badge": "Tier 3 (DIY)",
+        "class": "console-tier3",
+        "desc": "Open-source / DIY custom porting or manual NDA SDK integration required.",
+        "detail": "Community / Custom wrappers"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "raylib-networking / Sockets"
+      },
+      "memory_model": "Manual RAII & Custom Arena Allocators (Zero GC)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "SDL (SDL2/SDL3)",
+      "language": "C",
+      "license": "Free (zlib)",
+      "form": "Low-level Lib",
+      "focus": "Window, input, audio baseline",
+      "release_date": "1998-04-15",
+      "last_update": "SDL 3.1 Preview (2024-10)",
+      "share": "Fundamental (>30% of all PC games)",
+      "games": "Half-Life 2, Portal, Dota 2, CS:GO",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android",
+        "Switch",
+        "PS5",
+        "Xbox"
+      ],
+      "url": "https://libsdl.org",
+      "paradigm": "Low-Level C API / Hardware Abstraction",
+      "install_size": "Library (< 10 MB)",
+      "console_feasibility": "Native / Direct Platform Support",
+      "pedigree": "Created by Sam Lantinga at Loki Software in 1998; foundational multi-platform hardware abstraction layer used by Valve and Steam.",
+      "graphics_apis": [
+        "DirectX 11/12",
+        "Vulkan",
+        "Metal",
+        "OpenGL",
+        "Software"
+      ],
+      "physics": "None (Plumbing / Hardware Abstraction Only)",
+      "networking": "SDL_net / Low-level POSIX Sockets",
+      "ecosystem": "C/C++ Package Managers (vcpkg, Conan) & OS packages",
+      "console_friction": "Turnkey / First-Party Tier 1 (Native SDK backend)",
+      "console_model": {
+        "badge": "Tier 1 (Native)",
+        "class": "console-tier1",
+        "desc": "Native direct first-party SDK or turnkey module.",
+        "detail": "Native / Direct Platform Support"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "SDL_net / Low-level POSIX Sockets"
+      },
+      "memory_model": "Engine-Managed Hybrid Runtime",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "SFML",
+      "language": "C++",
+      "license": "Free (zlib)",
+      "form": "Library",
+      "focus": "Object-oriented 2D C++ library",
+      "release_date": "2007-08-01",
+      "last_update": "SFML 2.6.1 (2023-11)",
+      "share": "~0.5%",
+      "games": "Faster Than Light (FTL), Atom Zombie Smasher",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android"
+      ],
+      "url": "https://sfml-dev.org",
+      "paradigm": "Object-Oriented C++ Multimedia",
+      "install_size": "Library (< 20 MB)",
+      "console_feasibility": "Community / DIY",
+      "pedigree": "Created by Laurent Gomila in 2007; designed as a modern, clean C++ object-oriented alternative to traditional C SDL.",
+      "graphics_apis": [
+        "OpenGL 2.1 / 3.0"
+      ],
+      "physics": "None (Bring Your Own: Box2D, Chipmunk2D)",
+      "networking": "sf::TcpSocket, sf::UdpSocket, sf::Http",
+      "ecosystem": "vcpkg, Conan & SFML Community Projects",
+      "console_friction": "High / DIY Community Port",
+      "console_model": {
+        "badge": "Tier 3 (DIY)",
+        "class": "console-tier3",
+        "desc": "Open-source / DIY custom porting or manual NDA SDK integration required.",
+        "detail": "Community / DIY"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "sf::TcpSocket, sf::UdpSocket, sf::Http"
+      },
+      "memory_model": "Manual RAII & Custom Arena Allocators (Zero GC)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Allegro 5",
+      "language": "C, C++",
+      "license": "Free (zlib)",
+      "form": "Library",
+      "focus": "Classic low-level 2D games",
+      "release_date": "1990-01-01",
+      "last_update": "Allegro 5.2.9 (2023-11)",
+      "share": "<0.5%",
+      "games": "Icy Tower, classic retro PC titles",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android"
+      ],
+      "url": "https://liballeg.org",
+      "paradigm": "Procedural C Game Programming",
+      "install_size": "Library (< 20 MB)",
+      "console_feasibility": "Community / Retro ports",
+      "pedigree": "Created by Shawn Hargreaves in 1990 for Atari ST and MS-DOS; legendary retro library modernized in version 5 for OpenGL/DirectX.",
+      "graphics_apis": [
+        "DirectX 9",
+        "OpenGL"
+      ],
+      "physics": "None (Bring Your Own)",
+      "networking": "Allegro Network Addon / Sockets",
+      "ecosystem": "Allegro Community & Package Managers",
+      "console_friction": "High / DIY Community Port",
+      "console_model": {
+        "badge": "Tier 3 (DIY)",
+        "class": "console-tier3",
+        "desc": "Open-source / DIY custom porting or manual NDA SDK integration required.",
+        "detail": "Community / Retro ports"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "Allegro Network Addon / Sockets"
+      },
+      "memory_model": "Manual RAII & Custom Arena Allocators (Zero GC)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "OGRE 3D",
+      "language": "C++",
+      "license": "Free (MIT)",
+      "form": "Library",
+      "focus": "Pure 3D rendering pipeline",
+      "release_date": "2001-02-01",
+      "last_update": "OGRE 14.2 (2024-02)",
+      "share": "<0.5%",
+      "games": "Torchlight, Torchlight II, Rebel Galaxy",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android"
+      ],
+      "url": "https://ogre3d.org",
+      "paradigm": "Scene Graph & Pure 3D Rendering (C++)",
+      "install_size": "Library (< 100 MB)",
+      "console_feasibility": "Community / DIY",
+      "pedigree": "Started in 2001 by Steve Streeting; classic workhorse open-source 3D rendering engine used in Torchlight and commercial sims.",
+      "graphics_apis": [
+        "DirectX 11/12",
+        "Vulkan",
+        "Metal",
+        "OpenGL 3+"
+      ],
+      "physics": "None (OgreBullet / OgrePhysX wrappers)",
+      "networking": "None (Pure Scene Graph / Rendering)",
+      "ecosystem": "OGRE Addons & C++ Community",
+      "console_friction": "High / DIY Port",
+      "console_model": {
+        "badge": "Tier 3 (DIY)",
+        "class": "console-tier3",
+        "desc": "Open-source / DIY custom porting or manual NDA SDK integration required.",
+        "detail": "Community / DIY"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "None (Pure Scene Graph / Rendering)"
+      },
+      "memory_model": "Manual RAII & Custom Arena Allocators (Zero GC)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Diligent Engine",
+      "language": "C++",
+      "license": "Free (Apache 2.0)",
+      "form": "Graphics Lib",
+      "focus": "Low-level cross-platform graphics wrapper",
+      "release_date": "2015-05-01",
+      "last_update": "Diligent v2.5.4 (2023-12)",
+      "share": "<0.1%",
+      "games": "Custom engines, scientific visualizations",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android"
+      ],
+      "url": "https://diligentgraphics.com",
+      "paradigm": "Modern Low-Level Graphics Abstraction (C++)",
+      "install_size": "Library (< 50 MB)",
+      "console_feasibility": "Commercial / Custom",
+      "pedigree": "Created by Diligent Graphics; unified modern C++ graphics API exposing Vulkan, DirectX 12, Metal, and OpenGL under one banner.",
+      "graphics_apis": [
+        "DirectX 12",
+        "Vulkan",
+        "Metal",
+        "DirectX 11",
+        "OpenGL"
+      ],
+      "physics": "None (Low-Level Graphics Wrapper)",
+      "networking": "None (Graphics Layer Only)",
+      "ecosystem": "GitHub & CMake Integration",
+      "console_friction": "Medium (Direct Console Graphics Wrappers)",
+      "console_model": {
+        "badge": "Tier 2 (Partner)",
+        "class": "console-tier2",
+        "desc": "Established commercial porting house or official foundation pipeline.",
+        "detail": "Commercial / Custom"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "None (Graphics Layer Only)"
+      },
+      "memory_model": "Manual RAII & Custom Arena Allocators (Zero GC)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "bgfx",
+      "language": "C++",
+      "license": "Free (BSD)",
+      "form": "Graphics Lib",
+      "focus": "Cross-platform rendering abstraction",
+      "release_date": "2014-01-01",
+      "last_update": "bgfx Rolling (2024-09)",
+      "share": "<0.5%",
+      "games": "Minecraft (Bedrock engine rendering component)",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android",
+        "Web",
+        "Switch",
+        "PS5",
+        "Xbox"
+      ],
+      "url": "https://bkaradzic.github.io/bgfx",
+      "paradigm": "Stateless C++ Rendering API",
+      "install_size": "Library (< 20 MB)",
+      "console_feasibility": "Native / Platform Support",
+      "pedigree": "Created by Branimir Karad\u017ei\u0107; 'bring your own engine' graphics library used by Mojang for Minecraft Bedrock's render engine.",
+      "graphics_apis": [
+        "DirectX 11/12",
+        "Vulkan",
+        "Metal",
+        "WebGL 2",
+        "OpenGL"
+      ],
+      "physics": "None (Cross-Platform Rendering API Only)",
+      "networking": "None (Rendering Layer Only)",
+      "ecosystem": "GitHub & CMake / GENie build scripts",
+      "console_friction": "Turnkey / First-Party Tier 1 (Used in Bedrock)",
+      "console_model": {
+        "badge": "Tier 1 (Native)",
+        "class": "console-tier1",
+        "desc": "Native direct first-party SDK or turnkey module.",
+        "detail": "Native / Platform Support"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "None (Rendering Layer Only)"
+      },
+      "memory_model": "Manual RAII & Custom Arena Allocators (Zero GC)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Filament",
+      "language": "C++",
+      "license": "Free (Apache 2.0)",
+      "form": "Renderer",
+      "focus": "Google PBR rendering engine",
+      "release_date": "2018-08-01",
+      "last_update": "Filament 1.53 (2024-08)",
+      "share": "<0.2%",
+      "games": "Sceneform, Android 3D visuals, glTF viewers",
+      "platforms": [
+        "Android",
+        "Windows",
+        "Linux",
+        "macOS",
+        "iOS",
+        "Web"
+      ],
+      "url": "https://github.com/google/filament",
+      "paradigm": "Physically Based Rendering (PBR) Engine (C++)",
+      "install_size": "Library (< 40 MB)",
+      "console_feasibility": "Not Practical / N/A",
+      "pedigree": "Developed by Google engineers; open-source real-time PBR rendering engine optimized heavily for mobile devices and glTF.",
+      "graphics_apis": [
+        "Vulkan",
+        "Metal",
+        "OpenGL / WebGL 2"
+      ],
+      "physics": "None (PBR Renderer Only)",
+      "networking": "None (Pure Rendering Engine)",
+      "ecosystem": "Google GitHub & Android SDK",
+      "console_friction": "N/A (Mobile & Web focus)",
+      "console_model": {
+        "badge": "N/A",
+        "class": "console-na",
+        "desc": "Not practical for consoles (web or desktop utility focus).",
+        "detail": "Not Practical / N/A"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "None (Pure Rendering Engine)"
+      },
+      "memory_model": "Manual RAII & Custom Arena Allocators (Zero GC)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Pygame / Pygame-CE",
+      "language": "Python",
+      "license": "Free (LGPL)",
+      "form": "Library",
+      "focus": "Beginner 2D Python mechanics",
+      "release_date": "2000-10-28",
+      "last_update": "Pygame-CE 2.5 (2024-07)",
+      "share": "~1-2% (Education/Jams)",
+      "games": "Doki Doki News, indie Python prototypes",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Raspberry Pi"
+      ],
+      "url": "https://pyga.me",
+      "paradigm": "Procedural & OOP Python Modules",
+      "install_size": "pip package (< 30 MB)",
+      "console_feasibility": "Not Practical / N/A",
+      "pedigree": "Pygame started in 2000 by Pete Shinners over SDL; Pygame Community Edition (Pygame-CE) is the actively maintained modern fork.",
+      "graphics_apis": [
+        "SDL2 Surface / Software Blit / Modern OpenGL via Pygame.draw"
+      ],
+      "physics": "Built-in Rect Collisions & Pygame 2D Vectors",
+      "networking": "Python `socket`, `asyncio`, Twisted",
+      "ecosystem": "PyPI (pip install pygame-ce)",
+      "console_friction": "N/A (Desktop / Educational focus)",
+      "console_model": {
+        "badge": "N/A",
+        "class": "console-na",
+        "desc": "Not practical for consoles (web or desktop utility focus).",
+        "detail": "Not Practical / N/A"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "Python `socket`, `asyncio`, Twisted"
+      },
+      "memory_model": "Automatic Tracing Garbage Collector (Reference Counting / Mark-and-Sweep)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Arcade",
+      "language": "Python",
+      "license": "Free (MIT)",
+      "form": "Library",
+      "focus": "Modern OpenGL Python 2D",
+      "release_date": "2016-04-01",
+      "last_update": "Arcade 2.6.17 (2023-04)",
+      "share": "<0.5%",
+      "games": "Educational games, 2D Python indies",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "url": "https://arcade.academy",
+      "paradigm": "Object-Oriented Python (OpenGL accelerated)",
+      "install_size": "pip package (< 20 MB)",
+      "console_feasibility": "Not Practical / N/A",
+      "pedigree": "Created by Paul Vincent Craven; designed specifically for Python 3.8+ education with superior graphics performance over classic Pygame.",
+      "graphics_apis": [
+        "OpenGL 3.3+ (via Pyglet / ModernGL)"
+      ],
+      "physics": "PyMunk (Box2D/Chipmunk wrapper built-in)",
+      "networking": "Python `asyncio` & WebSockets",
+      "ecosystem": "PyPI (pip install arcade)",
+      "console_friction": "N/A (Desktop / Educational focus)",
+      "console_model": {
+        "badge": "N/A",
+        "class": "console-na",
+        "desc": "Not practical for consoles (web or desktop utility focus).",
+        "detail": "Not Practical / N/A"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "Python `asyncio` & WebSockets"
+      },
+      "memory_model": "Automatic Tracing Garbage Collector (Reference Counting / Mark-and-Sweep)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Ursina Engine",
+      "language": "Python",
+      "license": "Free (MIT)",
+      "form": "Framework",
+      "focus": "Minimalist Python 3D prototyping",
+      "release_date": "2020-02-01",
+      "last_update": "Ursina 7.0 (2024-01)",
+      "share": "<0.5%",
+      "games": "Indie 3D sandbox prototypes, game jams",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "url": "https://ursinaengine.org",
+      "paradigm": "Entity-Component & Pythonic Syntax",
+      "install_size": "pip package (< 50 MB)",
+      "console_feasibility": "Not Practical / N/A",
+      "pedigree": "Created by Petter Amland on top of Panda3D; offers astonishingly concise Python syntax for making quick 3D indie games.",
+      "graphics_apis": [
+        "OpenGL (via Panda3D)"
+      ],
+      "physics": "Built-in Raycasting & Mesh Colliders",
+      "networking": "ursina.networking / Sockets",
+      "ecosystem": "PyPI (pip install ursina)",
+      "console_friction": "N/A (Desktop Prototyping)",
+      "console_model": {
+        "badge": "N/A",
+        "class": "console-na",
+        "desc": "Not practical for consoles (web or desktop utility focus).",
+        "detail": "Not Practical / N/A"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "ursina.networking / Sockets"
+      },
+      "memory_model": "Automatic Tracing Garbage Collector (Reference Counting / Mark-and-Sweep)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "L\u00d6VE (Love2D)",
+      "language": "Lua",
+      "license": "Free (zlib)",
+      "form": "Framework",
+      "focus": "Minimal, flexible 2D Lua",
+      "release_date": "2008-01-13",
+      "last_update": "L\u00d6VE 11.5 (2023-12)",
+      "share": "~1-2%",
+      "games": "Balatro, Move or Die, Mari0",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android",
+        "Switch (Community)"
+      ],
+      "url": "https://love2d.org",
+      "paradigm": "Event-Driven & Lua Scripting",
+      "install_size": "~15 MB",
+      "console_feasibility": "Third-Party / Porting Partner",
+      "pedigree": "Created in 2008 by Anders T\u00e4rnberg & Mike Roth; celebrated for its pristine Lua API and incredible developer joy, powering Balatro.",
+      "graphics_apis": [
+        "OpenGL 2.1 / 3.0",
+        "OpenGL ES 2.0 / 3.0",
+        "Metal (via MoltenVK)"
+      ],
+      "physics": "Box2D (love.physics built-in)",
+      "networking": "LuaSocket & ENet (love.net / low-latency UDP)",
+      "ecosystem": "L\u00d6VE Forums, GitHub & Luarocks",
+      "console_friction": "Medium (LoveBrew for 3DS/Switch homebrew / Porting House)",
+      "console_model": {
+        "badge": "Tier 3 (DIY)",
+        "class": "console-tier3",
+        "desc": "Open-source / DIY custom porting or manual NDA SDK integration required.",
+        "detail": "Third-Party / Porting Partner"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "LuaSocket & ENet (love.net / low-latency UDP)"
+      },
+      "memory_model": "Automatic Tracing Garbage Collector (Reference Counting / Mark-and-Sweep)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "LibGDX",
+      "language": "Java, Kotlin",
+      "license": "Free (Apache 2.0)",
+      "form": "Framework",
+      "focus": "Proven multi-platform JVM 2D/3D",
+      "release_date": "2014-03-01",
+      "last_update": "LibGDX 1.12.1 (2023-10)",
+      "share": "~1%",
+      "games": "Slay the Spire (original release), Mindustry",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android",
+        "Web"
+      ],
+      "url": "https://libgdx.com",
+      "paradigm": "OOP & Java/Kotlin Framework",
+      "install_size": "SDK (< 100 MB)",
+      "console_feasibility": "Third-Party / Porting Partner",
+      "pedigree": "Started by Mario Zechner in 2010; the definitive multi-platform Java game framework that powered Mega Crit's original Slay the Spire.",
+      "graphics_apis": [
+        "OpenGL 2.0 / 3.0",
+        "OpenGL ES 2.0 / 3.0",
+        "WebGL 1/2"
+      ],
+      "physics": "Box2D & Bullet Physics (JNI bindings)",
+      "networking": "kryo-net, WebSockets, Java Sockets",
+      "ecosystem": "Maven Central / Gradle Plugin Ecosystem",
+      "console_friction": "Medium (RoboVM / Commercial Porting)",
+      "console_model": {
+        "badge": "Tier 2 (Partner)",
+        "class": "console-tier2",
+        "desc": "Established commercial porting house or official foundation pipeline.",
+        "detail": "Third-Party / Porting Partner"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "kryo-net, WebSockets, Java Sockets"
+      },
+      "memory_model": "JVM Managed Generational Tracing GC (G1/ZGC)",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "Heaps.io",
+      "language": "Haxe",
+      "license": "Free (MIT)",
+      "form": "Framework",
+      "focus": "Multi-platform (Dead Cells tech)",
+      "release_date": "2015-10-01",
+      "last_update": "Heaps 2.0 (2023-05)",
+      "share": "<0.5%",
+      "games": "Dead Cells, Northgard, Evoland",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web",
+        "iOS",
+        "Android",
+        "Switch",
+        "PS4",
+        "Xbox"
+      ],
+      "url": "https://heaps.io",
+      "paradigm": "Scene Graph & Haxe 2D/3D OOP",
+      "install_size": "SDK (< 50 MB)",
+      "console_feasibility": "Commercial Porting House / Native Haxe",
+      "pedigree": "Created by Nicolas Cannasse (creator of the Haxe language); engine technology that powers Motion Twin's mega-hit Dead Cells.",
+      "graphics_apis": [
+        "DirectX 11/12",
+        "Metal",
+        "OpenGL",
+        "WebGL 2 (via HashLink)"
+      ],
+      "physics": "OimoPhysics / Built-in 2D Collision",
+      "networking": "HashLink Sockets / HTTP",
+      "ecosystem": "Haxelib (Haxe Package Manager)",
+      "console_friction": "Low (Shipped Dead Cells natively via HashLink C)",
+      "console_model": {
+        "badge": "Tier 2 (Partner)",
+        "class": "console-tier2",
+        "desc": "Established commercial porting house or official foundation pipeline.",
+        "detail": "Commercial Porting House / Native Haxe"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "HashLink Sockets / HTTP"
+      },
+      "memory_model": "Engine-Managed Hybrid Runtime",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "HaxeFlixel",
+      "language": "Haxe",
+      "license": "Free (MIT)",
+      "form": "Framework",
+      "focus": "Feature-rich 2D OOP game dev",
+      "release_date": "2013-05-01",
+      "last_update": "HaxeFlixel 5.6 (2024-02)",
+      "share": "~0.5%",
+      "games": "Friday Night Funkin', Dicey Dungeons",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web",
+        "iOS",
+        "Android",
+        "Switch"
+      ],
+      "url": "https://haxeflixel.com",
+      "paradigm": "State / Entity OOP (Haxe)",
+      "install_size": "SDK (< 50 MB)",
+      "console_feasibility": "Third-Party / Porting Partner",
+      "pedigree": "Born from Adam Saltsman's Flash Flixel library; reimagined in Haxe to deliver cross-platform power, powering Friday Night Funkin'.",
+      "graphics_apis": [
+        "OpenGL",
+        "Metal",
+        "DirectX",
+        "WebGL (via OpenFL)"
+      ],
+      "physics": "Built-in Arcade Physics (Tile & AABB Collision)",
+      "networking": "Haxe Sockets, HTTP, Colyseus",
+      "ecosystem": "Haxelib & Flixel Community",
+      "console_friction": "Medium (Commercial Porting / Homebrew)",
+      "console_model": {
+        "badge": "Tier 2 (Partner)",
+        "class": "console-tier2",
+        "desc": "Established commercial porting house or official foundation pipeline.",
+        "detail": "Third-Party / Porting Partner"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "Haxe Sockets, HTTP, Colyseus"
+      },
+      "memory_model": "Engine-Managed Hybrid Runtime",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    },
+    {
+      "engine": "PureBasic",
+      "language": "BASIC",
+      "license": "Paid",
+      "form": "Native Tool",
+      "focus": "Native lightweight executables (OGRE 3D)",
+      "release_date": "1998-05-01",
+      "last_update": "PureBasic 6.11 (2024-05)",
+      "share": "<0.1%",
+      "games": "Desktop utilities, retro indie games",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Raspberry Pi"
+      ],
+      "url": "https://purebasic.com",
+      "paradigm": "Procedural BASIC (Native Compiler)",
+      "install_size": "~100 MB",
+      "console_feasibility": "Not Practical / N/A",
+      "pedigree": "Created by Fantaisie Software in 1998; compiles directly to blazing fast, dependency-free native assembly and integrates OGRE 3D.",
+      "graphics_apis": [
+        "DirectX 9/11",
+        "OpenGL (via OGRE 3D)"
+      ],
+      "physics": "Built-in 2D Sprite Collisions & OGRE Physics",
+      "networking": "Built-in High-Speed Network Library (TCP/UDP)",
+      "ecosystem": "PureBasic Forums & User Libraries",
+      "console_friction": "N/A (Pure Desktop Native Executables)",
+      "console_model": {
+        "badge": "N/A",
+        "class": "console-na",
+        "desc": "Not practical for consoles (web or desktop utility focus).",
+        "detail": "Not Practical / N/A"
+      },
+      "network_model": {
+        "badge": "Sockets / DIY",
+        "class": "net-sockets",
+        "tier": "Low-Level Sockets & Libraries",
+        "raw": "Built-in High-Speed Network Library (TCP/UDP)"
+      },
+      "memory_model": "Engine-Managed Hybrid Runtime",
+      "threading_model": "Main Game Loop + Optional Worker Threads / Async Tasks",
+      "rollback_support": "Manual / DIY State Serialization & Snapshot Interpolation"
+    }
+  ],
+  "tree": [
+    {
+      "id": "idtech1",
+      "name": "id Tech 1 (Doom)",
+      "year": 1993,
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "track": 1,
+      "creator": "John Carmack / id Software",
+      "summary": "Revolutionary 2.5D BSP sector raycaster in C",
+      "parents": [],
+      "children": [
+        {
+          "id": "quake",
+          "rel": "direct_evolution",
+          "note": "Carmack rewrote renderer into true textured 3D polygons"
+        }
+      ]
+    },
+    {
+      "id": "quake",
+      "name": "Quake Engine (id Tech 2)",
+      "year": 1996,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "track": 1,
+      "creator": "John Carmack / id Software",
+      "summary": "True 3D polygons with dedicated client-server architecture",
+      "parents": [
+        {
+          "id": "idtech1",
+          "rel": "direct_evolution",
+          "note": "Evolved from id Tech 1 BSP trees"
+        }
+      ],
+      "children": [
+        {
+          "id": "goldsrc",
+          "rel": "fork",
+          "note": "Valve heavily rewrote Quake to build Half-Life"
+        },
+        {
+          "id": "idtech3",
+          "rel": "direct_evolution",
+          "note": "Curved surfaces & hardware OpenGL acceleration"
+        }
+      ]
+    },
+    {
+      "id": "idtech3",
+      "name": "id Tech 3 (Quake III)",
+      "year": 1999,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "track": 1,
+      "creator": "John Carmack / id Software",
+      "summary": "Shader scripts, hardware OpenGL, QVM bytecode sandbox",
+      "parents": [
+        {
+          "id": "quake",
+          "rel": "direct_evolution",
+          "note": "Hardware-accelerated rewrite of Quake"
+        }
+      ],
+      "children": [
+        {
+          "id": "iw_engine",
+          "rel": "fork",
+          "note": "Infinity Ward heavily modified id Tech 3 for Call of Duty"
+        }
+      ]
+    },
+    {
+      "id": "goldsrc",
+      "name": "GoldSrc",
+      "year": 1998,
+      "lineage_type": "Hard Fork",
+      "badge_class": "badge-fork",
+      "track": 2,
+      "creator": "Valve Software",
+      "summary": "Skeletal character animation and scripted narrative sequences (Half-Life)",
+      "parents": [
+        {
+          "id": "quake",
+          "rel": "fork",
+          "note": "Valve licensed Quake code and rewrote ~70%"
+        }
+      ],
+      "children": [
+        {
+          "id": "source1",
+          "rel": "direct_evolution",
+          "note": "Completely modular C++ rewrite for Half-Life 2"
+        }
+      ]
+    },
+    {
+      "id": "source1",
+      "name": "Source Engine",
+      "year": 2004,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "track": 2,
+      "creator": "Valve Software",
+      "summary": "Modular C++ physics (Havok), facial animation, HDR lighting",
+      "parents": [
+        {
+          "id": "goldsrc",
+          "rel": "direct_evolution",
+          "note": "Clean-sheet C++ rewrite of GoldSrc"
+        }
+      ],
+      "children": [
+        {
+          "id": "source2",
+          "rel": "direct_evolution",
+          "note": "Modern 64-bit Vulkan/DX11 engine rewrite"
+        }
+      ]
+    },
+    {
+      "id": "source2",
+      "name": "Source 2",
+      "year": 2015,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "track": 2,
+      "creator": "Valve Software",
+      "summary": "64-bit multi-threaded Vulkan/DX11 engine (Half-Life: Alyx, CS2)",
+      "parents": [
+        {
+          "id": "source1",
+          "rel": "direct_evolution",
+          "note": "64-bit multi-threaded overhaul"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "iw_engine",
+      "name": "IW Engine",
+      "year": 2005,
+      "lineage_type": "Hard Fork",
+      "badge_class": "badge-fork",
+      "track": 1,
+      "creator": "Infinity Ward / Activision",
+      "summary": "Proprietary fork powering the Call of Duty franchise",
+      "parents": [
+        {
+          "id": "idtech3",
+          "rel": "fork",
+          "note": "Branched from id Tech 3 with proprietary console renderer"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "unreal1",
+      "name": "Unreal Engine 1",
+      "year": 1998,
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "track": 3,
+      "creator": "Tim Sweeney / Epic Games",
+      "summary": "C++ 3D engine with integrated editor and UnrealScript VM",
+      "parents": [],
+      "children": [
+        {
+          "id": "unreal2",
+          "rel": "direct_evolution",
+          "note": "Karma physics and multi-console generation expansion"
+        }
+      ]
+    },
+    {
+      "id": "unreal2",
+      "name": "Unreal Engine 2",
+      "year": 2002,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "track": 3,
+      "creator": "Epic Games",
+      "summary": "Ragdoll physics, skeletal meshes, terrain system",
+      "parents": [
+        {
+          "id": "unreal1",
+          "rel": "direct_evolution",
+          "note": "Expanded for PS2/Xbox era"
+        }
+      ],
+      "children": [
+        {
+          "id": "unreal3",
+          "rel": "direct_evolution",
+          "note": "Deferred lighting and Kismet visual scripting"
+        }
+      ]
+    },
+    {
+      "id": "unreal3",
+      "name": "Unreal Engine 3",
+      "year": 2006,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "track": 3,
+      "creator": "Epic Games",
+      "summary": "Dominant middleware of the PS3/X360 7th generation (Gears of War, Mass Effect)",
+      "parents": [
+        {
+          "id": "unreal2",
+          "rel": "direct_evolution",
+          "note": "Rebuilt for multi-core 7th gen consoles"
+        }
+      ],
+      "children": [
+        {
+          "id": "unreal4",
+          "rel": "direct_evolution",
+          "note": "Replaced UnrealScript with Blueprints and native C++"
+        }
+      ]
+    },
+    {
+      "id": "unreal4",
+      "name": "Unreal Engine 4",
+      "year": 2014,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "track": 3,
+      "creator": "Epic Games",
+      "summary": "PBR rendering, compute shaders, accessible source code model",
+      "parents": [
+        {
+          "id": "unreal3",
+          "rel": "direct_evolution",
+          "note": "Full source code opened to all developers"
+        }
+      ],
+      "children": [
+        {
+          "id": "unreal5",
+          "rel": "direct_evolution",
+          "note": "Nanite virtual geometry and Lumen dynamic GI"
+        }
+      ]
+    },
+    {
+      "id": "unreal5",
+      "name": "Unreal Engine 5",
+      "year": 2021,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "track": 3,
+      "creator": "Epic Games",
+      "summary": "Nanite virtualized geometry & Lumen real-time global illumination",
+      "parents": [
+        {
+          "id": "unreal4",
+          "rel": "direct_evolution",
+          "note": "Revolutionary geometry virtualization overhaul"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "cry1",
+      "name": "CryEngine 1",
+      "year": 2004,
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "track": 4,
+      "creator": "Crytek (Yerli Brothers)",
+      "summary": "Expansive outdoor 3D with polybump mapping (Far Cry)",
+      "parents": [],
+      "children": [
+        {
+          "id": "cry2_3",
+          "rel": "direct_evolution",
+          "note": "Pushed modern multi-core PC hardware to limits"
+        }
+      ]
+    },
+    {
+      "id": "cry2_3",
+      "name": "CryEngine 2 & 3",
+      "year": 2007,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "track": 4,
+      "creator": "Crytek",
+      "summary": "Real-time dynamic global illumination (Crysis benchmark)",
+      "parents": [
+        {
+          "id": "cry1",
+          "rel": "direct_evolution",
+          "note": "Pushed modern multi-core PC hardware to limits"
+        }
+      ],
+      "children": [
+        {
+          "id": "lumberyard",
+          "rel": "fork",
+          "note": "Amazon licensed CryEngine 3 to build Lumberyard"
+        }
+      ]
+    },
+    {
+      "id": "lumberyard",
+      "name": "Amazon Lumberyard",
+      "year": 2016,
+      "lineage_type": "Hard Fork",
+      "badge_class": "badge-fork",
+      "track": 4,
+      "creator": "Amazon Web Services",
+      "summary": "CryEngine 3 core rewired for AWS cloud services",
+      "parents": [
+        {
+          "id": "cry2_3",
+          "rel": "fork",
+          "note": "Purchased license from Crytek for ~$50M"
+        }
+      ],
+      "children": [
+        {
+          "id": "o3de",
+          "rel": "direct_evolution",
+          "note": "Linux Foundation open-source rewrite"
+        }
+      ]
+    },
+    {
+      "id": "o3de",
+      "name": "O3DE (Open 3D Engine)",
+      "year": 2021,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "track": 4,
+      "creator": "Linux Foundation & AWS",
+      "summary": "Modular Apache 2.0 open-source engine with Atom PBR renderer",
+      "parents": [
+        {
+          "id": "lumberyard",
+          "rel": "direct_evolution",
+          "note": "Complete open-source rewrite donated to Linux Foundation"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "xna",
+      "name": "Microsoft XNA",
+      "year": 2006,
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "track": 5,
+      "creator": "Microsoft",
+      "summary": "C# DirectX framework that ignited the 2000s indie console movement",
+      "parents": [],
+      "children": [
+        {
+          "id": "monogame",
+          "rel": "crossbreed",
+          "note": "Open-source reimplementation of XNA targeting OpenGL"
+        },
+        {
+          "id": "fna",
+          "rel": "fork",
+          "note": "Strict cycle-accurate PC/Linux porting fork"
+        }
+      ]
+    },
+    {
+      "id": "monogame",
+      "name": "MonoGame",
+      "year": 2009,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-cross",
+      "track": 5,
+      "creator": "MonoGame Community",
+      "summary": "Open-source XNA framework (Celeste, Stardew Valley, Bastion)",
+      "parents": [
+        {
+          "id": "xna",
+          "rel": "crossbreed",
+          "note": "Rebuilt XNA APIs with Mono and OpenGL"
+        }
+      ],
+      "children": [
+        {
+          "id": "fna",
+          "rel": "fork",
+          "note": "Forked by Ethan Lee for exact PC accuracy"
+        }
+      ]
+    },
+    {
+      "id": "fna",
+      "name": "FNA",
+      "year": 2014,
+      "lineage_type": "Hard Fork",
+      "badge_class": "badge-fork",
+      "track": 5,
+      "creator": "Ethan Lee",
+      "summary": "Cycle-accurate PC/console XNA reimplementation (Terraria, Fez)",
+      "parents": [
+        {
+          "id": "xna",
+          "rel": "fork",
+          "note": "Forked to prioritize exact XNA accuracy and zero garbage generation"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "unity",
+      "name": "Unity",
+      "year": 2005,
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "track": 6,
+      "creator": "David Helgason, Joachim Ante, Nicholas Francis",
+      "summary": "Pioneered modern component-based C# cross-platform development",
+      "parents": [],
+      "children": [
+        {
+          "id": "flax",
+          "rel": "inspired_by",
+          "note": "Flax built as modern C++ / C# alternative to Unity"
+        }
+      ]
+    },
+    {
+      "id": "flax",
+      "name": "Flax Engine",
+      "year": 2020,
+      "lineage_type": "Inspired Evolution",
+      "badge_class": "badge-inspired",
+      "track": 6,
+      "creator": "Wojciech Toman",
+      "summary": "Lightweight C++ core with C# scripting built as a streamlined Unity alternative",
+      "parents": [
+        {
+          "id": "unity",
+          "rel": "inspired_by",
+          "note": "Modeled on Unity editor ergonomics with native C++ speed"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "godot",
+      "name": "Godot Engine",
+      "year": 2014,
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "track": 6,
+      "creator": "Juan Linietsky & Ariel Manzur",
+      "summary": "Open-source node/scene graph engine with GDScript and C#",
+      "parents": [],
+      "children": []
+    },
+    {
+      "id": "gamemaker",
+      "name": "GameMaker",
+      "year": 1999,
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "track": 7,
+      "creator": "Mark Overmars",
+      "summary": "Event-driven 2D engine powering Undertale & Hotline Miami",
+      "parents": [],
+      "children": []
+    },
+    {
+      "id": "bevy",
+      "name": "Bevy",
+      "year": 2020,
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "track": 7,
+      "creator": "Carter Anderson (cart)",
+      "summary": "Pure data-driven ECS engine built in Rust with parallel Rayon execution",
+      "parents": [],
+      "children": []
+    },
+    {
+      "id": "defold",
+      "name": "Defold",
+      "year": 2016,
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "track": 7,
+      "creator": "King / Defold Foundation",
+      "summary": "Zero-overhead 2D game engine built around Lua and message passing",
+      "parents": [],
+      "children": []
+    }
+  ]
+}

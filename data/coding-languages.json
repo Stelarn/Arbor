@@ -1,0 +1,4070 @@
+{
+  "items": [
+    {
+      "id": "asm",
+      "name": "Assembly / Machine Code",
+      "year": 1949,
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "creator": "Kathleen Booth / Maurice Wilkes",
+      "paradigms": [
+        "Low-Level Imperative",
+        "Hardware-Mapped",
+        "Unstructured"
+      ],
+      "type_system": "Untyped / Raw bitwidth memory registers",
+      "memory_model": "Direct hardware register and physical memory addressing",
+      "runtime_profile": "Cycle-accurate bare-metal execution; zero overhead",
+      "compilation_targets": [
+        "Machine opcodes / ROM cart dumps"
+      ],
+      "ffi_status": "Native CPU architecture ABI",
+      "game_relevance": "Underpins early arcade/console games (NES, Game Boy, Atari), OS bootstrap code, and hand-tuned SIMD intrinsics (AVX-512, NEON).",
+      "notable_projects": [
+        "RollerCoaster Tycoon (99% x86 ASM by Chris Sawyer)",
+        "Super Mario Bros. (6502)",
+        "NESmaker core engine"
+      ],
+      "package_manager": "None (Assemblers: NASM, ca65, RGBDS, MASM)",
+      "parents": [],
+      "children": [
+        {
+          "id": "fortran",
+          "rel": "inspired_by",
+          "note": "Formula Translation abstracted assembly opcodes to mathematical equations"
+        },
+        {
+          "id": "c",
+          "rel": "inspired_by",
+          "note": "C was designed as a portable macro-assembler with structured control flow"
+        },
+        {
+          "id": "forth",
+          "rel": "direct_evolution",
+          "note": "Direct two-stack processor manipulation and threaded execution"
+        }
+      ]
+    },
+    {
+      "id": "fortran",
+      "name": "FORTRAN",
+      "year": 1957,
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "creator": "John Backus (IBM)",
+      "paradigms": [
+        "Procedural",
+        "Imperative",
+        "Array-Oriented"
+      ],
+      "type_system": "Static, Strong, Manifest",
+      "memory_model": "Static / Stack Allocation (Heap added in modern standards)",
+      "runtime_profile": "Extremely fast vector and numerical array math; no pointer aliasing",
+      "compilation_targets": [
+        "Native Machine Code"
+      ],
+      "ffi_status": "Direct native C ABI interop (ISO_C_BINDING)",
+      "game_relevance": "Earliest mainframe games (Star Trek 1971, Colossal Cave Adventure precursors); linear algebra algorithms.",
+      "notable_projects": [
+        "Star Trek (1971 mainframe)",
+        "BLAS",
+        "LAPACK"
+      ],
+      "package_manager": "fpm (Fortran Package Manager)",
+      "parents": [
+        {
+          "id": "asm",
+          "rel": "inspired_by",
+          "note": "Direct abstraction of machine registers into algebraic expressions"
+        }
+      ],
+      "children": [
+        {
+          "id": "basic",
+          "rel": "inspired_by",
+          "note": "Kemeny & Kurtz simplified Fortran into a beginner interactive language"
+        },
+        {
+          "id": "algol",
+          "rel": "inspired_by",
+          "note": "European committee formed Algol to standardize algorithmic representation"
+        }
+      ]
+    },
+    {
+      "id": "lisp",
+      "name": "Lisp",
+      "year": 1958,
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "creator": "John McCarthy (MIT)",
+      "paradigms": [
+        "Functional",
+        "Homoiconic",
+        "Symbolic / Metaprogramming"
+      ],
+      "type_system": "Dynamic, Strong",
+      "memory_model": "Automatic Garbage Collection (invented for Lisp)",
+      "runtime_profile": "Interpreted / JIT compiled image-based interactive environment (REPL)",
+      "compilation_targets": [
+        "Native Machine Code (SBCL)",
+        "Bytecode",
+        "C"
+      ],
+      "ffi_status": "CFFI (Common Foreign Function Interface)",
+      "game_relevance": "Pioneered Game Oriented Assembly Lisp (GOAL) used by Naughty Dog for Crash Bandicoot & Jak and Daxter.",
+      "notable_projects": [
+        "Crash Bandicoot (GOOL)",
+        "Jak and Daxter (GOAL by Andy Gavin)",
+        "Abuse (Lisp logic)"
+      ],
+      "package_manager": "Quicklisp",
+      "parents": [],
+      "children": [
+        {
+          "id": "scheme",
+          "rel": "direct_evolution",
+          "note": "Sussman & Steele added lexical scoping and tail call optimization"
+        },
+        {
+          "id": "smalltalk",
+          "rel": "crossbreed",
+          "note": "Alan Kay blended Lisp dynamic reflexivity and GC with Simula objects"
+        },
+        {
+          "id": "clojure",
+          "rel": "direct_evolution",
+          "note": "Rich Hickey modernized Lisp with immutable persistent data on JVM"
+        }
+      ]
+    },
+    {
+      "id": "algol",
+      "name": "ALGOL (58 / 60)",
+      "year": 1958,
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "creator": "IFIP Committee (Bauer, Backus, Naur, Perlis, van Wijngaarden)",
+      "paradigms": [
+        "Imperative",
+        "Structured",
+        "Lexical Scoping"
+      ],
+      "type_system": "Static, Strong",
+      "memory_model": "Call stack activation records and lexical scopes",
+      "runtime_profile": "Compiled machine code; introduced recursive functions to computer science",
+      "compilation_targets": [
+        "Native Machine Code"
+      ],
+      "ffi_status": "Pre-dates standard foreign function interfaces",
+      "game_relevance": "The universal trunk of modern syntax: introduced `begin...end`, `if...then...else`, structured loops, and Backus-Naur Form (BNF).",
+      "notable_projects": [
+        "ALGOL 60 Revised Report",
+        "Burroughs B5000 architecture"
+      ],
+      "package_manager": "None",
+      "parents": [
+        {
+          "id": "fortran",
+          "rel": "inspired_by",
+          "note": "Committee reaction against IBM vendor lock-in with Fortran"
+        }
+      ],
+      "children": [
+        {
+          "id": "simula",
+          "rel": "direct_evolution",
+          "note": "Dahl & Nygaard added classes, coroutines, and inheritance to ALGOL 60"
+        },
+        {
+          "id": "b_lang",
+          "rel": "direct_evolution",
+          "note": "CPL and BCPL simplified ALGOL into typeless systems programming"
+        },
+        {
+          "id": "pascal",
+          "rel": "direct_evolution",
+          "note": "Niklaus Wirth pruned ALGOL 68 bloat into a clean, educational language"
+        }
+      ]
+    },
+    {
+      "id": "basic",
+      "name": "BASIC",
+      "year": 1964,
+      "lineage_type": "Inspired Evolution",
+      "badge_class": "badge-inspired",
+      "creator": "John G. Kemeny & Thomas E. Kurtz (Dartmouth)",
+      "paradigms": [
+        "Procedural",
+        "Imperative",
+        "Line-Numbered"
+      ],
+      "type_system": "Dynamic / Manifest Weak Typing",
+      "memory_model": "Managed Interpreter Arrays & String Pools",
+      "runtime_profile": "Interactive bytecode / interpreted; instant line-by-line execution",
+      "compilation_targets": [
+        "Native Machine Code (QBasic/PureBasic)",
+        "Interpreted ROMs (Commodore, Apple II)"
+      ],
+      "ffi_status": "Platform dependent; PEEK/POKE and CALL/DEF USR hooks",
+      "game_relevance": "Ignited microcomputer bedroom game development in the 70s/80s (Apple II, Commodore 64, ZX Spectrum, DarkBASIC, PureBasic).",
+      "notable_projects": [
+        "Gorilla.bas",
+        "Nibbles",
+        "DarkBASIC",
+        "PureBasic Engine"
+      ],
+      "package_manager": "None",
+      "parents": [
+        {
+          "id": "fortran",
+          "rel": "inspired_by",
+          "note": "Created so non-science undergraduate students could program without Fortran punchcards"
+        }
+      ],
+      "children": [
+        {
+          "id": "purebasic",
+          "rel": "direct_evolution",
+          "note": "Modernized Basic compiling to dependency-free native C/assembly with OGRE 3D"
+        }
+      ]
+    },
+    {
+      "id": "simula",
+      "name": "Simula 67",
+      "year": 1967,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "creator": "Ole-Johan Dahl & Kristen Nygaard (Norwegian Computing Center)",
+      "paradigms": [
+        "Object-Oriented Trunk",
+        "Simulation-Oriented",
+        "Structured"
+      ],
+      "type_system": "Static, Strong, Nominal Subtyping",
+      "memory_model": "Garbage-collected heap for dynamic objects and processes",
+      "runtime_profile": "Compiled ALGOL-derivative with class instances and coroutine scheduling",
+      "compilation_targets": [
+        "Native Machine Code"
+      ],
+      "ffi_status": "Internal ALGOL bindings",
+      "game_relevance": "The birth of Object-Oriented Programming (OOP): invented classes, subclasses, virtual procedures, and discrete event simulation.",
+      "notable_projects": [
+        "Simula 67 Standard",
+        "Norwegian Defense Research Simulation"
+      ],
+      "package_manager": "None",
+      "parents": [
+        {
+          "id": "algol",
+          "rel": "direct_evolution",
+          "note": "Extended ALGOL 60 syntax to model discrete physics and queuing processes"
+        }
+      ],
+      "children": [
+        {
+          "id": "smalltalk",
+          "rel": "crossbreed",
+          "note": "Alan Kay fused Simula's objects with Lisp's dynamic message passing"
+        },
+        {
+          "id": "cpp",
+          "rel": "crossbreed",
+          "note": "Bjarne Stroustrup merged Simula's class hierarchies directly into raw C"
+        }
+      ]
+    },
+    {
+      "id": "b_lang",
+      "name": "B",
+      "year": 1969,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "creator": "Ken Thompson & Dennis Ritchie (Bell Labs)",
+      "paradigms": [
+        "Systems",
+        "Typeless",
+        "Imperative"
+      ],
+      "type_system": "Typeless (Everything is a machine word / pointer)",
+      "memory_model": "Raw machine word memory addresses and stack frames",
+      "runtime_profile": "Threaded code / interpreted on PDP-7 and PDP-11",
+      "compilation_targets": [
+        "PDP-7 / PDP-11 Machine Code"
+      ],
+      "ffi_status": "Direct PDP assembly routines",
+      "game_relevance": "Used to write Space Travel (1969), Ken Thompson's early spaceflight simulation game on the PDP-7.",
+      "notable_projects": [
+        "Space Travel (1969 game by Ken Thompson)",
+        "Early Unix utilities"
+      ],
+      "package_manager": "None",
+      "parents": [
+        {
+          "id": "algol",
+          "rel": "direct_evolution",
+          "note": "Derived from BCPL, which was a trimmed-down version of CPL (an ALGOL descendant)"
+        }
+      ],
+      "children": [
+        {
+          "id": "c",
+          "rel": "direct_evolution",
+          "note": "Dennis Ritchie added datatypes (char, int, float) and struct layouts to B, creating C"
+        }
+      ]
+    },
+    {
+      "id": "forth",
+      "name": "Forth",
+      "year": 1970,
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "creator": "Charles H. Moore",
+      "paradigms": [
+        "Stack-Oriented",
+        "Concatenative",
+        "Reflective"
+      ],
+      "type_system": "Untyped",
+      "memory_model": "Dual-stack (Data Stack and Return Stack) with direct memory cell access",
+      "runtime_profile": "Threaded interpreted execution in under 2KB of memory",
+      "compilation_targets": [
+        "Indirect Threaded Code / Native Assembly"
+      ],
+      "ffi_status": "Direct memory register manipulation",
+      "game_relevance": "Used to program Starflight (1986, Electronic Arts) and arcade games due to extreme memory constraints.",
+      "notable_projects": [
+        "Starflight (1986)",
+        "Open Firmware",
+        "Telescope control systems"
+      ],
+      "package_manager": "None",
+      "parents": [
+        {
+          "id": "asm",
+          "rel": "direct_evolution",
+          "note": "Direct stack abstraction over CPU register operations"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "pascal",
+      "name": "Pascal",
+      "year": 1970,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "creator": "Niklaus Wirth (ETH Zurich)",
+      "paradigms": [
+        "Structured",
+        "Imperative",
+        "Type-Safe"
+      ],
+      "type_system": "Static, Strong, Manifest (Record types, range checks)",
+      "memory_model": "Stack frames + explicit pointer dynamic allocation (New / Dispose)",
+      "runtime_profile": "Fast single-pass compilation; P-Code virtual machine (UCSD Pascal)",
+      "compilation_targets": [
+        "Native Machine Code",
+        "P-Code Bytecode"
+      ],
+      "ffi_status": "Platform dependent",
+      "game_relevance": "Taught an entire generation structured programming; early Mac and Apple II shareware gaming.",
+      "notable_projects": [
+        "Macintosh OS ROM (original)",
+        "Wizardry (UCSD Pascal)",
+        "TeX typesetting system"
+      ],
+      "package_manager": "None",
+      "parents": [
+        {
+          "id": "algol",
+          "rel": "direct_evolution",
+          "note": "Niklaus Wirth designed Pascal to enforce strict typing and algorithmic discipline"
+        }
+      ],
+      "children": [
+        {
+          "id": "object_pascal",
+          "rel": "direct_evolution",
+          "note": "Borland & Apple added classes and objects, creating Turbo Pascal / Delphi"
+        },
+        {
+          "id": "ada",
+          "rel": "crossbreed",
+          "note": "DoD used Pascal as the syntactic baseline for mission-critical Ada"
+        }
+      ]
+    },
+    {
+      "id": "c",
+      "name": "C",
+      "year": 1972,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "creator": "Dennis Ritchie (Bell Labs)",
+      "paradigms": [
+        "Imperative",
+        "Procedural",
+        "Structured Systems"
+      ],
+      "type_system": "Static, Weak, Manifest",
+      "memory_model": "Manual (malloc/free, stack frames, raw pointers)",
+      "runtime_profile": "Zero-overhead native binary; zero GC; deterministic microsecond latency",
+      "compilation_targets": [
+        "Native Machine Code (All ISAs)",
+        "WebAssembly"
+      ],
+      "ffi_status": "The universal ABI / lingua franca of all modern software engineering",
+      "game_relevance": "Underpins Unix, graphics drivers (DirectX, Vulkan, OpenGL), physics, retro game emulators, SDL2/SDL3, and Raylib.",
+      "notable_projects": [
+        "Doom (id Tech 1)",
+        "Quake Engine Core",
+        "Linux Kernel",
+        "SDL2/SDL3",
+        "Raylib"
+      ],
+      "package_manager": "vcpkg, Conan, CMake FetchContent",
+      "parents": [
+        {
+          "id": "b_lang",
+          "rel": "direct_evolution",
+          "note": "Dennis Ritchie added types, character arrays, and memory structs to Ken Thompson's B"
+        }
+      ],
+      "children": [
+        {
+          "id": "cpp",
+          "rel": "direct_evolution",
+          "note": "Bjarne Stroustrup added Simula classes and RAII to C, creating C++"
+        },
+        {
+          "id": "obj_c",
+          "rel": "crossbreed",
+          "note": "Brad Cox wrapped Smalltalk dynamic message dispatch inside C"
+        },
+        {
+          "id": "csharp",
+          "rel": "crossbreed",
+          "note": "C# used C/C++ syntactic structure over a managed runtime"
+        },
+        {
+          "id": "go",
+          "rel": "crossbreed",
+          "note": "Rob Pike & Ken Thompson simplified C with garbage collection and CSP channels"
+        },
+        {
+          "id": "zig",
+          "rel": "crossbreed",
+          "note": "Andrew Kelley redesigned C with comptime reflection and no hidden control flow"
+        },
+        {
+          "id": "odin",
+          "rel": "crossbreed",
+          "note": "Ginger Bill built Odin around C's speed with custom allocators for game engines"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk",
+      "name": "Smalltalk (-72 / -80)",
+      "year": 1972,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Alan Kay, Dan Ingalls, Adele Goldberg (Xerox PARC)",
+      "paradigms": [
+        "Pure Dynamic Object-Oriented",
+        "Message-Passing",
+        "Reflective"
+      ],
+      "type_system": "Dynamic, Duck Typed",
+      "memory_model": "Managed Garbage Collection in an interactive live virtual image",
+      "runtime_profile": "Bytecode VM with JIT method cache; live dynamic image modification",
+      "compilation_targets": [
+        "Smalltalk Virtual Image Bytecode"
+      ],
+      "ffi_status": "Primitive system calls and external C hooks",
+      "game_relevance": "Pioneered desktop graphical user interfaces, bitmapped graphics, MVC architecture, and dynamic object messaging.",
+      "notable_projects": [
+        "Xerox Alto GUI",
+        "Squeak",
+        "Pharo"
+      ],
+      "package_manager": "Metacello",
+      "parents": [
+        {
+          "id": "simula",
+          "rel": "crossbreed",
+          "note": "Inherited the concept of objects as autonomous simulation entities"
+        },
+        {
+          "id": "lisp",
+          "rel": "crossbreed",
+          "note": "Inherited garbage collection, dynamic metaprogramming, and homoiconic environments"
+        }
+      ],
+      "children": [
+        {
+          "id": "obj_c",
+          "rel": "crossbreed",
+          "note": "Objective-C bolted Smalltalk's dynamic message syntax onto standard C"
+        },
+        {
+          "id": "ruby",
+          "rel": "crossbreed",
+          "note": "Matz made 'everything an object' in Ruby inspired directly by Smalltalk"
+        },
+        {
+          "id": "java",
+          "rel": "inspired_by",
+          "note": "Java took Smalltalk's single-rooted Object hierarchy and portable bytecode VM"
+        }
+      ]
+    },
+    {
+      "id": "ml",
+      "name": "ML (MetaLanguage)",
+      "year": 1973,
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "creator": "Robin Milner (University of Edinburgh)",
+      "paradigms": [
+        "Functional",
+        "Algebraic Types",
+        "Type-Inferred"
+      ],
+      "type_system": "Static, Strong, Parametric Polymorphism, Hindley-Milner Type Inference",
+      "memory_model": "Garbage Collected (Heap-allocated closures and algebraic data)",
+      "runtime_profile": "Compiled functional execution with pattern matching",
+      "compilation_targets": [
+        "Native Machine Code",
+        "Bytecode"
+      ],
+      "ffi_status": "Platform dependent",
+      "game_relevance": "Grandfather of modern type safety: pattern matching, algebraic data types (`Option`/`Result`), and compile-time inference.",
+      "notable_projects": [
+        "Edinburgh LCF theorem prover",
+        "Standard ML of New Jersey"
+      ],
+      "package_manager": "None",
+      "parents": [
+        {
+          "id": "lisp",
+          "rel": "inspired_by",
+          "note": "Inspired by typed lambda calculus and Lisp symbolic expressions"
+        }
+      ],
+      "children": [
+        {
+          "id": "ocaml",
+          "rel": "direct_evolution",
+          "note": "INRIA added an object-oriented module system and ultra-fast native compiler"
+        },
+        {
+          "id": "haskell",
+          "rel": "crossbreed",
+          "note": "Standardized non-strict purely functional evaluation with monads"
+        },
+        {
+          "id": "rust",
+          "rel": "crossbreed",
+          "note": "Rust borrowed pattern matching and enum algebraic types directly from ML/OCaml"
+        }
+      ]
+    },
+    {
+      "id": "scheme",
+      "name": "Scheme",
+      "year": 1975,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "creator": "Guy L. Steele & Gerald Jay Sussman (MIT AI Lab)",
+      "paradigms": [
+        "Functional",
+        "Minimalist",
+        "Lexical Scoping"
+      ],
+      "type_system": "Dynamic, Latent Strong Typing",
+      "memory_model": "Garbage Collection with first-class continuations (`call/cc`)",
+      "runtime_profile": "Proper tail call optimization mandatory in specification",
+      "compilation_targets": [
+        "Native Machine Code (Chez Scheme)",
+        "Bytecode"
+      ],
+      "ffi_status": "C FFI via foreign-procedure wrappers",
+      "game_relevance": "Used for AI scripting in early games and served as the secret functional engine inside JavaScript and Lua.",
+      "notable_projects": [
+        "Structure and Interpretation of Computer Programs (SICP)",
+        "Chez Scheme"
+      ],
+      "package_manager": "Akku",
+      "parents": [
+        {
+          "id": "lisp",
+          "rel": "direct_evolution",
+          "note": "Steele & Sussman redesigned Lisp around lexical scoping and formal actor semantics"
+        }
+      ],
+      "children": [
+        {
+          "id": "javascript",
+          "rel": "crossbreed",
+          "note": "Brendan Eich was hired to put Scheme in Netscape; wrapped it in Java-like syntax"
+        },
+        {
+          "id": "lua",
+          "rel": "crossbreed",
+          "note": "Lua's tables, lexical scoping, and minimal core were heavily influenced by Scheme"
+        }
+      ]
+    },
+    {
+      "id": "ada",
+      "name": "Ada",
+      "year": 1980,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Jean Ichbiah (CII Honeywell Bull for US DoD)",
+      "paradigms": [
+        "Structured",
+        "Concurrent (Rendezvous)",
+        "Mission-Critical Systems"
+      ],
+      "type_system": "Static, Extremely Strong, Range-checked, Nominal",
+      "memory_model": "Explicit Allocation + Deterministic Storage Pools; zero GC",
+      "runtime_profile": "Compiles to robust native machine code with compile-time contract verification (SPARK Ada)",
+      "compilation_targets": [
+        "Native Machine Code (GNAT / GCC)"
+      ],
+      "ffi_status": "Direct native C and assembly pragma interfaces",
+      "game_relevance": "Commercial avionics, railway safety, and military simulators where software crashes are physically catastrophic.",
+      "notable_projects": [
+        "Boeing 777 Fly-by-Wire Avionics",
+        "European High-Speed Rail Signaling",
+        "SPARK Verified Kernel"
+      ],
+      "package_manager": "Alire",
+      "parents": [
+        {
+          "id": "pascal",
+          "rel": "crossbreed",
+          "note": "Syntactic baseline and strong structural record typing from Pascal"
+        },
+        {
+          "id": "algol",
+          "rel": "inspired_by",
+          "note": "Block-structured architecture"
+        }
+      ],
+      "children": [
+        {
+          "id": "nim",
+          "rel": "inspired_by",
+          "note": "Nim borrowed range types and syntax safety from Ada"
+        }
+      ]
+    },
+    {
+      "id": "obj_c",
+      "name": "Objective-C",
+      "year": 1984,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Brad Cox & Tom Love (Stepstone)",
+      "paradigms": [
+        "Object-Oriented",
+        "Message-Passing",
+        "Systems"
+      ],
+      "type_system": "Static C types + Dynamic Smalltalk object messaging (`id`)",
+      "memory_model": "Manual Retain/Release evolving into Automatic Reference Counting (ARC)",
+      "runtime_profile": "C speed for data math + dynamic runtime method dispatch table (objc_msgSend)",
+      "compilation_targets": [
+        "Native Machine Code (LLVM/Clang)"
+      ],
+      "ffi_status": "100% transparent inline C and C++ (Objective-C++)",
+      "game_relevance": "Powered the original NeXTSTEP platform, DOOM's original level editor (DoomEd on NeXT), and all early iOS iPhone games.",
+      "notable_projects": [
+        "DoomEd (John Romero's level editor on NeXT)",
+        "NextSTEP / macOS Cocoa",
+        "Early App Store game catalog"
+      ],
+      "package_manager": "CocoaPods / Carthage",
+      "parents": [
+        {
+          "id": "c",
+          "rel": "crossbreed",
+          "note": "Underlying procedural foundation and raw memory pointer access"
+        },
+        {
+          "id": "smalltalk",
+          "rel": "crossbreed",
+          "note": "Bracketed dynamic message passing syntax: [receiver message]"
+        }
+      ],
+      "children": [
+        {
+          "id": "swift",
+          "rel": "direct_evolution",
+          "note": "Apple and Chris Lattner built Swift to replace Objective-C's pointer vulnerabilities"
+        }
+      ]
+    },
+    {
+      "id": "cpp",
+      "name": "C++",
+      "year": 1985,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Bjarne Stroustrup (Bell Labs)",
+      "paradigms": [
+        "Multi-paradigm",
+        "OOP",
+        "Generic (Templates)",
+        "RAII Systems"
+      ],
+      "type_system": "Static, Strong, Nominal, Type Inference (auto)",
+      "memory_model": "Manual RAII (unique_ptr/shared_ptr, custom arena allocators, stack frames)",
+      "runtime_profile": "Zero-cost abstractions; compile-time metaprogramming; deterministic destruction; no GC pauses",
+      "compilation_targets": [
+        "Native Machine Code (PC, Consoles, Mobile)",
+        "WebAssembly"
+      ],
+      "ffi_status": "Direct native C ABI compatibility via `extern 'C'`",
+      "game_relevance": "The undisputed king of AAA game engines, real-time graphics pipelines, physics engines, and GPU APIs.",
+      "notable_projects": [
+        "Unreal Engine",
+        "CryEngine",
+        "Godot Core",
+        "Source 2",
+        "PhysX / Chaos",
+        "Vulkan / DX12 headers"
+      ],
+      "package_manager": "vcpkg, Conan, CMake",
+      "parents": [
+        {
+          "id": "c",
+          "rel": "crossbreed",
+          "note": "100% C compatibility and raw pointer performance"
+        },
+        {
+          "id": "simula",
+          "rel": "crossbreed",
+          "note": "Classes, member functions, inheritance, and virtual method dispatch"
+        }
+      ],
+      "children": [
+        {
+          "id": "java",
+          "rel": "crossbreed",
+          "note": "Gosling stripped C++ of pointers and memory leaks, running it in a managed VM"
+        },
+        {
+          "id": "csharp",
+          "rel": "crossbreed",
+          "note": "Hejlsberg merged C++ performance with managed .NET components"
+        },
+        {
+          "id": "d_lang",
+          "rel": "direct_evolution",
+          "note": "Walter Bright designed D as a modern cleanup of C++ compilation issues"
+        },
+        {
+          "id": "rust",
+          "rel": "crossbreed",
+          "note": "Rust aimed to match C++ speed while completely eliminating memory corruption bugs"
+        }
+      ]
+    },
+    {
+      "id": "object_pascal",
+      "name": "Object Pascal (Delphi)",
+      "year": 1986,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "creator": "Anders Hejlsberg / Borland / Apple",
+      "paradigms": [
+        "Structured",
+        "Object-Oriented",
+        "Visual Rapid Application Development"
+      ],
+      "type_system": "Static, Strong, Nominal",
+      "memory_model": "Manual Object Instantiation (Create/Free) + Reference Counted Strings/Interfaces",
+      "runtime_profile": "Blazing fast compiler speed (<1 second full builds); standalone zero-dependency native binaries",
+      "compilation_targets": [
+        "Native Machine Code (Delphi / Free Pascal Compiler)"
+      ],
+      "ffi_status": "Direct native C calling conventions (cdecl, stdcall)",
+      "game_relevance": "Castle Game Engine; classic PC shareware games; FL Studio audio engine.",
+      "notable_projects": [
+        "Castle Game Engine",
+        "FL Studio audio engine",
+        "Total Commander",
+        "Inno Setup"
+      ],
+      "package_manager": "OPM (Lazarus) / GetIt (Delphi)",
+      "parents": [
+        {
+          "id": "pascal",
+          "rel": "direct_evolution",
+          "note": "Extended classic Pascal with class definitions, constructors, and virtual tables"
+        }
+      ],
+      "children": [
+        {
+          "id": "csharp",
+          "rel": "crossbreed",
+          "note": "Anders Hejlsberg brought Delphi's properties, component models, and visual design to C#"
+        }
+      ]
+    },
+    {
+      "id": "erlang",
+      "name": "Erlang",
+      "year": 1986,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Joe Armstrong, Robert Virding, Mike Williams (Ericsson)",
+      "paradigms": [
+        "Actor Model",
+        "Concurrent",
+        "Functional",
+        "Fault-Tolerant"
+      ],
+      "type_system": "Dynamic, Strong",
+      "memory_model": "Isolated process heaps (each lightweight actor has its own mini-GC; no shared state)",
+      "runtime_profile": "BEAM Virtual Machine; preemptive scheduling millions of lightweight processes; live code hot-swapping",
+      "compilation_targets": [
+        "BEAM Bytecode"
+      ],
+      "ffi_status": "NIFs (Native Implemented Functions in C)",
+      "game_relevance": "High-concurrency MMO game server backends, matchmaking servers, and chat platforms (Discord voice routing, WhatsApp).",
+      "notable_projects": [
+        "Discord audio infrastructure",
+        "Riot Games chat servers",
+        "RabbitMQ"
+      ],
+      "package_manager": "Hex",
+      "parents": [
+        {
+          "id": "prolog",
+          "rel": "crossbreed",
+          "note": "Original prototype implemented in Prolog; inherited pattern matching and logic unification"
+        },
+        {
+          "id": "smalltalk",
+          "rel": "inspired_by",
+          "note": "Erlang processes communicate strictly by sending immutable messages"
+        }
+      ],
+      "children": [
+        {
+          "id": "elixir",
+          "rel": "direct_evolution",
+          "note": "Jos\u00e9 Valim added Ruby-like ergonomics and macro metaprogramming to the Erlang BEAM"
+        }
+      ]
+    },
+    {
+      "id": "perl",
+      "name": "Perl",
+      "year": 1987,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Larry Wall",
+      "paradigms": [
+        "Scripting",
+        "Procedural",
+        "Text-Processing"
+      ],
+      "type_system": "Dynamic, Weak (Scalars, Arrays, Hashes: $, @, %)",
+      "memory_model": "Reference Counting Garbage Collection",
+      "runtime_profile": "Compiled into internal bytecode tree, then executed in fast C runtime",
+      "compilation_targets": [
+        "Perl Bytecode / C-based Interpreter"
+      ],
+      "ffi_status": "XS (Perl C extension interface)",
+      "game_relevance": "The glue code of early studio pipelines and build automation scripts in the 1990s.",
+      "notable_projects": [
+        "CPAN",
+        "Major 90s build scripts",
+        "Slashdot engine"
+      ],
+      "package_manager": "CPAN",
+      "parents": [
+        {
+          "id": "c",
+          "rel": "crossbreed",
+          "note": "C-style syntax and system call bindings"
+        },
+        {
+          "id": "basic",
+          "rel": "inspired_by",
+          "note": "Practical beginner scripting mindset"
+        }
+      ],
+      "children": [
+        {
+          "id": "python",
+          "rel": "crossbreed",
+          "note": "Python emerged as a cleaner, readable alternative to Perl's cryptic regex symbols"
+        },
+        {
+          "id": "ruby",
+          "rel": "crossbreed",
+          "note": "Matz blended Perl's text-processing power with Smalltalk's pure object model"
+        }
+      ]
+    },
+    {
+      "id": "haskell",
+      "name": "Haskell",
+      "year": 1990,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Lennart Augustsson, Dave Barton, Simon Peyton Jones, Philip Wadler",
+      "paradigms": [
+        "Pure Functional",
+        "Non-Strict (Lazy)",
+        "Type-Driven"
+      ],
+      "type_system": "Static, Extremely Strong, Higher-Kinded Types, Monadic Type Classes",
+      "memory_model": "Managed Tracing GC (Graph reduction engine with thunk evaluation)",
+      "runtime_profile": "Compiles to native machine code via GHC; multithreaded parallel green threads",
+      "compilation_targets": [
+        "Native Machine Code (GHC)",
+        "JavaScript (GHCJS)"
+      ],
+      "ffi_status": "Haskell Foreign Function Interface (FFI) to C",
+      "game_relevance": "Functional Reactive Programming (FRP) game research, procedural dungeon generators, and domain-specific game languages.",
+      "notable_projects": [
+        "GHC (Glasgow Haskell Compiler)",
+        "Pandoc",
+        "Nikki and the Robots"
+      ],
+      "package_manager": "Cabal / Stack",
+      "parents": [
+        {
+          "id": "ml",
+          "rel": "crossbreed",
+          "note": "Hindley-Milner type system and pattern matching from ML"
+        },
+        {
+          "id": "lisp",
+          "rel": "inspired_by",
+          "note": "Mathematical purity and lambda calculus"
+        }
+      ],
+      "children": [
+        {
+          "id": "rust",
+          "rel": "crossbreed",
+          "note": "Rust borrowed traits (type classes), sum types, and immutability defaults from Haskell"
+        }
+      ]
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "year": 1991,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Guido van Rossum (CWI Netherlands)",
+      "paradigms": [
+        "Object-Oriented",
+        "Imperative",
+        "Dynamic",
+        "Scripting"
+      ],
+      "type_system": "Dynamic, Strong, Duck-Typed (Optional Type Hints)",
+      "memory_model": "Reference Counting + Cyclic Garbage Collector (GIL in CPython)",
+      "runtime_profile": "Interpreted Bytecode VM; rapid iteration speed; accelerated via native C extensions",
+      "compilation_targets": [
+        "CPython Bytecode (.pyc)",
+        "PyPy JIT",
+        "WASM (Pyodide)"
+      ],
+      "ffi_status": "Direct CPython C API, ctypes, cffi, PyO3 (Rust bindings)",
+      "game_relevance": "The undisputed standard for 3D art pipelines (Blender, Maya), visual novels (Ren'Py), and educational 2D games (Pygame).",
+      "notable_projects": [
+        "Ren'Py Visual Novel Engine",
+        "Pygame / Pygame-CE",
+        "Blender Python API",
+        "EVE Online server logic"
+      ],
+      "package_manager": "pip / PyPI",
+      "parents": [
+        {
+          "id": "c",
+          "rel": "crossbreed",
+          "note": "Implemented in clean ANSI C with transparent C-extension module architecture"
+        },
+        {
+          "id": "perl",
+          "rel": "inspired_by",
+          "note": "Scripting practicality without Perl's visual punctuation clutter"
+        }
+      ],
+      "children": [
+        {
+          "id": "gdscript",
+          "rel": "crossbreed",
+          "note": "Godot modeled GDScript's whitespace indentation and concise syntax directly on Python"
+        },
+        {
+          "id": "nim",
+          "rel": "crossbreed",
+          "note": "Nim paired Python's clean indentation syntax with static C++ compilation"
+        }
+      ]
+    },
+    {
+      "id": "lua",
+      "name": "Lua",
+      "year": 1993,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Roberto Ierusalimschy, Luiz Henrique de Figueiredo, Waldemar Celes (PUC-Rio)",
+      "paradigms": [
+        "Multi-paradigm",
+        "Prototype-based",
+        "Data-Driven",
+        "Procedural"
+      ],
+      "type_system": "Dynamic, Duck-Typed (Numbers, Strings, Booleans, Tables)",
+      "memory_model": "Incremental / Generational Mark-and-Sweep Garbage Collection",
+      "runtime_profile": "Ultra-compact embedded C footprint (<300KB); LuaJIT is one of the fastest dynamic compilers in existence",
+      "compilation_targets": [
+        "Lua Bytecode",
+        "LuaJIT Native Machine Code",
+        "Direct C Embedding"
+      ],
+      "ffi_status": "Extremely clean C Stack API; LuaJIT includes a near zero-overhead C FFI",
+      "game_relevance": "The most widely embedded runtime scripting language in video game history (Defold, L\u00d6VE, World of Warcraft, Roblox, PICO-8).",
+      "notable_projects": [
+        "World of Warcraft UI",
+        "Roblox (Luau)",
+        "L\u00d6VE (Love2D)",
+        "Defold",
+        "PICO-8",
+        "Balatro"
+      ],
+      "package_manager": "LuaRocks",
+      "parents": [
+        {
+          "id": "c",
+          "rel": "crossbreed",
+          "note": "Engineered strictly as an ANSI C library to embed inside host game runtimes"
+        },
+        {
+          "id": "scheme",
+          "rel": "crossbreed",
+          "note": "Inherited associative arrays (tables), lexical scoping, and first-class functions"
+        }
+      ],
+      "children": [
+        {
+          "id": "luau",
+          "rel": "fork",
+          "note": "Roblox's official high-performance typed fork of Lua 5.1"
+        },
+        {
+          "id": "gdscript",
+          "rel": "crossbreed",
+          "note": "Godot adopted Lua's light embedding architecture and table data structures"
+        }
+      ]
+    },
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "year": 1995,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Yukihiro Matsumoto (Matz)",
+      "paradigms": [
+        "Pure Object-Oriented",
+        "Dynamic",
+        "Reflective",
+        "Functional-lite"
+      ],
+      "type_system": "Dynamic, Strong, Duck-Typed",
+      "memory_model": "Generational Tracing Garbage Collection (RGenGC)",
+      "runtime_profile": "YARV Bytecode VM; compiles to native C in DragonRuby GTK using mruby",
+      "compilation_targets": [
+        "YARV Bytecode",
+        "mruby C compilation (DragonRuby)"
+      ],
+      "ffi_status": "Ruby C extension API, FFI gem",
+      "game_relevance": "The scripting backbone of classic RPG Maker (XP, VX, VX Ace via RGSS) and modern 60 FPS indie 2D engine DragonRuby GTK.",
+      "notable_projects": [
+        "RPG Maker XP / VX Ace (RGSS)",
+        "DragonRuby GTK",
+        "A Dark Room (Switch port)"
+      ],
+      "package_manager": "RubyGems / Bundler",
+      "parents": [
+        {
+          "id": "smalltalk",
+          "rel": "crossbreed",
+          "note": "Pure object-oriented model where every literal number and boolean is an object"
+        },
+        {
+          "id": "perl",
+          "rel": "crossbreed",
+          "note": "Command-line scripting ergonomics and regular expressions"
+        }
+      ],
+      "children": [
+        {
+          "id": "elixir",
+          "rel": "crossbreed",
+          "note": "Elixir adopted Ruby's syntax to bring developer joy to the Erlang BEAM runtime"
+        }
+      ]
+    },
+    {
+      "id": "java",
+      "name": "Java",
+      "year": 1995,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "James Gosling (Sun Microsystems)",
+      "paradigms": [
+        "Object-Oriented",
+        "Class-based",
+        "Structured Concurrent"
+      ],
+      "type_system": "Static, Strong, Nominal, Generics (Type Erasure)",
+      "memory_model": "Generational Tracing Garbage Collection (G1, ZGC, Shenandoah)",
+      "runtime_profile": "JVM HotSpot JIT compiler; adaptive optimization; Android ART execution",
+      "compilation_targets": [
+        "JVM Bytecode (.class / .jar)",
+        "Android DEX bytecode",
+        "GraalVM Native Image"
+      ],
+      "ffi_status": "JNI (Java Native Interface) and modern Project Panama (FFM API)",
+      "game_relevance": "Built Minecraft Java Edition (the best-selling game of all time), LibGDX, RuneScape, and Android native games.",
+      "notable_projects": [
+        "Minecraft (original Java Edition)",
+        "Slay the Spire (original LibGDX release)",
+        "Mindustry",
+        "RuneScape Classic"
+      ],
+      "package_manager": "Maven / Gradle",
+      "parents": [
+        {
+          "id": "cpp",
+          "rel": "crossbreed",
+          "note": "Familiar C++ syntax stripped of manual pointers, multiple inheritance, and header files"
+        },
+        {
+          "id": "smalltalk",
+          "rel": "inspired_by",
+          "note": "Bytecode virtual machine and universal single-root `java.lang.Object` hierarchy"
+        }
+      ],
+      "children": [
+        {
+          "id": "csharp",
+          "rel": "crossbreed",
+          "note": "Microsoft designed C# as a direct modern competitor to Java"
+        },
+        {
+          "id": "kotlin",
+          "rel": "direct_evolution",
+          "note": "JetBrains built Kotlin as a concise, 100% interoperable replacement for Java"
+        },
+        {
+          "id": "scala",
+          "rel": "crossbreed",
+          "note": "Unified OOP and functional programming on top of the JVM"
+        }
+      ]
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "year": 1995,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Brendan Eich (Netscape)",
+      "paradigms": [
+        "Event-Driven",
+        "Prototype-based",
+        "Functional",
+        "Imperative"
+      ],
+      "type_system": "Dynamic, Weak",
+      "memory_model": "Generational Tracing Garbage Collection (V8, SpiderMonkey, JavaScriptCore)",
+      "runtime_profile": "Multi-tier dynamic JIT compilers; asynchronous single-threaded event loop",
+      "compilation_targets": [
+        "Browser JS Runtimes (V8, SM, JSC)",
+        "Node.js",
+        "QuickJS embedded"
+      ],
+      "ffi_status": "WebAssembly FFI; Node.js N-API",
+      "game_relevance": "The native runtime language of all browser WebGL/WebGPU games (Phaser, Three.js, Babylon.js, Construct 3, RPG Maker MZ).",
+      "notable_projects": [
+        "Phaser 3",
+        "Three.js",
+        "Babylon.js",
+        "Construct 3 runtime",
+        "RPG Maker MZ plugins"
+      ],
+      "package_manager": "npm / yarn / pnpm",
+      "parents": [
+        {
+          "id": "scheme",
+          "rel": "crossbreed",
+          "note": "First-class functions, closures, and functional lambda core"
+        },
+        {
+          "id": "java",
+          "rel": "inspired_by",
+          "note": "Syntax styled to look like Java for Netscape marketing purposes"
+        }
+      ],
+      "children": [
+        {
+          "id": "typescript",
+          "rel": "direct_evolution",
+          "note": "Anders Hejlsberg built TypeScript as a compile-time static type system over JS"
+        },
+        {
+          "id": "actionscript",
+          "rel": "direct_evolution",
+          "note": "Adobe ActionScript 3.0 standardized ECMAScript for Flash games"
+        }
+      ]
+    },
+    {
+      "id": "ocaml",
+      "name": "OCaml",
+      "year": 1996,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "creator": "Xavier Leroy, Damien Doligez, Alain Frisch (INRIA)",
+      "paradigms": [
+        "Functional",
+        "Imperative",
+        "Object-Oriented Modules"
+      ],
+      "type_system": "Static, Strong, Hindley-Milner Inference, Structural Variants",
+      "memory_model": "Generational Stop-and-Copy GC (Extremely fast minor heap allocations)",
+      "runtime_profile": "Blazing fast native machine code compiler; rivaling C in algorithmic tasks",
+      "compilation_targets": [
+        "Native Machine Code",
+        "Bytecode",
+        "JavaScript (js_of_ocaml)"
+      ],
+      "ffi_status": "Clean C interface with memory-safe value representations",
+      "game_relevance": "Used to write the original compiler for Rust (`rustc` was originally in OCaml) and Haxe compiler toolchains.",
+      "notable_projects": [
+        "Original Rust compiler (2006-2010)",
+        "Haxe compiler",
+        "Coq theorem prover"
+      ],
+      "package_manager": "opam",
+      "parents": [
+        {
+          "id": "ml",
+          "rel": "direct_evolution",
+          "note": "INRIA added object-oriented parameterized modules and a fast native codegen to ML"
+        }
+      ],
+      "children": [
+        {
+          "id": "rust",
+          "rel": "crossbreed",
+          "note": "Graydon Hoare initially prototyped Rust in OCaml, adopting its pattern matching and sum types"
+        },
+        {
+          "id": "haxe",
+          "rel": "inspired_by",
+          "note": "Nicolas Cannasse authored the Haxe compiler in OCaml"
+        }
+      ]
+    },
+    {
+      "id": "csharp",
+      "name": "C# (.NET)",
+      "year": 2000,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Anders Hejlsberg (Microsoft)",
+      "paradigms": [
+        "Object-Oriented",
+        "Component-Oriented",
+        "Generic",
+        "Functional-lite"
+      ],
+      "type_system": "Static, Strong, Nominal, Type Inference (var)",
+      "memory_model": "Managed Generational GC (Gen 0/1/2, LOH) + Native Unmanaged Memory (Span<T>, Memory<T>)",
+      "runtime_profile": "JIT / Native AOT / CoreCLR; IL2CPP translates C# bytecode to native C++ for mobile & consoles",
+      "compilation_targets": [
+        "CIL Bytecode",
+        "Native AOT",
+        "WebAssembly",
+        "IL2CPP (Native C++)"
+      ],
+      "ffi_status": "P/Invoke with NativeLibrary and high-speed C# unmanaged function pointers",
+      "game_relevance": "The dominant gameplay scripting language of modern indie & AA games (Unity, Godot C#, Flax, Stride, MonoGame).",
+      "notable_projects": [
+        "Unity Engine",
+        "MonoGame",
+        "Hollow Knight",
+        "Celeste",
+        "Stardew Valley",
+        "Subnautica"
+      ],
+      "package_manager": "NuGet",
+      "parents": [
+        {
+          "id": "cpp",
+          "rel": "crossbreed",
+          "note": "C-style curly brace syntax and systems programming ambition"
+        },
+        {
+          "id": "java",
+          "rel": "crossbreed",
+          "note": "Bytecode intermediate representation running inside a safe managed runtime"
+        },
+        {
+          "id": "object_pascal",
+          "rel": "crossbreed",
+          "note": "Anders Hejlsberg brought Delphi's properties, events, and component architecture to C#"
+        }
+      ],
+      "children": [
+        {
+          "id": "typescript",
+          "rel": "inspired_by",
+          "note": "Anders Hejlsberg applied C# type ergonomics to JavaScript"
+        },
+        {
+          "id": "kotlin",
+          "rel": "inspired_by",
+          "note": "Kotlin borrowed properties, extension functions, and reified generics from C#"
+        }
+      ]
+    },
+    {
+      "id": "d_lang",
+      "name": "D",
+      "year": 2001,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "creator": "Walter Bright (Digital Mars) & Andrei Alexandrescu",
+      "paradigms": [
+        "Systems",
+        "Multi-paradigm",
+        "Metaprogramming",
+        "Generic"
+      ],
+      "type_system": "Static, Strong, Design by Contract, Compile-Time Function Execution (CTFE)",
+      "memory_model": "Garbage Collected by default; `@nogc` attribute allows strict manual RAII allocation",
+      "runtime_profile": "Native machine code via DMD, GDC (GCC), or LDC (LLVM); CTFE evaluates complex logic at compile time",
+      "compilation_targets": [
+        "Native Machine Code (All architectures)"
+      ],
+      "ffi_status": "Direct native C and C++ ABI interoperability (`extern(C++)`)",
+      "game_relevance": "Remedy Entertainment used D in production; loved by systems programmers wanting C++ power with clean compilation.",
+      "notable_projects": [
+        "Quantum Break asset tools (Remedy)",
+        "DRuntime",
+        "Mir scientific library"
+      ],
+      "package_manager": "DUB",
+      "parents": [
+        {
+          "id": "cpp",
+          "rel": "direct_evolution",
+          "note": "Walter Bright designed D as a modern cleanup of C++ without legacy preprocessor baggage"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "haxe",
+      "name": "Haxe",
+      "year": 2005,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Nicolas Cannasse",
+      "paradigms": [
+        "Multi-paradigm",
+        "Object-Oriented",
+        "Generic",
+        "Functional"
+      ],
+      "type_system": "Static, Strong, Nominal with Structural Subtyping, Algebraic Types",
+      "memory_model": "Adapts to target: GC on HashLink/JS/JVM; manual/managed on native C++ (hxcpp)",
+      "runtime_profile": "Universal transpiler: compiles to C++, HashLink C, JavaScript, JVM, or C#",
+      "compilation_targets": [
+        "C++ (hxcpp)",
+        "HashLink (HL/C)",
+        "JavaScript",
+        "JVM",
+        "C#"
+      ],
+      "ffi_status": "Direct native C/C++ bindings via hxcpp and HashLink C extensions",
+      "game_relevance": "Indie secret weapon: write high-level gameplay once and compile to native C++ for turnkey console releases.",
+      "notable_projects": [
+        "Dead Cells (Motion Twin)",
+        "Northgard",
+        "Friday Night Funkin'",
+        "Dicey Dungeons",
+        "Heaps.io"
+      ],
+      "package_manager": "Haxelib",
+      "parents": [
+        {
+          "id": "actionscript",
+          "rel": "crossbreed",
+          "note": "Born from Motion Twin's open-source Flash ActionScript compiler (MTASC)"
+        },
+        {
+          "id": "ocaml",
+          "rel": "crossbreed",
+          "note": "Haxe compiler written in OCaml, adopting pattern matching and algebraic enums"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "actionscript",
+      "name": "ActionScript (3.0)",
+      "year": 2006,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "creator": "Gary Grossman / Macromedia / Adobe",
+      "paradigms": [
+        "Object-Oriented",
+        "Event-Driven",
+        "Class-based"
+      ],
+      "type_system": "Static, Strong, Nominal Type Checking",
+      "memory_model": "Mark-and-Sweep Garbage Collection inside Adobe Flash Player (AVM2)",
+      "runtime_profile": "Just-In-Time compiled bytecode running inside Flash Virtual Machine",
+      "compilation_targets": [
+        "SWF Bytecode (AVM2)"
+      ],
+      "ffi_status": "Alchemy / FlasCC native C compilation to SWF",
+      "game_relevance": "Powered the golden age of web browser indie games (Newgrounds, Armor Games, Kongregate) and early indies.",
+      "notable_projects": [
+        "The Binding of Isaac (original)",
+        "Meat Boy prototype",
+        "Canabalt",
+        "Flixel framework"
+      ],
+      "package_manager": "None",
+      "parents": [
+        {
+          "id": "javascript",
+          "rel": "direct_evolution",
+          "note": "Standardized around the ECMAScript 4 draft with classes and strong types"
+        }
+      ],
+      "children": [
+        {
+          "id": "haxe",
+          "rel": "direct_evolution",
+          "note": "Nicolas Cannasse created Haxe to break free from proprietary Flash VM locks"
+        }
+      ]
+    },
+    {
+      "id": "clojure",
+      "name": "Clojure",
+      "year": 2007,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "creator": "Rich Hickey",
+      "paradigms": [
+        "Functional",
+        "Homoiconic Lisp",
+        "Concurrent"
+      ],
+      "type_system": "Dynamic, Strong",
+      "memory_model": "JVM Managed GC with persistent immutable data structures and Software Transactional Memory (STM)",
+      "runtime_profile": "Compiles directly to JVM bytecode; runs on Java HotSpot with zero reflection overhead",
+      "compilation_targets": [
+        "JVM Bytecode",
+        "JavaScript (ClojureScript)"
+      ],
+      "ffi_status": "Transparent Java interop",
+      "game_relevance": "Used for multiplayer backend simulation and data-driven generative audio synthesis.",
+      "notable_projects": [
+        "Overtone audio synth",
+        "Datomic database",
+        "Arcadia (Clojure in Unity)"
+      ],
+      "package_manager": "Clojure CLI / Leiningen",
+      "parents": [
+        {
+          "id": "lisp",
+          "rel": "direct_evolution",
+          "note": "Modernized classic Lisp around immutability, thread safety, and standard JVM infrastructure"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "nim",
+      "name": "Nim",
+      "year": 2008,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Andreas Rumpf",
+      "paradigms": [
+        "Multi-paradigm",
+        "Procedural",
+        "AST Metaprogramming",
+        "Imperative"
+      ],
+      "type_system": "Static, Strong, Type Inference",
+      "memory_model": "ARC / ORC (Deterministic Automatic Reference Counting with Cycle Collector) or Manual Allocators",
+      "runtime_profile": "Compiles directly to clean, human-readable C or C++; native machine binary with zero GC pauses under ARC",
+      "compilation_targets": [
+        "C",
+        "C++",
+        "Objective-C",
+        "JavaScript"
+      ],
+      "ffi_status": "Seamless zero-cost C/C++ header inclusion and FFI",
+      "game_relevance": "Beloved by indie systems programmers who want Python's readability with raw C/C++ speed and no GC latency.",
+      "notable_projects": [
+        "Status Ethereum client",
+        "Nico 2D game engine",
+        "NimGL bindings"
+      ],
+      "package_manager": "Nimble",
+      "parents": [
+        {
+          "id": "python",
+          "rel": "crossbreed",
+          "note": "Indentation-based whitespace syntax and readable control flow"
+        },
+        {
+          "id": "c",
+          "rel": "crossbreed",
+          "note": "Compiles down directly to portable C with pointer efficiency"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "go",
+      "name": "Go (Golang)",
+      "year": 2009,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Robert Griesemer, Rob Pike, Ken Thompson (Google)",
+      "paradigms": [
+        "Concurrent (CSP)",
+        "Imperative",
+        "Structural"
+      ],
+      "type_system": "Static, Strong, Structural Typing (Interfaces)",
+      "memory_model": "Concurrent Mark-and-Sweep Garbage Collection (Sub-millisecond pause guarantees)",
+      "runtime_profile": "Extremely fast compilation; lightweight goroutines scheduled on M:N user-space runtime thread pool",
+      "compilation_targets": [
+        "Native Machine Code",
+        "WebAssembly"
+      ],
+      "ffi_status": "cgo (C bindings)",
+      "game_relevance": "Standard workhorse for scalable game server backends, matchmaking microservices, and 2D games via Ebitengine.",
+      "notable_projects": [
+        "Ebitengine 2D game library",
+        "Riot Games multiplayer backends",
+        "Docker & Kubernetes"
+      ],
+      "package_manager": "Go Modules",
+      "parents": [
+        {
+          "id": "c",
+          "rel": "crossbreed",
+          "note": "C-style pointer structs and systems performance without C++ template bloat"
+        },
+        {
+          "id": "pascal",
+          "rel": "inspired_by",
+          "note": "Clean keyword declarations and concise structural typing"
+        }
+      ],
+      "children": [
+        {
+          "id": "odin",
+          "rel": "inspired_by",
+          "note": "Odin borrowed Go's multi-return syntax and clean package declarations"
+        }
+      ]
+    },
+    {
+      "id": "rust",
+      "name": "Rust",
+      "year": 2010,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Graydon Hoare (Mozilla Research)",
+      "paradigms": [
+        "Safe Systems",
+        "Data-Oriented / ECS-friendly",
+        "Functional-inspired"
+      ],
+      "type_system": "Static, Strong, Affine / Ownership Lifetimes, Trait System, Full HM Inference",
+      "memory_model": "Compile-time Ownership & Borrow Checker; Zero Garbage Collection; Thread-safe `Send`/`Sync`",
+      "runtime_profile": "Native machine code via LLVM; matches C++ speed while mathematically preventing data races and memory corruption",
+      "compilation_targets": [
+        "Native Machine Code (All ISAs)",
+        "WebAssembly (wasm32-unknown-unknown)"
+      ],
+      "ffi_status": "Direct native C ABI compatibility via `extern 'C'`",
+      "game_relevance": "Leading the modern code-first game engine revolution and data-oriented entity component systems (Bevy, Fyrox, WGPU).",
+      "notable_projects": [
+        "Bevy Engine",
+        "Fyrox",
+        "Veloren MMO",
+        "WGPU graphics abstraction",
+        "Rapier physics"
+      ],
+      "package_manager": "Cargo / crates.io",
+      "parents": [
+        {
+          "id": "cpp",
+          "rel": "crossbreed",
+          "note": "Zero-overhead abstractions and deterministic RAII destruction"
+        },
+        {
+          "id": "ocaml",
+          "rel": "crossbreed",
+          "note": "Original compiler in OCaml; pattern matching, sum types, and option types"
+        },
+        {
+          "id": "c",
+          "rel": "crossbreed",
+          "note": "Native machine performance, manual layout control, and raw pointers in unsafe blocks"
+        }
+      ],
+      "children": [
+        {
+          "id": "swift",
+          "rel": "crossbreed",
+          "note": "Swift adopted Rust's memory safety principles and pattern matching ergonomics"
+        },
+        {
+          "id": "zig",
+          "rel": "inspired_by",
+          "note": "Zig formed as a simpler C-replacement alternative to Rust's complex borrow checker"
+        }
+      ]
+    },
+    {
+      "id": "kotlin",
+      "name": "Kotlin",
+      "year": 2011,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "JetBrains",
+      "paradigms": [
+        "Multi-paradigm",
+        "Object-Oriented",
+        "Functional",
+        "Concise Safe"
+      ],
+      "type_system": "Static, Strong, Null-Safety in type system, Type Inference",
+      "memory_model": "JVM Managed GC / Kotlin Native reference counting",
+      "runtime_profile": "100% interoperable with Java; compiles to JVM bytecode with lightweight async Coroutines",
+      "compilation_targets": [
+        "JVM Bytecode",
+        "Native Machine Code (Kotlin/Native)",
+        "JavaScript",
+        "WASM"
+      ],
+      "ffi_status": "Direct Java interop; C ABI interop via Kotlin/Native cinterop",
+      "game_relevance": "Preferred modern language for Android mobile games, LibGDX Kotlin games, and the KorGE multiplatform game engine.",
+      "notable_projects": [
+        "KorGE Game Engine",
+        "Android Game SDKs",
+        "Jetpack Compose"
+      ],
+      "package_manager": "Gradle / Maven",
+      "parents": [
+        {
+          "id": "java",
+          "rel": "direct_evolution",
+          "note": "Designed as a concise, 100% binary-compatible upgrade over Java"
+        },
+        {
+          "id": "csharp",
+          "rel": "crossbreed",
+          "note": "Properties, extension methods, and reified generics borrowed from C#"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "year": 2012,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "creator": "Anders Hejlsberg (Microsoft)",
+      "paradigms": [
+        "Multi-paradigm",
+        "Structural",
+        "Functional",
+        "Object-Oriented"
+      ],
+      "type_system": "Static, Structural, Gradual, Generics with advanced union and mapped types",
+      "memory_model": "Identical to JavaScript (Runs on browser/V8 GC engines)",
+      "runtime_profile": "Transpiles directly to clean JavaScript; zero runtime type-checking overhead",
+      "compilation_targets": [
+        "JavaScript (ES5 through ESNext)"
+      ],
+      "ffi_status": "Inherits JavaScript's WebAssembly and native bindings",
+      "game_relevance": "The gold standard for modern 3D web games, WebGPU pipelines, and cross-platform mobile mini-games (Cocos Creator 3, PlayCanvas).",
+      "notable_projects": [
+        "Cocos Creator 3",
+        "Babylon.js",
+        "PlayCanvas",
+        "Excalibur.js"
+      ],
+      "package_manager": "npm / yarn / pnpm",
+      "parents": [
+        {
+          "id": "javascript",
+          "rel": "direct_evolution",
+          "note": "Strict syntactic superset: all valid JavaScript is valid TypeScript"
+        },
+        {
+          "id": "csharp",
+          "rel": "inspired_by",
+          "note": "Anders Hejlsberg applied C# type engineering rigor to JavaScript"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "elixir",
+      "name": "Elixir",
+      "year": 2012,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Jos\u00e9 Valim (Plataformatec)",
+      "paradigms": [
+        "Functional",
+        "Actor Model",
+        "Concurrent",
+        "Macro Metaprogramming"
+      ],
+      "type_system": "Dynamic, Strong, Pattern Matching",
+      "memory_model": "Per-process isolated heap garbage collection on the Erlang BEAM runtime",
+      "runtime_profile": "Runs on the Erlang BEAM VM; fault-tolerant supervision trees and millions of concurrent actors",
+      "compilation_targets": [
+        "BEAM Bytecode"
+      ],
+      "ffi_status": "Erlang NIFs in C/Rust",
+      "game_relevance": "High-scale real-time multiplayer game servers, web socket lobbies, and matchmaking infrastructure.",
+      "notable_projects": [
+        "Phoenix LiveView",
+        "Multiplayer matchmaking backends"
+      ],
+      "package_manager": "Hex",
+      "parents": [
+        {
+          "id": "erlang",
+          "rel": "crossbreed",
+          "note": "Built on top of the battle-tested Erlang BEAM virtual machine"
+        },
+        {
+          "id": "ruby",
+          "rel": "crossbreed",
+          "note": "Borrowed Ruby's elegant developer-friendly syntax and pipeline operators"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "swift",
+      "name": "Swift",
+      "year": 2014,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Chris Lattner, Doug Gregor, John McCall (Apple)",
+      "paradigms": [
+        "Protocol-Oriented",
+        "Functional",
+        "Object-Oriented",
+        "Safe Systems"
+      ],
+      "type_system": "Static, Strong, Inferred, Generics with Protocol Extensions",
+      "memory_model": "Automatic Reference Counting (ARC) with compile-time non-copyable ownership types",
+      "runtime_profile": "Compiles to native machine code via LLVM; fast dynamic runtime without tracing GC pauses",
+      "compilation_targets": [
+        "Native Machine Code (iOS, macOS, Linux, Windows)"
+      ],
+      "ffi_status": "Bidirectional C and C++ direct interop (no bridge required)",
+      "game_relevance": "Apple platforms native games (Metal graphics API, RealityKit, Game Center, SceneKit).",
+      "notable_projects": [
+        "RealityKit for VisionPro",
+        "Metal shader pipelines",
+        "Apple Arcade native titles"
+      ],
+      "package_manager": "Swift Package Manager (SPM)",
+      "parents": [
+        {
+          "id": "obj_c",
+          "rel": "direct_evolution",
+          "note": "Designed by Apple to replace Objective-C while seamlessly bridging Cocoa APIs"
+        },
+        {
+          "id": "rust",
+          "rel": "crossbreed",
+          "note": "Borrowed optionals, pattern matching, value semantics, and ownership ideas"
+        },
+        {
+          "id": "python",
+          "rel": "inspired_by",
+          "note": "Clean, concise syntax and interactive Playgrounds"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "gdscript",
+      "name": "GDScript",
+      "year": 2014,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Juan Linietsky (Godot Engine)",
+      "paradigms": [
+        "Object-Oriented",
+        "Imperative",
+        "Scene-Tree Native"
+      ],
+      "type_system": "Gradual / Optional Static Typing (Typed GDScript 2.0 with JIT)",
+      "memory_model": "Reference Counting for Objects / Resources; deterministic engine memory handling",
+      "runtime_profile": "Custom Godot Bytecode VM; deeply integrated with C++ core avoiding marshalling overhead",
+      "compilation_targets": [
+        "Godot Bytecode VM"
+      ],
+      "ffi_status": "Native C++ GDExtension ABI binding",
+      "game_relevance": "Engineered exclusively for video game creation inside Godot Engine; optimized for 60 FPS scene tree traversal.",
+      "notable_projects": [
+        "Godot Engine",
+        "Brotato",
+        "Dome Keeper",
+        "Cassette Beasts",
+        "Slay the Spire 2"
+      ],
+      "package_manager": "Godot Asset Library",
+      "parents": [
+        {
+          "id": "python",
+          "rel": "crossbreed",
+          "note": "Pythonic whitespace indentation and variable declaration syntax"
+        },
+        {
+          "id": "lua",
+          "rel": "crossbreed",
+          "note": "Lightweight C++ embedding model and associative dictionary structures"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "zig",
+      "name": "Zig",
+      "year": 2015,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Andrew Kelley",
+      "paradigms": [
+        "Imperative",
+        "Procedural",
+        "Comptime Metaprogramming"
+      ],
+      "type_system": "Static, Strong, Types as First-Class Compile-Time Values",
+      "memory_model": "Explicit Manual Allocation (Zero hidden allocations; allocators passed explicitly)",
+      "runtime_profile": "Native machine code via LLVM and self-hosted backend; rivals or beats C performance",
+      "compilation_targets": [
+        "Native Machine Code (x86, ARM, RISC-V, WASM)"
+      ],
+      "ffi_status": "Direct C header ingestion (`@cImport`) and native C ABI export; can compile C/C++ directly via `zig cc`",
+      "game_relevance": "Emerging as the favorite modern C replacement for low-level game engines, Vulkan graphics, and custom game loops.",
+      "notable_projects": [
+        "Bun JS runtime",
+        "Mach Engine",
+        "ZLS (Zig Language Server)"
+      ],
+      "package_manager": "Zig Package Manager (build.zig.zon)",
+      "parents": [
+        {
+          "id": "c",
+          "rel": "crossbreed",
+          "note": "C memory model, transparent pointers, and direct C header parsing without wrappers"
+        },
+        {
+          "id": "rust",
+          "rel": "inspired_by",
+          "note": "Reaction against Rust's complex borrow checker, choosing explicit manual allocators and comptime"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "odin",
+      "name": "Odin",
+      "year": 2016,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Ginger Bill",
+      "paradigms": [
+        "Imperative",
+        "Data-Oriented",
+        "Procedural",
+        "Custom Memory Context"
+      ],
+      "type_system": "Static, Strong, Distinct Types, Polymorphic Procedures",
+      "memory_model": "Explicit Allocation (Arena, Pool, Temp Allocators built into thread-local Context)",
+      "runtime_profile": "Native LLVM machine code; engineered expressly for high-performance graphical applications and games",
+      "compilation_targets": [
+        "Native Machine Code (x86, ARM, WASM)"
+      ],
+      "ffi_status": "Direct native C ABI interop",
+      "game_relevance": "Gaining rapid momentum in professional indie dev; used to build the complete custom rendering engine for Emberward.",
+      "notable_projects": [
+        "Emberward",
+        "Spall Profiler",
+        "Vendor Raylib & Sokol bindings"
+      ],
+      "package_manager": "Vendor packages / Git submodules",
+      "parents": [
+        {
+          "id": "c",
+          "rel": "crossbreed",
+          "note": "C-style raw performance, structs, and pointer arithmetic"
+        },
+        {
+          "id": "pascal",
+          "rel": "crossbreed",
+          "note": "Clean parameter syntax, range checks, and distinct typing"
+        },
+        {
+          "id": "go",
+          "rel": "inspired_by",
+          "note": "Multiple return values and package declarations"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "luau",
+      "name": "Luau",
+      "year": 2019,
+      "lineage_type": "Hard Fork",
+      "badge_class": "badge-fork",
+      "creator": "Roblox Corporation",
+      "paradigms": [
+        "Gradually Typed",
+        "Sandboxed Scripting",
+        "Prototype-based"
+      ],
+      "type_system": "Gradual / Static Type Checking with Type Inference",
+      "memory_model": "Incremental Garbage Collection with security-hardened memory sandbox",
+      "runtime_profile": "Extremely fast bytecode VM with SIMD optimizations; sandboxed against arbitrary C calls",
+      "compilation_targets": [
+        "Luau Bytecode"
+      ],
+      "ffi_status": "Strictly sandboxed (No raw C pointers for security)",
+      "game_relevance": "Powers all games, simulations, and user-generated experiences on the Roblox platform for over 70 million daily players.",
+      "notable_projects": [
+        "Roblox Game Engine",
+        "Luau CLI",
+        "Rojo build system"
+      ],
+      "package_manager": "Wally / Pesde",
+      "parents": [
+        {
+          "id": "lua",
+          "rel": "fork",
+          "note": "Hard fork of Lua 5.1 created by Roblox to add static typing and sandboxing"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "purebasic",
+      "name": "PureBasic",
+      "year": 1998,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "creator": "Fantaisie Software (Fr\u00e9d\u00e9ric Laboureur)",
+      "paradigms": [
+        "Procedural",
+        "Imperative",
+        "Desktop Systems"
+      ],
+      "type_system": "Static, Weak",
+      "memory_model": "Manual Allocation + Built-in dynamic lists and maps",
+      "runtime_profile": "Compiles directly to tiny, lightning-fast native assembly executables; no runtime DLLs required",
+      "compilation_targets": [
+        "Native Machine Code (via FASM or C backend)"
+      ],
+      "ffi_status": "Direct native C and Windows/POSIX API calling",
+      "game_relevance": "Shipped with built-in 2D game library and native 3D OGRE engine integration.",
+      "notable_projects": [
+        "PureBasic IDE",
+        "Indie retro desktop games",
+        "Lightweight system utilities"
+      ],
+      "package_manager": "User Forums / Libs",
+      "parents": [
+        {
+          "id": "basic",
+          "rel": "direct_evolution",
+          "note": "Modernized line-free BASIC compiling directly to native assembly"
+        }
+      ],
+      "children": []
+    }
+  ],
+  "tree": [
+    {
+      "id": "asm",
+      "name": "Assembly / Machine Code",
+      "year": 1949,
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "creator": "Kathleen Booth / Maurice Wilkes",
+      "paradigms": [
+        "Low-Level Imperative",
+        "Hardware-Mapped",
+        "Unstructured"
+      ],
+      "type_system": "Untyped / Raw bitwidth memory registers",
+      "memory_model": "Direct hardware register and physical memory addressing",
+      "runtime_profile": "Cycle-accurate bare-metal execution; zero overhead",
+      "compilation_targets": [
+        "Machine opcodes / ROM cart dumps"
+      ],
+      "ffi_status": "Native CPU architecture ABI",
+      "game_relevance": "Underpins early arcade/console games (NES, Game Boy, Atari), OS bootstrap code, and hand-tuned SIMD intrinsics (AVX-512, NEON).",
+      "notable_projects": [
+        "RollerCoaster Tycoon (99% x86 ASM by Chris Sawyer)",
+        "Super Mario Bros. (6502)",
+        "NESmaker core engine"
+      ],
+      "package_manager": "None (Assemblers: NASM, ca65, RGBDS, MASM)",
+      "parents": [],
+      "children": [
+        {
+          "id": "fortran",
+          "rel": "inspired_by",
+          "note": "Formula Translation abstracted assembly opcodes to mathematical equations"
+        },
+        {
+          "id": "c",
+          "rel": "inspired_by",
+          "note": "C was designed as a portable macro-assembler with structured control flow"
+        },
+        {
+          "id": "forth",
+          "rel": "direct_evolution",
+          "note": "Direct two-stack processor manipulation and threaded execution"
+        }
+      ]
+    },
+    {
+      "id": "fortran",
+      "name": "FORTRAN",
+      "year": 1957,
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "creator": "John Backus (IBM)",
+      "paradigms": [
+        "Procedural",
+        "Imperative",
+        "Array-Oriented"
+      ],
+      "type_system": "Static, Strong, Manifest",
+      "memory_model": "Static / Stack Allocation (Heap added in modern standards)",
+      "runtime_profile": "Extremely fast vector and numerical array math; no pointer aliasing",
+      "compilation_targets": [
+        "Native Machine Code"
+      ],
+      "ffi_status": "Direct native C ABI interop (ISO_C_BINDING)",
+      "game_relevance": "Earliest mainframe games (Star Trek 1971, Colossal Cave Adventure precursors); linear algebra algorithms.",
+      "notable_projects": [
+        "Star Trek (1971 mainframe)",
+        "BLAS",
+        "LAPACK"
+      ],
+      "package_manager": "fpm (Fortran Package Manager)",
+      "parents": [
+        {
+          "id": "asm",
+          "rel": "inspired_by",
+          "note": "Direct abstraction of machine registers into algebraic expressions"
+        }
+      ],
+      "children": [
+        {
+          "id": "basic",
+          "rel": "inspired_by",
+          "note": "Kemeny & Kurtz simplified Fortran into a beginner interactive language"
+        },
+        {
+          "id": "algol",
+          "rel": "inspired_by",
+          "note": "European committee formed Algol to standardize algorithmic representation"
+        }
+      ]
+    },
+    {
+      "id": "lisp",
+      "name": "Lisp",
+      "year": 1958,
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "creator": "John McCarthy (MIT)",
+      "paradigms": [
+        "Functional",
+        "Homoiconic",
+        "Symbolic / Metaprogramming"
+      ],
+      "type_system": "Dynamic, Strong",
+      "memory_model": "Automatic Garbage Collection (invented for Lisp)",
+      "runtime_profile": "Interpreted / JIT compiled image-based interactive environment (REPL)",
+      "compilation_targets": [
+        "Native Machine Code (SBCL)",
+        "Bytecode",
+        "C"
+      ],
+      "ffi_status": "CFFI (Common Foreign Function Interface)",
+      "game_relevance": "Pioneered Game Oriented Assembly Lisp (GOAL) used by Naughty Dog for Crash Bandicoot & Jak and Daxter.",
+      "notable_projects": [
+        "Crash Bandicoot (GOOL)",
+        "Jak and Daxter (GOAL by Andy Gavin)",
+        "Abuse (Lisp logic)"
+      ],
+      "package_manager": "Quicklisp",
+      "parents": [],
+      "children": [
+        {
+          "id": "scheme",
+          "rel": "direct_evolution",
+          "note": "Sussman & Steele added lexical scoping and tail call optimization"
+        },
+        {
+          "id": "smalltalk",
+          "rel": "crossbreed",
+          "note": "Alan Kay blended Lisp dynamic reflexivity and GC with Simula objects"
+        },
+        {
+          "id": "clojure",
+          "rel": "direct_evolution",
+          "note": "Rich Hickey modernized Lisp with immutable persistent data on JVM"
+        }
+      ]
+    },
+    {
+      "id": "algol",
+      "name": "ALGOL (58 / 60)",
+      "year": 1958,
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "creator": "IFIP Committee (Bauer, Backus, Naur, Perlis, van Wijngaarden)",
+      "paradigms": [
+        "Imperative",
+        "Structured",
+        "Lexical Scoping"
+      ],
+      "type_system": "Static, Strong",
+      "memory_model": "Call stack activation records and lexical scopes",
+      "runtime_profile": "Compiled machine code; introduced recursive functions to computer science",
+      "compilation_targets": [
+        "Native Machine Code"
+      ],
+      "ffi_status": "Pre-dates standard foreign function interfaces",
+      "game_relevance": "The universal trunk of modern syntax: introduced `begin...end`, `if...then...else`, structured loops, and Backus-Naur Form (BNF).",
+      "notable_projects": [
+        "ALGOL 60 Revised Report",
+        "Burroughs B5000 architecture"
+      ],
+      "package_manager": "None",
+      "parents": [
+        {
+          "id": "fortran",
+          "rel": "inspired_by",
+          "note": "Committee reaction against IBM vendor lock-in with Fortran"
+        }
+      ],
+      "children": [
+        {
+          "id": "simula",
+          "rel": "direct_evolution",
+          "note": "Dahl & Nygaard added classes, coroutines, and inheritance to ALGOL 60"
+        },
+        {
+          "id": "b_lang",
+          "rel": "direct_evolution",
+          "note": "CPL and BCPL simplified ALGOL into typeless systems programming"
+        },
+        {
+          "id": "pascal",
+          "rel": "direct_evolution",
+          "note": "Niklaus Wirth pruned ALGOL 68 bloat into a clean, educational language"
+        }
+      ]
+    },
+    {
+      "id": "basic",
+      "name": "BASIC",
+      "year": 1964,
+      "lineage_type": "Inspired Evolution",
+      "badge_class": "badge-inspired",
+      "creator": "John G. Kemeny & Thomas E. Kurtz (Dartmouth)",
+      "paradigms": [
+        "Procedural",
+        "Imperative",
+        "Line-Numbered"
+      ],
+      "type_system": "Dynamic / Manifest Weak Typing",
+      "memory_model": "Managed Interpreter Arrays & String Pools",
+      "runtime_profile": "Interactive bytecode / interpreted; instant line-by-line execution",
+      "compilation_targets": [
+        "Native Machine Code (QBasic/PureBasic)",
+        "Interpreted ROMs (Commodore, Apple II)"
+      ],
+      "ffi_status": "Platform dependent; PEEK/POKE and CALL/DEF USR hooks",
+      "game_relevance": "Ignited microcomputer bedroom game development in the 70s/80s (Apple II, Commodore 64, ZX Spectrum, DarkBASIC, PureBasic).",
+      "notable_projects": [
+        "Gorilla.bas",
+        "Nibbles",
+        "DarkBASIC",
+        "PureBasic Engine"
+      ],
+      "package_manager": "None",
+      "parents": [
+        {
+          "id": "fortran",
+          "rel": "inspired_by",
+          "note": "Created so non-science undergraduate students could program without Fortran punchcards"
+        }
+      ],
+      "children": [
+        {
+          "id": "purebasic",
+          "rel": "direct_evolution",
+          "note": "Modernized Basic compiling to dependency-free native C/assembly with OGRE 3D"
+        }
+      ]
+    },
+    {
+      "id": "simula",
+      "name": "Simula 67",
+      "year": 1967,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "creator": "Ole-Johan Dahl & Kristen Nygaard (Norwegian Computing Center)",
+      "paradigms": [
+        "Object-Oriented Trunk",
+        "Simulation-Oriented",
+        "Structured"
+      ],
+      "type_system": "Static, Strong, Nominal Subtyping",
+      "memory_model": "Garbage-collected heap for dynamic objects and processes",
+      "runtime_profile": "Compiled ALGOL-derivative with class instances and coroutine scheduling",
+      "compilation_targets": [
+        "Native Machine Code"
+      ],
+      "ffi_status": "Internal ALGOL bindings",
+      "game_relevance": "The birth of Object-Oriented Programming (OOP): invented classes, subclasses, virtual procedures, and discrete event simulation.",
+      "notable_projects": [
+        "Simula 67 Standard",
+        "Norwegian Defense Research Simulation"
+      ],
+      "package_manager": "None",
+      "parents": [
+        {
+          "id": "algol",
+          "rel": "direct_evolution",
+          "note": "Extended ALGOL 60 syntax to model discrete physics and queuing processes"
+        }
+      ],
+      "children": [
+        {
+          "id": "smalltalk",
+          "rel": "crossbreed",
+          "note": "Alan Kay fused Simula's objects with Lisp's dynamic message passing"
+        },
+        {
+          "id": "cpp",
+          "rel": "crossbreed",
+          "note": "Bjarne Stroustrup merged Simula's class hierarchies directly into raw C"
+        }
+      ]
+    },
+    {
+      "id": "b_lang",
+      "name": "B",
+      "year": 1969,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "creator": "Ken Thompson & Dennis Ritchie (Bell Labs)",
+      "paradigms": [
+        "Systems",
+        "Typeless",
+        "Imperative"
+      ],
+      "type_system": "Typeless (Everything is a machine word / pointer)",
+      "memory_model": "Raw machine word memory addresses and stack frames",
+      "runtime_profile": "Threaded code / interpreted on PDP-7 and PDP-11",
+      "compilation_targets": [
+        "PDP-7 / PDP-11 Machine Code"
+      ],
+      "ffi_status": "Direct PDP assembly routines",
+      "game_relevance": "Used to write Space Travel (1969), Ken Thompson's early spaceflight simulation game on the PDP-7.",
+      "notable_projects": [
+        "Space Travel (1969 game by Ken Thompson)",
+        "Early Unix utilities"
+      ],
+      "package_manager": "None",
+      "parents": [
+        {
+          "id": "algol",
+          "rel": "direct_evolution",
+          "note": "Derived from BCPL, which was a trimmed-down version of CPL (an ALGOL descendant)"
+        }
+      ],
+      "children": [
+        {
+          "id": "c",
+          "rel": "direct_evolution",
+          "note": "Dennis Ritchie added datatypes (char, int, float) and struct layouts to B, creating C"
+        }
+      ]
+    },
+    {
+      "id": "forth",
+      "name": "Forth",
+      "year": 1970,
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "creator": "Charles H. Moore",
+      "paradigms": [
+        "Stack-Oriented",
+        "Concatenative",
+        "Reflective"
+      ],
+      "type_system": "Untyped",
+      "memory_model": "Dual-stack (Data Stack and Return Stack) with direct memory cell access",
+      "runtime_profile": "Threaded interpreted execution in under 2KB of memory",
+      "compilation_targets": [
+        "Indirect Threaded Code / Native Assembly"
+      ],
+      "ffi_status": "Direct memory register manipulation",
+      "game_relevance": "Used to program Starflight (1986, Electronic Arts) and arcade games due to extreme memory constraints.",
+      "notable_projects": [
+        "Starflight (1986)",
+        "Open Firmware",
+        "Telescope control systems"
+      ],
+      "package_manager": "None",
+      "parents": [
+        {
+          "id": "asm",
+          "rel": "direct_evolution",
+          "note": "Direct stack abstraction over CPU register operations"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "pascal",
+      "name": "Pascal",
+      "year": 1970,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "creator": "Niklaus Wirth (ETH Zurich)",
+      "paradigms": [
+        "Structured",
+        "Imperative",
+        "Type-Safe"
+      ],
+      "type_system": "Static, Strong, Manifest (Record types, range checks)",
+      "memory_model": "Stack frames + explicit pointer dynamic allocation (New / Dispose)",
+      "runtime_profile": "Fast single-pass compilation; P-Code virtual machine (UCSD Pascal)",
+      "compilation_targets": [
+        "Native Machine Code",
+        "P-Code Bytecode"
+      ],
+      "ffi_status": "Platform dependent",
+      "game_relevance": "Taught an entire generation structured programming; early Mac and Apple II shareware gaming.",
+      "notable_projects": [
+        "Macintosh OS ROM (original)",
+        "Wizardry (UCSD Pascal)",
+        "TeX typesetting system"
+      ],
+      "package_manager": "None",
+      "parents": [
+        {
+          "id": "algol",
+          "rel": "direct_evolution",
+          "note": "Niklaus Wirth designed Pascal to enforce strict typing and algorithmic discipline"
+        }
+      ],
+      "children": [
+        {
+          "id": "object_pascal",
+          "rel": "direct_evolution",
+          "note": "Borland & Apple added classes and objects, creating Turbo Pascal / Delphi"
+        },
+        {
+          "id": "ada",
+          "rel": "crossbreed",
+          "note": "DoD used Pascal as the syntactic baseline for mission-critical Ada"
+        }
+      ]
+    },
+    {
+      "id": "c",
+      "name": "C",
+      "year": 1972,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "creator": "Dennis Ritchie (Bell Labs)",
+      "paradigms": [
+        "Imperative",
+        "Procedural",
+        "Structured Systems"
+      ],
+      "type_system": "Static, Weak, Manifest",
+      "memory_model": "Manual (malloc/free, stack frames, raw pointers)",
+      "runtime_profile": "Zero-overhead native binary; zero GC; deterministic microsecond latency",
+      "compilation_targets": [
+        "Native Machine Code (All ISAs)",
+        "WebAssembly"
+      ],
+      "ffi_status": "The universal ABI / lingua franca of all modern software engineering",
+      "game_relevance": "Underpins Unix, graphics drivers (DirectX, Vulkan, OpenGL), physics, retro game emulators, SDL2/SDL3, and Raylib.",
+      "notable_projects": [
+        "Doom (id Tech 1)",
+        "Quake Engine Core",
+        "Linux Kernel",
+        "SDL2/SDL3",
+        "Raylib"
+      ],
+      "package_manager": "vcpkg, Conan, CMake FetchContent",
+      "parents": [
+        {
+          "id": "b_lang",
+          "rel": "direct_evolution",
+          "note": "Dennis Ritchie added types, character arrays, and memory structs to Ken Thompson's B"
+        }
+      ],
+      "children": [
+        {
+          "id": "cpp",
+          "rel": "direct_evolution",
+          "note": "Bjarne Stroustrup added Simula classes and RAII to C, creating C++"
+        },
+        {
+          "id": "obj_c",
+          "rel": "crossbreed",
+          "note": "Brad Cox wrapped Smalltalk dynamic message dispatch inside C"
+        },
+        {
+          "id": "csharp",
+          "rel": "crossbreed",
+          "note": "C# used C/C++ syntactic structure over a managed runtime"
+        },
+        {
+          "id": "go",
+          "rel": "crossbreed",
+          "note": "Rob Pike & Ken Thompson simplified C with garbage collection and CSP channels"
+        },
+        {
+          "id": "zig",
+          "rel": "crossbreed",
+          "note": "Andrew Kelley redesigned C with comptime reflection and no hidden control flow"
+        },
+        {
+          "id": "odin",
+          "rel": "crossbreed",
+          "note": "Ginger Bill built Odin around C's speed with custom allocators for game engines"
+        }
+      ]
+    },
+    {
+      "id": "smalltalk",
+      "name": "Smalltalk (-72 / -80)",
+      "year": 1972,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Alan Kay, Dan Ingalls, Adele Goldberg (Xerox PARC)",
+      "paradigms": [
+        "Pure Dynamic Object-Oriented",
+        "Message-Passing",
+        "Reflective"
+      ],
+      "type_system": "Dynamic, Duck Typed",
+      "memory_model": "Managed Garbage Collection in an interactive live virtual image",
+      "runtime_profile": "Bytecode VM with JIT method cache; live dynamic image modification",
+      "compilation_targets": [
+        "Smalltalk Virtual Image Bytecode"
+      ],
+      "ffi_status": "Primitive system calls and external C hooks",
+      "game_relevance": "Pioneered desktop graphical user interfaces, bitmapped graphics, MVC architecture, and dynamic object messaging.",
+      "notable_projects": [
+        "Xerox Alto GUI",
+        "Squeak",
+        "Pharo"
+      ],
+      "package_manager": "Metacello",
+      "parents": [
+        {
+          "id": "simula",
+          "rel": "crossbreed",
+          "note": "Inherited the concept of objects as autonomous simulation entities"
+        },
+        {
+          "id": "lisp",
+          "rel": "crossbreed",
+          "note": "Inherited garbage collection, dynamic metaprogramming, and homoiconic environments"
+        }
+      ],
+      "children": [
+        {
+          "id": "obj_c",
+          "rel": "crossbreed",
+          "note": "Objective-C bolted Smalltalk's dynamic message syntax onto standard C"
+        },
+        {
+          "id": "ruby",
+          "rel": "crossbreed",
+          "note": "Matz made 'everything an object' in Ruby inspired directly by Smalltalk"
+        },
+        {
+          "id": "java",
+          "rel": "inspired_by",
+          "note": "Java took Smalltalk's single-rooted Object hierarchy and portable bytecode VM"
+        }
+      ]
+    },
+    {
+      "id": "ml",
+      "name": "ML (MetaLanguage)",
+      "year": 1973,
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "creator": "Robin Milner (University of Edinburgh)",
+      "paradigms": [
+        "Functional",
+        "Algebraic Types",
+        "Type-Inferred"
+      ],
+      "type_system": "Static, Strong, Parametric Polymorphism, Hindley-Milner Type Inference",
+      "memory_model": "Garbage Collected (Heap-allocated closures and algebraic data)",
+      "runtime_profile": "Compiled functional execution with pattern matching",
+      "compilation_targets": [
+        "Native Machine Code",
+        "Bytecode"
+      ],
+      "ffi_status": "Platform dependent",
+      "game_relevance": "Grandfather of modern type safety: pattern matching, algebraic data types (`Option`/`Result`), and compile-time inference.",
+      "notable_projects": [
+        "Edinburgh LCF theorem prover",
+        "Standard ML of New Jersey"
+      ],
+      "package_manager": "None",
+      "parents": [
+        {
+          "id": "lisp",
+          "rel": "inspired_by",
+          "note": "Inspired by typed lambda calculus and Lisp symbolic expressions"
+        }
+      ],
+      "children": [
+        {
+          "id": "ocaml",
+          "rel": "direct_evolution",
+          "note": "INRIA added an object-oriented module system and ultra-fast native compiler"
+        },
+        {
+          "id": "haskell",
+          "rel": "crossbreed",
+          "note": "Standardized non-strict purely functional evaluation with monads"
+        },
+        {
+          "id": "rust",
+          "rel": "crossbreed",
+          "note": "Rust borrowed pattern matching and enum algebraic types directly from ML/OCaml"
+        }
+      ]
+    },
+    {
+      "id": "scheme",
+      "name": "Scheme",
+      "year": 1975,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "creator": "Guy L. Steele & Gerald Jay Sussman (MIT AI Lab)",
+      "paradigms": [
+        "Functional",
+        "Minimalist",
+        "Lexical Scoping"
+      ],
+      "type_system": "Dynamic, Latent Strong Typing",
+      "memory_model": "Garbage Collection with first-class continuations (`call/cc`)",
+      "runtime_profile": "Proper tail call optimization mandatory in specification",
+      "compilation_targets": [
+        "Native Machine Code (Chez Scheme)",
+        "Bytecode"
+      ],
+      "ffi_status": "C FFI via foreign-procedure wrappers",
+      "game_relevance": "Used for AI scripting in early games and served as the secret functional engine inside JavaScript and Lua.",
+      "notable_projects": [
+        "Structure and Interpretation of Computer Programs (SICP)",
+        "Chez Scheme"
+      ],
+      "package_manager": "Akku",
+      "parents": [
+        {
+          "id": "lisp",
+          "rel": "direct_evolution",
+          "note": "Steele & Sussman redesigned Lisp around lexical scoping and formal actor semantics"
+        }
+      ],
+      "children": [
+        {
+          "id": "javascript",
+          "rel": "crossbreed",
+          "note": "Brendan Eich was hired to put Scheme in Netscape; wrapped it in Java-like syntax"
+        },
+        {
+          "id": "lua",
+          "rel": "crossbreed",
+          "note": "Lua's tables, lexical scoping, and minimal core were heavily influenced by Scheme"
+        }
+      ]
+    },
+    {
+      "id": "ada",
+      "name": "Ada",
+      "year": 1980,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Jean Ichbiah (CII Honeywell Bull for US DoD)",
+      "paradigms": [
+        "Structured",
+        "Concurrent (Rendezvous)",
+        "Mission-Critical Systems"
+      ],
+      "type_system": "Static, Extremely Strong, Range-checked, Nominal",
+      "memory_model": "Explicit Allocation + Deterministic Storage Pools; zero GC",
+      "runtime_profile": "Compiles to robust native machine code with compile-time contract verification (SPARK Ada)",
+      "compilation_targets": [
+        "Native Machine Code (GNAT / GCC)"
+      ],
+      "ffi_status": "Direct native C and assembly pragma interfaces",
+      "game_relevance": "Commercial avionics, railway safety, and military simulators where software crashes are physically catastrophic.",
+      "notable_projects": [
+        "Boeing 777 Fly-by-Wire Avionics",
+        "European High-Speed Rail Signaling",
+        "SPARK Verified Kernel"
+      ],
+      "package_manager": "Alire",
+      "parents": [
+        {
+          "id": "pascal",
+          "rel": "crossbreed",
+          "note": "Syntactic baseline and strong structural record typing from Pascal"
+        },
+        {
+          "id": "algol",
+          "rel": "inspired_by",
+          "note": "Block-structured architecture"
+        }
+      ],
+      "children": [
+        {
+          "id": "nim",
+          "rel": "inspired_by",
+          "note": "Nim borrowed range types and syntax safety from Ada"
+        }
+      ]
+    },
+    {
+      "id": "obj_c",
+      "name": "Objective-C",
+      "year": 1984,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Brad Cox & Tom Love (Stepstone)",
+      "paradigms": [
+        "Object-Oriented",
+        "Message-Passing",
+        "Systems"
+      ],
+      "type_system": "Static C types + Dynamic Smalltalk object messaging (`id`)",
+      "memory_model": "Manual Retain/Release evolving into Automatic Reference Counting (ARC)",
+      "runtime_profile": "C speed for data math + dynamic runtime method dispatch table (objc_msgSend)",
+      "compilation_targets": [
+        "Native Machine Code (LLVM/Clang)"
+      ],
+      "ffi_status": "100% transparent inline C and C++ (Objective-C++)",
+      "game_relevance": "Powered the original NeXTSTEP platform, DOOM's original level editor (DoomEd on NeXT), and all early iOS iPhone games.",
+      "notable_projects": [
+        "DoomEd (John Romero's level editor on NeXT)",
+        "NextSTEP / macOS Cocoa",
+        "Early App Store game catalog"
+      ],
+      "package_manager": "CocoaPods / Carthage",
+      "parents": [
+        {
+          "id": "c",
+          "rel": "crossbreed",
+          "note": "Underlying procedural foundation and raw memory pointer access"
+        },
+        {
+          "id": "smalltalk",
+          "rel": "crossbreed",
+          "note": "Bracketed dynamic message passing syntax: [receiver message]"
+        }
+      ],
+      "children": [
+        {
+          "id": "swift",
+          "rel": "direct_evolution",
+          "note": "Apple and Chris Lattner built Swift to replace Objective-C's pointer vulnerabilities"
+        }
+      ]
+    },
+    {
+      "id": "cpp",
+      "name": "C++",
+      "year": 1985,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Bjarne Stroustrup (Bell Labs)",
+      "paradigms": [
+        "Multi-paradigm",
+        "OOP",
+        "Generic (Templates)",
+        "RAII Systems"
+      ],
+      "type_system": "Static, Strong, Nominal, Type Inference (auto)",
+      "memory_model": "Manual RAII (unique_ptr/shared_ptr, custom arena allocators, stack frames)",
+      "runtime_profile": "Zero-cost abstractions; compile-time metaprogramming; deterministic destruction; no GC pauses",
+      "compilation_targets": [
+        "Native Machine Code (PC, Consoles, Mobile)",
+        "WebAssembly"
+      ],
+      "ffi_status": "Direct native C ABI compatibility via `extern 'C'`",
+      "game_relevance": "The undisputed king of AAA game engines, real-time graphics pipelines, physics engines, and GPU APIs.",
+      "notable_projects": [
+        "Unreal Engine",
+        "CryEngine",
+        "Godot Core",
+        "Source 2",
+        "PhysX / Chaos",
+        "Vulkan / DX12 headers"
+      ],
+      "package_manager": "vcpkg, Conan, CMake",
+      "parents": [
+        {
+          "id": "c",
+          "rel": "crossbreed",
+          "note": "100% C compatibility and raw pointer performance"
+        },
+        {
+          "id": "simula",
+          "rel": "crossbreed",
+          "note": "Classes, member functions, inheritance, and virtual method dispatch"
+        }
+      ],
+      "children": [
+        {
+          "id": "java",
+          "rel": "crossbreed",
+          "note": "Gosling stripped C++ of pointers and memory leaks, running it in a managed VM"
+        },
+        {
+          "id": "csharp",
+          "rel": "crossbreed",
+          "note": "Hejlsberg merged C++ performance with managed .NET components"
+        },
+        {
+          "id": "d_lang",
+          "rel": "direct_evolution",
+          "note": "Walter Bright designed D as a modern cleanup of C++ compilation issues"
+        },
+        {
+          "id": "rust",
+          "rel": "crossbreed",
+          "note": "Rust aimed to match C++ speed while completely eliminating memory corruption bugs"
+        }
+      ]
+    },
+    {
+      "id": "object_pascal",
+      "name": "Object Pascal (Delphi)",
+      "year": 1986,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "creator": "Anders Hejlsberg / Borland / Apple",
+      "paradigms": [
+        "Structured",
+        "Object-Oriented",
+        "Visual Rapid Application Development"
+      ],
+      "type_system": "Static, Strong, Nominal",
+      "memory_model": "Manual Object Instantiation (Create/Free) + Reference Counted Strings/Interfaces",
+      "runtime_profile": "Blazing fast compiler speed (<1 second full builds); standalone zero-dependency native binaries",
+      "compilation_targets": [
+        "Native Machine Code (Delphi / Free Pascal Compiler)"
+      ],
+      "ffi_status": "Direct native C calling conventions (cdecl, stdcall)",
+      "game_relevance": "Castle Game Engine; classic PC shareware games; FL Studio audio engine.",
+      "notable_projects": [
+        "Castle Game Engine",
+        "FL Studio audio engine",
+        "Total Commander",
+        "Inno Setup"
+      ],
+      "package_manager": "OPM (Lazarus) / GetIt (Delphi)",
+      "parents": [
+        {
+          "id": "pascal",
+          "rel": "direct_evolution",
+          "note": "Extended classic Pascal with class definitions, constructors, and virtual tables"
+        }
+      ],
+      "children": [
+        {
+          "id": "csharp",
+          "rel": "crossbreed",
+          "note": "Anders Hejlsberg brought Delphi's properties, component models, and visual design to C#"
+        }
+      ]
+    },
+    {
+      "id": "erlang",
+      "name": "Erlang",
+      "year": 1986,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Joe Armstrong, Robert Virding, Mike Williams (Ericsson)",
+      "paradigms": [
+        "Actor Model",
+        "Concurrent",
+        "Functional",
+        "Fault-Tolerant"
+      ],
+      "type_system": "Dynamic, Strong",
+      "memory_model": "Isolated process heaps (each lightweight actor has its own mini-GC; no shared state)",
+      "runtime_profile": "BEAM Virtual Machine; preemptive scheduling millions of lightweight processes; live code hot-swapping",
+      "compilation_targets": [
+        "BEAM Bytecode"
+      ],
+      "ffi_status": "NIFs (Native Implemented Functions in C)",
+      "game_relevance": "High-concurrency MMO game server backends, matchmaking servers, and chat platforms (Discord voice routing, WhatsApp).",
+      "notable_projects": [
+        "Discord audio infrastructure",
+        "Riot Games chat servers",
+        "RabbitMQ"
+      ],
+      "package_manager": "Hex",
+      "parents": [
+        {
+          "id": "prolog",
+          "rel": "crossbreed",
+          "note": "Original prototype implemented in Prolog; inherited pattern matching and logic unification"
+        },
+        {
+          "id": "smalltalk",
+          "rel": "inspired_by",
+          "note": "Erlang processes communicate strictly by sending immutable messages"
+        }
+      ],
+      "children": [
+        {
+          "id": "elixir",
+          "rel": "direct_evolution",
+          "note": "Jos\u00e9 Valim added Ruby-like ergonomics and macro metaprogramming to the Erlang BEAM"
+        }
+      ]
+    },
+    {
+      "id": "perl",
+      "name": "Perl",
+      "year": 1987,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Larry Wall",
+      "paradigms": [
+        "Scripting",
+        "Procedural",
+        "Text-Processing"
+      ],
+      "type_system": "Dynamic, Weak (Scalars, Arrays, Hashes: $, @, %)",
+      "memory_model": "Reference Counting Garbage Collection",
+      "runtime_profile": "Compiled into internal bytecode tree, then executed in fast C runtime",
+      "compilation_targets": [
+        "Perl Bytecode / C-based Interpreter"
+      ],
+      "ffi_status": "XS (Perl C extension interface)",
+      "game_relevance": "The glue code of early studio pipelines and build automation scripts in the 1990s.",
+      "notable_projects": [
+        "CPAN",
+        "Major 90s build scripts",
+        "Slashdot engine"
+      ],
+      "package_manager": "CPAN",
+      "parents": [
+        {
+          "id": "c",
+          "rel": "crossbreed",
+          "note": "C-style syntax and system call bindings"
+        },
+        {
+          "id": "basic",
+          "rel": "inspired_by",
+          "note": "Practical beginner scripting mindset"
+        }
+      ],
+      "children": [
+        {
+          "id": "python",
+          "rel": "crossbreed",
+          "note": "Python emerged as a cleaner, readable alternative to Perl's cryptic regex symbols"
+        },
+        {
+          "id": "ruby",
+          "rel": "crossbreed",
+          "note": "Matz blended Perl's text-processing power with Smalltalk's pure object model"
+        }
+      ]
+    },
+    {
+      "id": "haskell",
+      "name": "Haskell",
+      "year": 1990,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Lennart Augustsson, Dave Barton, Simon Peyton Jones, Philip Wadler",
+      "paradigms": [
+        "Pure Functional",
+        "Non-Strict (Lazy)",
+        "Type-Driven"
+      ],
+      "type_system": "Static, Extremely Strong, Higher-Kinded Types, Monadic Type Classes",
+      "memory_model": "Managed Tracing GC (Graph reduction engine with thunk evaluation)",
+      "runtime_profile": "Compiles to native machine code via GHC; multithreaded parallel green threads",
+      "compilation_targets": [
+        "Native Machine Code (GHC)",
+        "JavaScript (GHCJS)"
+      ],
+      "ffi_status": "Haskell Foreign Function Interface (FFI) to C",
+      "game_relevance": "Functional Reactive Programming (FRP) game research, procedural dungeon generators, and domain-specific game languages.",
+      "notable_projects": [
+        "GHC (Glasgow Haskell Compiler)",
+        "Pandoc",
+        "Nikki and the Robots"
+      ],
+      "package_manager": "Cabal / Stack",
+      "parents": [
+        {
+          "id": "ml",
+          "rel": "crossbreed",
+          "note": "Hindley-Milner type system and pattern matching from ML"
+        },
+        {
+          "id": "lisp",
+          "rel": "inspired_by",
+          "note": "Mathematical purity and lambda calculus"
+        }
+      ],
+      "children": [
+        {
+          "id": "rust",
+          "rel": "crossbreed",
+          "note": "Rust borrowed traits (type classes), sum types, and immutability defaults from Haskell"
+        }
+      ]
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "year": 1991,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Guido van Rossum (CWI Netherlands)",
+      "paradigms": [
+        "Object-Oriented",
+        "Imperative",
+        "Dynamic",
+        "Scripting"
+      ],
+      "type_system": "Dynamic, Strong, Duck-Typed (Optional Type Hints)",
+      "memory_model": "Reference Counting + Cyclic Garbage Collector (GIL in CPython)",
+      "runtime_profile": "Interpreted Bytecode VM; rapid iteration speed; accelerated via native C extensions",
+      "compilation_targets": [
+        "CPython Bytecode (.pyc)",
+        "PyPy JIT",
+        "WASM (Pyodide)"
+      ],
+      "ffi_status": "Direct CPython C API, ctypes, cffi, PyO3 (Rust bindings)",
+      "game_relevance": "The undisputed standard for 3D art pipelines (Blender, Maya), visual novels (Ren'Py), and educational 2D games (Pygame).",
+      "notable_projects": [
+        "Ren'Py Visual Novel Engine",
+        "Pygame / Pygame-CE",
+        "Blender Python API",
+        "EVE Online server logic"
+      ],
+      "package_manager": "pip / PyPI",
+      "parents": [
+        {
+          "id": "c",
+          "rel": "crossbreed",
+          "note": "Implemented in clean ANSI C with transparent C-extension module architecture"
+        },
+        {
+          "id": "perl",
+          "rel": "inspired_by",
+          "note": "Scripting practicality without Perl's visual punctuation clutter"
+        }
+      ],
+      "children": [
+        {
+          "id": "gdscript",
+          "rel": "crossbreed",
+          "note": "Godot modeled GDScript's whitespace indentation and concise syntax directly on Python"
+        },
+        {
+          "id": "nim",
+          "rel": "crossbreed",
+          "note": "Nim paired Python's clean indentation syntax with static C++ compilation"
+        }
+      ]
+    },
+    {
+      "id": "lua",
+      "name": "Lua",
+      "year": 1993,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Roberto Ierusalimschy, Luiz Henrique de Figueiredo, Waldemar Celes (PUC-Rio)",
+      "paradigms": [
+        "Multi-paradigm",
+        "Prototype-based",
+        "Data-Driven",
+        "Procedural"
+      ],
+      "type_system": "Dynamic, Duck-Typed (Numbers, Strings, Booleans, Tables)",
+      "memory_model": "Incremental / Generational Mark-and-Sweep Garbage Collection",
+      "runtime_profile": "Ultra-compact embedded C footprint (<300KB); LuaJIT is one of the fastest dynamic compilers in existence",
+      "compilation_targets": [
+        "Lua Bytecode",
+        "LuaJIT Native Machine Code",
+        "Direct C Embedding"
+      ],
+      "ffi_status": "Extremely clean C Stack API; LuaJIT includes a near zero-overhead C FFI",
+      "game_relevance": "The most widely embedded runtime scripting language in video game history (Defold, L\u00d6VE, World of Warcraft, Roblox, PICO-8).",
+      "notable_projects": [
+        "World of Warcraft UI",
+        "Roblox (Luau)",
+        "L\u00d6VE (Love2D)",
+        "Defold",
+        "PICO-8",
+        "Balatro"
+      ],
+      "package_manager": "LuaRocks",
+      "parents": [
+        {
+          "id": "c",
+          "rel": "crossbreed",
+          "note": "Engineered strictly as an ANSI C library to embed inside host game runtimes"
+        },
+        {
+          "id": "scheme",
+          "rel": "crossbreed",
+          "note": "Inherited associative arrays (tables), lexical scoping, and first-class functions"
+        }
+      ],
+      "children": [
+        {
+          "id": "luau",
+          "rel": "fork",
+          "note": "Roblox's official high-performance typed fork of Lua 5.1"
+        },
+        {
+          "id": "gdscript",
+          "rel": "crossbreed",
+          "note": "Godot adopted Lua's light embedding architecture and table data structures"
+        }
+      ]
+    },
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "year": 1995,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Yukihiro Matsumoto (Matz)",
+      "paradigms": [
+        "Pure Object-Oriented",
+        "Dynamic",
+        "Reflective",
+        "Functional-lite"
+      ],
+      "type_system": "Dynamic, Strong, Duck-Typed",
+      "memory_model": "Generational Tracing Garbage Collection (RGenGC)",
+      "runtime_profile": "YARV Bytecode VM; compiles to native C in DragonRuby GTK using mruby",
+      "compilation_targets": [
+        "YARV Bytecode",
+        "mruby C compilation (DragonRuby)"
+      ],
+      "ffi_status": "Ruby C extension API, FFI gem",
+      "game_relevance": "The scripting backbone of classic RPG Maker (XP, VX, VX Ace via RGSS) and modern 60 FPS indie 2D engine DragonRuby GTK.",
+      "notable_projects": [
+        "RPG Maker XP / VX Ace (RGSS)",
+        "DragonRuby GTK",
+        "A Dark Room (Switch port)"
+      ],
+      "package_manager": "RubyGems / Bundler",
+      "parents": [
+        {
+          "id": "smalltalk",
+          "rel": "crossbreed",
+          "note": "Pure object-oriented model where every literal number and boolean is an object"
+        },
+        {
+          "id": "perl",
+          "rel": "crossbreed",
+          "note": "Command-line scripting ergonomics and regular expressions"
+        }
+      ],
+      "children": [
+        {
+          "id": "elixir",
+          "rel": "crossbreed",
+          "note": "Elixir adopted Ruby's syntax to bring developer joy to the Erlang BEAM runtime"
+        }
+      ]
+    },
+    {
+      "id": "java",
+      "name": "Java",
+      "year": 1995,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "James Gosling (Sun Microsystems)",
+      "paradigms": [
+        "Object-Oriented",
+        "Class-based",
+        "Structured Concurrent"
+      ],
+      "type_system": "Static, Strong, Nominal, Generics (Type Erasure)",
+      "memory_model": "Generational Tracing Garbage Collection (G1, ZGC, Shenandoah)",
+      "runtime_profile": "JVM HotSpot JIT compiler; adaptive optimization; Android ART execution",
+      "compilation_targets": [
+        "JVM Bytecode (.class / .jar)",
+        "Android DEX bytecode",
+        "GraalVM Native Image"
+      ],
+      "ffi_status": "JNI (Java Native Interface) and modern Project Panama (FFM API)",
+      "game_relevance": "Built Minecraft Java Edition (the best-selling game of all time), LibGDX, RuneScape, and Android native games.",
+      "notable_projects": [
+        "Minecraft (original Java Edition)",
+        "Slay the Spire (original LibGDX release)",
+        "Mindustry",
+        "RuneScape Classic"
+      ],
+      "package_manager": "Maven / Gradle",
+      "parents": [
+        {
+          "id": "cpp",
+          "rel": "crossbreed",
+          "note": "Familiar C++ syntax stripped of manual pointers, multiple inheritance, and header files"
+        },
+        {
+          "id": "smalltalk",
+          "rel": "inspired_by",
+          "note": "Bytecode virtual machine and universal single-root `java.lang.Object` hierarchy"
+        }
+      ],
+      "children": [
+        {
+          "id": "csharp",
+          "rel": "crossbreed",
+          "note": "Microsoft designed C# as a direct modern competitor to Java"
+        },
+        {
+          "id": "kotlin",
+          "rel": "direct_evolution",
+          "note": "JetBrains built Kotlin as a concise, 100% interoperable replacement for Java"
+        },
+        {
+          "id": "scala",
+          "rel": "crossbreed",
+          "note": "Unified OOP and functional programming on top of the JVM"
+        }
+      ]
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "year": 1995,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Brendan Eich (Netscape)",
+      "paradigms": [
+        "Event-Driven",
+        "Prototype-based",
+        "Functional",
+        "Imperative"
+      ],
+      "type_system": "Dynamic, Weak",
+      "memory_model": "Generational Tracing Garbage Collection (V8, SpiderMonkey, JavaScriptCore)",
+      "runtime_profile": "Multi-tier dynamic JIT compilers; asynchronous single-threaded event loop",
+      "compilation_targets": [
+        "Browser JS Runtimes (V8, SM, JSC)",
+        "Node.js",
+        "QuickJS embedded"
+      ],
+      "ffi_status": "WebAssembly FFI; Node.js N-API",
+      "game_relevance": "The native runtime language of all browser WebGL/WebGPU games (Phaser, Three.js, Babylon.js, Construct 3, RPG Maker MZ).",
+      "notable_projects": [
+        "Phaser 3",
+        "Three.js",
+        "Babylon.js",
+        "Construct 3 runtime",
+        "RPG Maker MZ plugins"
+      ],
+      "package_manager": "npm / yarn / pnpm",
+      "parents": [
+        {
+          "id": "scheme",
+          "rel": "crossbreed",
+          "note": "First-class functions, closures, and functional lambda core"
+        },
+        {
+          "id": "java",
+          "rel": "inspired_by",
+          "note": "Syntax styled to look like Java for Netscape marketing purposes"
+        }
+      ],
+      "children": [
+        {
+          "id": "typescript",
+          "rel": "direct_evolution",
+          "note": "Anders Hejlsberg built TypeScript as a compile-time static type system over JS"
+        },
+        {
+          "id": "actionscript",
+          "rel": "direct_evolution",
+          "note": "Adobe ActionScript 3.0 standardized ECMAScript for Flash games"
+        }
+      ]
+    },
+    {
+      "id": "ocaml",
+      "name": "OCaml",
+      "year": 1996,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "creator": "Xavier Leroy, Damien Doligez, Alain Frisch (INRIA)",
+      "paradigms": [
+        "Functional",
+        "Imperative",
+        "Object-Oriented Modules"
+      ],
+      "type_system": "Static, Strong, Hindley-Milner Inference, Structural Variants",
+      "memory_model": "Generational Stop-and-Copy GC (Extremely fast minor heap allocations)",
+      "runtime_profile": "Blazing fast native machine code compiler; rivaling C in algorithmic tasks",
+      "compilation_targets": [
+        "Native Machine Code",
+        "Bytecode",
+        "JavaScript (js_of_ocaml)"
+      ],
+      "ffi_status": "Clean C interface with memory-safe value representations",
+      "game_relevance": "Used to write the original compiler for Rust (`rustc` was originally in OCaml) and Haxe compiler toolchains.",
+      "notable_projects": [
+        "Original Rust compiler (2006-2010)",
+        "Haxe compiler",
+        "Coq theorem prover"
+      ],
+      "package_manager": "opam",
+      "parents": [
+        {
+          "id": "ml",
+          "rel": "direct_evolution",
+          "note": "INRIA added object-oriented parameterized modules and a fast native codegen to ML"
+        }
+      ],
+      "children": [
+        {
+          "id": "rust",
+          "rel": "crossbreed",
+          "note": "Graydon Hoare initially prototyped Rust in OCaml, adopting its pattern matching and sum types"
+        },
+        {
+          "id": "haxe",
+          "rel": "inspired_by",
+          "note": "Nicolas Cannasse authored the Haxe compiler in OCaml"
+        }
+      ]
+    },
+    {
+      "id": "csharp",
+      "name": "C# (.NET)",
+      "year": 2000,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Anders Hejlsberg (Microsoft)",
+      "paradigms": [
+        "Object-Oriented",
+        "Component-Oriented",
+        "Generic",
+        "Functional-lite"
+      ],
+      "type_system": "Static, Strong, Nominal, Type Inference (var)",
+      "memory_model": "Managed Generational GC (Gen 0/1/2, LOH) + Native Unmanaged Memory (Span<T>, Memory<T>)",
+      "runtime_profile": "JIT / Native AOT / CoreCLR; IL2CPP translates C# bytecode to native C++ for mobile & consoles",
+      "compilation_targets": [
+        "CIL Bytecode",
+        "Native AOT",
+        "WebAssembly",
+        "IL2CPP (Native C++)"
+      ],
+      "ffi_status": "P/Invoke with NativeLibrary and high-speed C# unmanaged function pointers",
+      "game_relevance": "The dominant gameplay scripting language of modern indie & AA games (Unity, Godot C#, Flax, Stride, MonoGame).",
+      "notable_projects": [
+        "Unity Engine",
+        "MonoGame",
+        "Hollow Knight",
+        "Celeste",
+        "Stardew Valley",
+        "Subnautica"
+      ],
+      "package_manager": "NuGet",
+      "parents": [
+        {
+          "id": "cpp",
+          "rel": "crossbreed",
+          "note": "C-style curly brace syntax and systems programming ambition"
+        },
+        {
+          "id": "java",
+          "rel": "crossbreed",
+          "note": "Bytecode intermediate representation running inside a safe managed runtime"
+        },
+        {
+          "id": "object_pascal",
+          "rel": "crossbreed",
+          "note": "Anders Hejlsberg brought Delphi's properties, events, and component architecture to C#"
+        }
+      ],
+      "children": [
+        {
+          "id": "typescript",
+          "rel": "inspired_by",
+          "note": "Anders Hejlsberg applied C# type ergonomics to JavaScript"
+        },
+        {
+          "id": "kotlin",
+          "rel": "inspired_by",
+          "note": "Kotlin borrowed properties, extension functions, and reified generics from C#"
+        }
+      ]
+    },
+    {
+      "id": "d_lang",
+      "name": "D",
+      "year": 2001,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "creator": "Walter Bright (Digital Mars) & Andrei Alexandrescu",
+      "paradigms": [
+        "Systems",
+        "Multi-paradigm",
+        "Metaprogramming",
+        "Generic"
+      ],
+      "type_system": "Static, Strong, Design by Contract, Compile-Time Function Execution (CTFE)",
+      "memory_model": "Garbage Collected by default; `@nogc` attribute allows strict manual RAII allocation",
+      "runtime_profile": "Native machine code via DMD, GDC (GCC), or LDC (LLVM); CTFE evaluates complex logic at compile time",
+      "compilation_targets": [
+        "Native Machine Code (All architectures)"
+      ],
+      "ffi_status": "Direct native C and C++ ABI interoperability (`extern(C++)`)",
+      "game_relevance": "Remedy Entertainment used D in production; loved by systems programmers wanting C++ power with clean compilation.",
+      "notable_projects": [
+        "Quantum Break asset tools (Remedy)",
+        "DRuntime",
+        "Mir scientific library"
+      ],
+      "package_manager": "DUB",
+      "parents": [
+        {
+          "id": "cpp",
+          "rel": "direct_evolution",
+          "note": "Walter Bright designed D as a modern cleanup of C++ without legacy preprocessor baggage"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "haxe",
+      "name": "Haxe",
+      "year": 2005,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Nicolas Cannasse",
+      "paradigms": [
+        "Multi-paradigm",
+        "Object-Oriented",
+        "Generic",
+        "Functional"
+      ],
+      "type_system": "Static, Strong, Nominal with Structural Subtyping, Algebraic Types",
+      "memory_model": "Adapts to target: GC on HashLink/JS/JVM; manual/managed on native C++ (hxcpp)",
+      "runtime_profile": "Universal transpiler: compiles to C++, HashLink C, JavaScript, JVM, or C#",
+      "compilation_targets": [
+        "C++ (hxcpp)",
+        "HashLink (HL/C)",
+        "JavaScript",
+        "JVM",
+        "C#"
+      ],
+      "ffi_status": "Direct native C/C++ bindings via hxcpp and HashLink C extensions",
+      "game_relevance": "Indie secret weapon: write high-level gameplay once and compile to native C++ for turnkey console releases.",
+      "notable_projects": [
+        "Dead Cells (Motion Twin)",
+        "Northgard",
+        "Friday Night Funkin'",
+        "Dicey Dungeons",
+        "Heaps.io"
+      ],
+      "package_manager": "Haxelib",
+      "parents": [
+        {
+          "id": "actionscript",
+          "rel": "crossbreed",
+          "note": "Born from Motion Twin's open-source Flash ActionScript compiler (MTASC)"
+        },
+        {
+          "id": "ocaml",
+          "rel": "crossbreed",
+          "note": "Haxe compiler written in OCaml, adopting pattern matching and algebraic enums"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "actionscript",
+      "name": "ActionScript (3.0)",
+      "year": 2006,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "creator": "Gary Grossman / Macromedia / Adobe",
+      "paradigms": [
+        "Object-Oriented",
+        "Event-Driven",
+        "Class-based"
+      ],
+      "type_system": "Static, Strong, Nominal Type Checking",
+      "memory_model": "Mark-and-Sweep Garbage Collection inside Adobe Flash Player (AVM2)",
+      "runtime_profile": "Just-In-Time compiled bytecode running inside Flash Virtual Machine",
+      "compilation_targets": [
+        "SWF Bytecode (AVM2)"
+      ],
+      "ffi_status": "Alchemy / FlasCC native C compilation to SWF",
+      "game_relevance": "Powered the golden age of web browser indie games (Newgrounds, Armor Games, Kongregate) and early indies.",
+      "notable_projects": [
+        "The Binding of Isaac (original)",
+        "Meat Boy prototype",
+        "Canabalt",
+        "Flixel framework"
+      ],
+      "package_manager": "None",
+      "parents": [
+        {
+          "id": "javascript",
+          "rel": "direct_evolution",
+          "note": "Standardized around the ECMAScript 4 draft with classes and strong types"
+        }
+      ],
+      "children": [
+        {
+          "id": "haxe",
+          "rel": "direct_evolution",
+          "note": "Nicolas Cannasse created Haxe to break free from proprietary Flash VM locks"
+        }
+      ]
+    },
+    {
+      "id": "clojure",
+      "name": "Clojure",
+      "year": 2007,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "creator": "Rich Hickey",
+      "paradigms": [
+        "Functional",
+        "Homoiconic Lisp",
+        "Concurrent"
+      ],
+      "type_system": "Dynamic, Strong",
+      "memory_model": "JVM Managed GC with persistent immutable data structures and Software Transactional Memory (STM)",
+      "runtime_profile": "Compiles directly to JVM bytecode; runs on Java HotSpot with zero reflection overhead",
+      "compilation_targets": [
+        "JVM Bytecode",
+        "JavaScript (ClojureScript)"
+      ],
+      "ffi_status": "Transparent Java interop",
+      "game_relevance": "Used for multiplayer backend simulation and data-driven generative audio synthesis.",
+      "notable_projects": [
+        "Overtone audio synth",
+        "Datomic database",
+        "Arcadia (Clojure in Unity)"
+      ],
+      "package_manager": "Clojure CLI / Leiningen",
+      "parents": [
+        {
+          "id": "lisp",
+          "rel": "direct_evolution",
+          "note": "Modernized classic Lisp around immutability, thread safety, and standard JVM infrastructure"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "nim",
+      "name": "Nim",
+      "year": 2008,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Andreas Rumpf",
+      "paradigms": [
+        "Multi-paradigm",
+        "Procedural",
+        "AST Metaprogramming",
+        "Imperative"
+      ],
+      "type_system": "Static, Strong, Type Inference",
+      "memory_model": "ARC / ORC (Deterministic Automatic Reference Counting with Cycle Collector) or Manual Allocators",
+      "runtime_profile": "Compiles directly to clean, human-readable C or C++; native machine binary with zero GC pauses under ARC",
+      "compilation_targets": [
+        "C",
+        "C++",
+        "Objective-C",
+        "JavaScript"
+      ],
+      "ffi_status": "Seamless zero-cost C/C++ header inclusion and FFI",
+      "game_relevance": "Beloved by indie systems programmers who want Python's readability with raw C/C++ speed and no GC latency.",
+      "notable_projects": [
+        "Status Ethereum client",
+        "Nico 2D game engine",
+        "NimGL bindings"
+      ],
+      "package_manager": "Nimble",
+      "parents": [
+        {
+          "id": "python",
+          "rel": "crossbreed",
+          "note": "Indentation-based whitespace syntax and readable control flow"
+        },
+        {
+          "id": "c",
+          "rel": "crossbreed",
+          "note": "Compiles down directly to portable C with pointer efficiency"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "go",
+      "name": "Go (Golang)",
+      "year": 2009,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Robert Griesemer, Rob Pike, Ken Thompson (Google)",
+      "paradigms": [
+        "Concurrent (CSP)",
+        "Imperative",
+        "Structural"
+      ],
+      "type_system": "Static, Strong, Structural Typing (Interfaces)",
+      "memory_model": "Concurrent Mark-and-Sweep Garbage Collection (Sub-millisecond pause guarantees)",
+      "runtime_profile": "Extremely fast compilation; lightweight goroutines scheduled on M:N user-space runtime thread pool",
+      "compilation_targets": [
+        "Native Machine Code",
+        "WebAssembly"
+      ],
+      "ffi_status": "cgo (C bindings)",
+      "game_relevance": "Standard workhorse for scalable game server backends, matchmaking microservices, and 2D games via Ebitengine.",
+      "notable_projects": [
+        "Ebitengine 2D game library",
+        "Riot Games multiplayer backends",
+        "Docker & Kubernetes"
+      ],
+      "package_manager": "Go Modules",
+      "parents": [
+        {
+          "id": "c",
+          "rel": "crossbreed",
+          "note": "C-style pointer structs and systems performance without C++ template bloat"
+        },
+        {
+          "id": "pascal",
+          "rel": "inspired_by",
+          "note": "Clean keyword declarations and concise structural typing"
+        }
+      ],
+      "children": [
+        {
+          "id": "odin",
+          "rel": "inspired_by",
+          "note": "Odin borrowed Go's multi-return syntax and clean package declarations"
+        }
+      ]
+    },
+    {
+      "id": "rust",
+      "name": "Rust",
+      "year": 2010,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Graydon Hoare (Mozilla Research)",
+      "paradigms": [
+        "Safe Systems",
+        "Data-Oriented / ECS-friendly",
+        "Functional-inspired"
+      ],
+      "type_system": "Static, Strong, Affine / Ownership Lifetimes, Trait System, Full HM Inference",
+      "memory_model": "Compile-time Ownership & Borrow Checker; Zero Garbage Collection; Thread-safe `Send`/`Sync`",
+      "runtime_profile": "Native machine code via LLVM; matches C++ speed while mathematically preventing data races and memory corruption",
+      "compilation_targets": [
+        "Native Machine Code (All ISAs)",
+        "WebAssembly (wasm32-unknown-unknown)"
+      ],
+      "ffi_status": "Direct native C ABI compatibility via `extern 'C'`",
+      "game_relevance": "Leading the modern code-first game engine revolution and data-oriented entity component systems (Bevy, Fyrox, WGPU).",
+      "notable_projects": [
+        "Bevy Engine",
+        "Fyrox",
+        "Veloren MMO",
+        "WGPU graphics abstraction",
+        "Rapier physics"
+      ],
+      "package_manager": "Cargo / crates.io",
+      "parents": [
+        {
+          "id": "cpp",
+          "rel": "crossbreed",
+          "note": "Zero-overhead abstractions and deterministic RAII destruction"
+        },
+        {
+          "id": "ocaml",
+          "rel": "crossbreed",
+          "note": "Original compiler in OCaml; pattern matching, sum types, and option types"
+        },
+        {
+          "id": "c",
+          "rel": "crossbreed",
+          "note": "Native machine performance, manual layout control, and raw pointers in unsafe blocks"
+        }
+      ],
+      "children": [
+        {
+          "id": "swift",
+          "rel": "crossbreed",
+          "note": "Swift adopted Rust's memory safety principles and pattern matching ergonomics"
+        },
+        {
+          "id": "zig",
+          "rel": "inspired_by",
+          "note": "Zig formed as a simpler C-replacement alternative to Rust's complex borrow checker"
+        }
+      ]
+    },
+    {
+      "id": "kotlin",
+      "name": "Kotlin",
+      "year": 2011,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "JetBrains",
+      "paradigms": [
+        "Multi-paradigm",
+        "Object-Oriented",
+        "Functional",
+        "Concise Safe"
+      ],
+      "type_system": "Static, Strong, Null-Safety in type system, Type Inference",
+      "memory_model": "JVM Managed GC / Kotlin Native reference counting",
+      "runtime_profile": "100% interoperable with Java; compiles to JVM bytecode with lightweight async Coroutines",
+      "compilation_targets": [
+        "JVM Bytecode",
+        "Native Machine Code (Kotlin/Native)",
+        "JavaScript",
+        "WASM"
+      ],
+      "ffi_status": "Direct Java interop; C ABI interop via Kotlin/Native cinterop",
+      "game_relevance": "Preferred modern language for Android mobile games, LibGDX Kotlin games, and the KorGE multiplatform game engine.",
+      "notable_projects": [
+        "KorGE Game Engine",
+        "Android Game SDKs",
+        "Jetpack Compose"
+      ],
+      "package_manager": "Gradle / Maven",
+      "parents": [
+        {
+          "id": "java",
+          "rel": "direct_evolution",
+          "note": "Designed as a concise, 100% binary-compatible upgrade over Java"
+        },
+        {
+          "id": "csharp",
+          "rel": "crossbreed",
+          "note": "Properties, extension methods, and reified generics borrowed from C#"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "year": 2012,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "creator": "Anders Hejlsberg (Microsoft)",
+      "paradigms": [
+        "Multi-paradigm",
+        "Structural",
+        "Functional",
+        "Object-Oriented"
+      ],
+      "type_system": "Static, Structural, Gradual, Generics with advanced union and mapped types",
+      "memory_model": "Identical to JavaScript (Runs on browser/V8 GC engines)",
+      "runtime_profile": "Transpiles directly to clean JavaScript; zero runtime type-checking overhead",
+      "compilation_targets": [
+        "JavaScript (ES5 through ESNext)"
+      ],
+      "ffi_status": "Inherits JavaScript's WebAssembly and native bindings",
+      "game_relevance": "The gold standard for modern 3D web games, WebGPU pipelines, and cross-platform mobile mini-games (Cocos Creator 3, PlayCanvas).",
+      "notable_projects": [
+        "Cocos Creator 3",
+        "Babylon.js",
+        "PlayCanvas",
+        "Excalibur.js"
+      ],
+      "package_manager": "npm / yarn / pnpm",
+      "parents": [
+        {
+          "id": "javascript",
+          "rel": "direct_evolution",
+          "note": "Strict syntactic superset: all valid JavaScript is valid TypeScript"
+        },
+        {
+          "id": "csharp",
+          "rel": "inspired_by",
+          "note": "Anders Hejlsberg applied C# type engineering rigor to JavaScript"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "elixir",
+      "name": "Elixir",
+      "year": 2012,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Jos\u00e9 Valim (Plataformatec)",
+      "paradigms": [
+        "Functional",
+        "Actor Model",
+        "Concurrent",
+        "Macro Metaprogramming"
+      ],
+      "type_system": "Dynamic, Strong, Pattern Matching",
+      "memory_model": "Per-process isolated heap garbage collection on the Erlang BEAM runtime",
+      "runtime_profile": "Runs on the Erlang BEAM VM; fault-tolerant supervision trees and millions of concurrent actors",
+      "compilation_targets": [
+        "BEAM Bytecode"
+      ],
+      "ffi_status": "Erlang NIFs in C/Rust",
+      "game_relevance": "High-scale real-time multiplayer game servers, web socket lobbies, and matchmaking infrastructure.",
+      "notable_projects": [
+        "Phoenix LiveView",
+        "Multiplayer matchmaking backends"
+      ],
+      "package_manager": "Hex",
+      "parents": [
+        {
+          "id": "erlang",
+          "rel": "crossbreed",
+          "note": "Built on top of the battle-tested Erlang BEAM virtual machine"
+        },
+        {
+          "id": "ruby",
+          "rel": "crossbreed",
+          "note": "Borrowed Ruby's elegant developer-friendly syntax and pipeline operators"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "swift",
+      "name": "Swift",
+      "year": 2014,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Chris Lattner, Doug Gregor, John McCall (Apple)",
+      "paradigms": [
+        "Protocol-Oriented",
+        "Functional",
+        "Object-Oriented",
+        "Safe Systems"
+      ],
+      "type_system": "Static, Strong, Inferred, Generics with Protocol Extensions",
+      "memory_model": "Automatic Reference Counting (ARC) with compile-time non-copyable ownership types",
+      "runtime_profile": "Compiles to native machine code via LLVM; fast dynamic runtime without tracing GC pauses",
+      "compilation_targets": [
+        "Native Machine Code (iOS, macOS, Linux, Windows)"
+      ],
+      "ffi_status": "Bidirectional C and C++ direct interop (no bridge required)",
+      "game_relevance": "Apple platforms native games (Metal graphics API, RealityKit, Game Center, SceneKit).",
+      "notable_projects": [
+        "RealityKit for VisionPro",
+        "Metal shader pipelines",
+        "Apple Arcade native titles"
+      ],
+      "package_manager": "Swift Package Manager (SPM)",
+      "parents": [
+        {
+          "id": "obj_c",
+          "rel": "direct_evolution",
+          "note": "Designed by Apple to replace Objective-C while seamlessly bridging Cocoa APIs"
+        },
+        {
+          "id": "rust",
+          "rel": "crossbreed",
+          "note": "Borrowed optionals, pattern matching, value semantics, and ownership ideas"
+        },
+        {
+          "id": "python",
+          "rel": "inspired_by",
+          "note": "Clean, concise syntax and interactive Playgrounds"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "gdscript",
+      "name": "GDScript",
+      "year": 2014,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Juan Linietsky (Godot Engine)",
+      "paradigms": [
+        "Object-Oriented",
+        "Imperative",
+        "Scene-Tree Native"
+      ],
+      "type_system": "Gradual / Optional Static Typing (Typed GDScript 2.0 with JIT)",
+      "memory_model": "Reference Counting for Objects / Resources; deterministic engine memory handling",
+      "runtime_profile": "Custom Godot Bytecode VM; deeply integrated with C++ core avoiding marshalling overhead",
+      "compilation_targets": [
+        "Godot Bytecode VM"
+      ],
+      "ffi_status": "Native C++ GDExtension ABI binding",
+      "game_relevance": "Engineered exclusively for video game creation inside Godot Engine; optimized for 60 FPS scene tree traversal.",
+      "notable_projects": [
+        "Godot Engine",
+        "Brotato",
+        "Dome Keeper",
+        "Cassette Beasts",
+        "Slay the Spire 2"
+      ],
+      "package_manager": "Godot Asset Library",
+      "parents": [
+        {
+          "id": "python",
+          "rel": "crossbreed",
+          "note": "Pythonic whitespace indentation and variable declaration syntax"
+        },
+        {
+          "id": "lua",
+          "rel": "crossbreed",
+          "note": "Lightweight C++ embedding model and associative dictionary structures"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "zig",
+      "name": "Zig",
+      "year": 2015,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Andrew Kelley",
+      "paradigms": [
+        "Imperative",
+        "Procedural",
+        "Comptime Metaprogramming"
+      ],
+      "type_system": "Static, Strong, Types as First-Class Compile-Time Values",
+      "memory_model": "Explicit Manual Allocation (Zero hidden allocations; allocators passed explicitly)",
+      "runtime_profile": "Native machine code via LLVM and self-hosted backend; rivals or beats C performance",
+      "compilation_targets": [
+        "Native Machine Code (x86, ARM, RISC-V, WASM)"
+      ],
+      "ffi_status": "Direct C header ingestion (`@cImport`) and native C ABI export; can compile C/C++ directly via `zig cc`",
+      "game_relevance": "Emerging as the favorite modern C replacement for low-level game engines, Vulkan graphics, and custom game loops.",
+      "notable_projects": [
+        "Bun JS runtime",
+        "Mach Engine",
+        "ZLS (Zig Language Server)"
+      ],
+      "package_manager": "Zig Package Manager (build.zig.zon)",
+      "parents": [
+        {
+          "id": "c",
+          "rel": "crossbreed",
+          "note": "C memory model, transparent pointers, and direct C header parsing without wrappers"
+        },
+        {
+          "id": "rust",
+          "rel": "inspired_by",
+          "note": "Reaction against Rust's complex borrow checker, choosing explicit manual allocators and comptime"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "odin",
+      "name": "Odin",
+      "year": 2016,
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "creator": "Ginger Bill",
+      "paradigms": [
+        "Imperative",
+        "Data-Oriented",
+        "Procedural",
+        "Custom Memory Context"
+      ],
+      "type_system": "Static, Strong, Distinct Types, Polymorphic Procedures",
+      "memory_model": "Explicit Allocation (Arena, Pool, Temp Allocators built into thread-local Context)",
+      "runtime_profile": "Native LLVM machine code; engineered expressly for high-performance graphical applications and games",
+      "compilation_targets": [
+        "Native Machine Code (x86, ARM, WASM)"
+      ],
+      "ffi_status": "Direct native C ABI interop",
+      "game_relevance": "Gaining rapid momentum in professional indie dev; used to build the complete custom rendering engine for Emberward.",
+      "notable_projects": [
+        "Emberward",
+        "Spall Profiler",
+        "Vendor Raylib & Sokol bindings"
+      ],
+      "package_manager": "Vendor packages / Git submodules",
+      "parents": [
+        {
+          "id": "c",
+          "rel": "crossbreed",
+          "note": "C-style raw performance, structs, and pointer arithmetic"
+        },
+        {
+          "id": "pascal",
+          "rel": "crossbreed",
+          "note": "Clean parameter syntax, range checks, and distinct typing"
+        },
+        {
+          "id": "go",
+          "rel": "inspired_by",
+          "note": "Multiple return values and package declarations"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "luau",
+      "name": "Luau",
+      "year": 2019,
+      "lineage_type": "Hard Fork",
+      "badge_class": "badge-fork",
+      "creator": "Roblox Corporation",
+      "paradigms": [
+        "Gradually Typed",
+        "Sandboxed Scripting",
+        "Prototype-based"
+      ],
+      "type_system": "Gradual / Static Type Checking with Type Inference",
+      "memory_model": "Incremental Garbage Collection with security-hardened memory sandbox",
+      "runtime_profile": "Extremely fast bytecode VM with SIMD optimizations; sandboxed against arbitrary C calls",
+      "compilation_targets": [
+        "Luau Bytecode"
+      ],
+      "ffi_status": "Strictly sandboxed (No raw C pointers for security)",
+      "game_relevance": "Powers all games, simulations, and user-generated experiences on the Roblox platform for over 70 million daily players.",
+      "notable_projects": [
+        "Roblox Game Engine",
+        "Luau CLI",
+        "Rojo build system"
+      ],
+      "package_manager": "Wally / Pesde",
+      "parents": [
+        {
+          "id": "lua",
+          "rel": "fork",
+          "note": "Hard fork of Lua 5.1 created by Roblox to add static typing and sandboxing"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "purebasic",
+      "name": "PureBasic",
+      "year": 1998,
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "creator": "Fantaisie Software (Fr\u00e9d\u00e9ric Laboureur)",
+      "paradigms": [
+        "Procedural",
+        "Imperative",
+        "Desktop Systems"
+      ],
+      "type_system": "Static, Weak",
+      "memory_model": "Manual Allocation + Built-in dynamic lists and maps",
+      "runtime_profile": "Compiles directly to tiny, lightning-fast native assembly executables; no runtime DLLs required",
+      "compilation_targets": [
+        "Native Machine Code (via FASM or C backend)"
+      ],
+      "ffi_status": "Direct native C and Windows/POSIX API calling",
+      "game_relevance": "Shipped with built-in 2D game library and native 3D OGRE engine integration.",
+      "notable_projects": [
+        "PureBasic IDE",
+        "Indie retro desktop games",
+        "Lightweight system utilities"
+      ],
+      "package_manager": "User Forums / Libs",
+      "parents": [
+        {
+          "id": "basic",
+          "rel": "direct_evolution",
+          "note": "Modernized line-free BASIC compiling directly to native assembly"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

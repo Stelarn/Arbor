@@ -1,0 +1,882 @@
+{
+  "items": [
+    {
+      "id": "pie",
+      "name": "Proto-Indo-European (PIE)",
+      "year": -4000,
+      "year_display": "c. 4000 BCE",
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "family": "Indo-European",
+      "script": "Unwritten (Reconstructed Kurgan / Steppe hypothesis)",
+      "speakers": "Extinct ancestral speech community",
+      "desc": "The reconstructed linguistic ancestor of over 400 languages spoken by nearly 3 billion people today.",
+      "parents": [],
+      "children": [
+        {
+          "id": "proto_germanic",
+          "rel": "direct_evolution",
+          "note": "Grimm's Law consonant shifts"
+        },
+        {
+          "id": "italic_latin",
+          "rel": "direct_evolution",
+          "note": "Italic branch in Italian peninsula"
+        },
+        {
+          "id": "hellenic_greek",
+          "rel": "direct_evolution",
+          "note": "Mycenaean & Ancient Greek branch"
+        },
+        {
+          "id": "indo_iranian",
+          "rel": "direct_evolution",
+          "note": "Sanskrit, Avestan and Persian branch"
+        },
+        {
+          "id": "balto_slavic",
+          "rel": "direct_evolution",
+          "note": "Slavic and Baltic language trunk"
+        }
+      ]
+    },
+    {
+      "id": "proto_afroasiatic",
+      "name": "Proto-Afroasiatic",
+      "year": -8000,
+      "year_display": "c. 8000 BCE",
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "family": "Afroasiatic",
+      "script": "Unwritten (Reconstructed North / East African origin)",
+      "speakers": "Extinct ancestral speech community",
+      "desc": "One of the oldest phyla on earth; gave birth to Ancient Egyptian, Semitic (Akkadian, Arabic, Hebrew), and Berber.",
+      "parents": [],
+      "children": [
+        {
+          "id": "ancient_egyptian",
+          "rel": "direct_evolution",
+          "note": "Earliest written hieroglyphic branch"
+        },
+        {
+          "id": "proto_semitic",
+          "rel": "direct_evolution",
+          "note": "Triconsonantal root Semitic lineage"
+        }
+      ]
+    },
+    {
+      "id": "proto_sino_tibetan",
+      "name": "Proto-Sino-Tibetan",
+      "year": -5000,
+      "year_display": "c. 5000 BCE",
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "family": "Sino-Tibetan",
+      "script": "Unwritten (Yellow River basin Neolithic culture)",
+      "speakers": "Extinct ancestral speech community",
+      "desc": "Ancestral language giving rise to the Sinitic (Chinese) languages and Tibeto-Burman families.",
+      "parents": [],
+      "children": [
+        {
+          "id": "old_chinese",
+          "rel": "direct_evolution",
+          "note": "Oracle bone and Bronze inscription Sinitic trunk"
+        }
+      ]
+    },
+    {
+      "id": "sumerian",
+      "name": "Sumerian",
+      "year": -3200,
+      "year_display": "c. 3200 BCE",
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "family": "Language Isolate",
+      "script": "Cuneiform (First true writing system in history)",
+      "speakers": "Extinct (Liturgical use until 1st c. CE)",
+      "desc": "Invented wedge-shaped cuneiform writing on clay tablets in southern Mesopotamia; completely isolated from all known families.",
+      "parents": [],
+      "children": []
+    },
+    {
+      "id": "ancient_egyptian",
+      "name": "Ancient Egyptian",
+      "year": -3100,
+      "year_display": "c. 3100 BCE",
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "family": "Afroasiatic",
+      "script": "Hieroglyphic, Hieratic, Demotic, Coptic alphabet",
+      "speakers": "Extinct (Coptic liturgical survivor)",
+      "desc": "Recorded over 3,000 continuous years of writing from Old Kingdom pyramid texts to Coptic Christian manuscripts.",
+      "parents": [
+        {
+          "id": "proto_afroasiatic",
+          "rel": "direct_evolution",
+          "note": "Oldest recorded Afroasiatic language"
+        }
+      ],
+      "children": [
+        {
+          "id": "phoenician",
+          "rel": "inspired_by",
+          "note": "Proto-Sinaitic script adapted Egyptian hieroglyphs into first phonetic alphabet"
+        }
+      ]
+    },
+    {
+      "id": "proto_semitic",
+      "name": "Proto-Semitic",
+      "year": -3500,
+      "year_display": "c. 3500 BCE",
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "family": "Afroasiatic / Semitic",
+      "script": "Reconstructed",
+      "speakers": "Extinct",
+      "desc": "Origin of the triconsonantal root system (e.g. k-t-b for writing) and Semitic phonology.",
+      "parents": [
+        {
+          "id": "proto_afroasiatic",
+          "rel": "direct_evolution",
+          "note": "Levant / Arabian peninsula branch"
+        }
+      ],
+      "children": [
+        {
+          "id": "akkadian",
+          "rel": "direct_evolution",
+          "note": "East Semitic Mesopotamian branch in cuneiform"
+        },
+        {
+          "id": "phoenician",
+          "rel": "direct_evolution",
+          "note": "Northwest Semitic maritime alphabet origin"
+        },
+        {
+          "id": "arabic",
+          "rel": "direct_evolution",
+          "note": "Central Semitic peninsular branch"
+        }
+      ]
+    },
+    {
+      "id": "phoenician",
+      "name": "Phoenician",
+      "year": -1200,
+      "year_display": "c. 1200 BCE",
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "family": "Semitic / Canaanite",
+      "script": "Phoenician Abjad (Ancestor of nearly all modern alphabets)",
+      "speakers": "Extinct (Punic in Carthage until 6th c. CE)",
+      "desc": "Maritime traders who popularized the 22-letter phonetic abjad, which directly gave birth to Greek, Latin, Cyrillic, Aramaic, Hebrew, and Arabic scripts.",
+      "parents": [
+        {
+          "id": "proto_semitic",
+          "rel": "direct_evolution",
+          "note": "Canaanite coastal language"
+        },
+        {
+          "id": "ancient_egyptian",
+          "rel": "inspired_by",
+          "note": "Phonetic script derived from Proto-Sinaitic glyphs"
+        }
+      ],
+      "children": [
+        {
+          "id": "hellenic_greek",
+          "rel": "inspired_by",
+          "note": "Greeks adapted Phoenician letters, inventing true vowel glyphs (Alpha, Epsilon, etc.)"
+        },
+        {
+          "id": "aramaic",
+          "rel": "direct_evolution",
+          "note": "Aramaic script evolved from Phoenician abjad"
+        }
+      ]
+    },
+    {
+      "id": "hellenic_greek",
+      "name": "Ancient Greek",
+      "year": -1400,
+      "year_display": "c. 1400 BCE",
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "family": "Indo-European / Hellenic",
+      "script": "Linear B -> Greek Alphabet",
+      "speakers": "Extinct Classical (Evolved into Modern Greek)",
+      "desc": "Language of Homer, Plato, Aristotle, and Euclid; foundation of Western philosophy, mathematics, logic, and scientific vocabulary.",
+      "parents": [
+        {
+          "id": "pie",
+          "rel": "direct_evolution",
+          "note": "Hellenic migration into Balkan peninsula"
+        },
+        {
+          "id": "phoenician",
+          "rel": "inspired_by",
+          "note": "Adopted Phoenician alphabet and added explicit vowel letters"
+        }
+      ],
+      "children": [
+        {
+          "id": "italic_latin",
+          "rel": "inspired_by",
+          "note": "Western Greek alphabet adapted by Etruscans into Latin alphabet"
+        },
+        {
+          "id": "modern_greek",
+          "rel": "direct_evolution",
+          "note": "Koine Greek evolved into Byzantine and Modern Greek"
+        }
+      ]
+    },
+    {
+      "id": "italic_latin",
+      "name": "Latin (Classical)",
+      "year": -700,
+      "year_display": "c. 700 BCE",
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "family": "Indo-European / Italic",
+      "script": "Latin / Roman Alphabet",
+      "speakers": "Extinct Classical (Liturgical / Ecclesiastical survivor)",
+      "desc": "Language of the Roman Republic and Empire; survived as Europe's universal scientific and literary lingua franca for 2,000 years and birthed the Romance languages.",
+      "parents": [
+        {
+          "id": "pie",
+          "rel": "direct_evolution",
+          "note": "Italic branch in Latium along the Tiber river"
+        },
+        {
+          "id": "hellenic_greek",
+          "rel": "inspired_by",
+          "note": "Alphabet adopted via Cumae Greek & Etruscan mediation"
+        }
+      ],
+      "children": [
+        {
+          "id": "romance_french",
+          "rel": "direct_evolution",
+          "note": "Vulgar Latin with Gaulish Celtic substrate & Frankish Germanic superstrate"
+        },
+        {
+          "id": "romance_spanish",
+          "rel": "direct_evolution",
+          "note": "Iberian Vulgar Latin with Mozarabic Arabic influence"
+        },
+        {
+          "id": "romance_italian",
+          "rel": "direct_evolution",
+          "note": "Tuscan dialect direct literary descendant of Latin"
+        }
+      ]
+    },
+    {
+      "id": "proto_germanic",
+      "name": "Proto-Germanic",
+      "year": -500,
+      "year_display": "c. 500 BCE",
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "family": "Indo-European / Germanic",
+      "script": "Elder Futhark Runes",
+      "speakers": "Extinct ancestral speech community",
+      "desc": "Defined by Grimm's Law and Verner's Law of systematic consonant shifts; ancestor of English, German, Dutch, and Scandinavian languages.",
+      "parents": [
+        {
+          "id": "pie",
+          "rel": "direct_evolution",
+          "note": "Jastorf culture and Nordic Bronze Age branch"
+        }
+      ],
+      "children": [
+        {
+          "id": "old_english",
+          "rel": "direct_evolution",
+          "note": "North Sea Germanic Ingvaeonic dialects of Angles, Saxons, and Jutes"
+        },
+        {
+          "id": "german",
+          "rel": "direct_evolution",
+          "note": "High German consonant shift branch"
+        }
+      ]
+    },
+    {
+      "id": "old_english",
+      "name": "Old English (Anglo-Saxon)",
+      "year": 450,
+      "year_display": "c. 450 CE",
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "family": "Germanic / West Germanic",
+      "script": "Anglo-Saxon Futhorc Runes -> Insular Latin script",
+      "speakers": "Extinct (Evolved through Middle English)",
+      "desc": "Inflected Germanic language of Beowulf; heavily influenced by Old Norse during Danelaw Viking settlements.",
+      "parents": [
+        {
+          "id": "proto_germanic",
+          "rel": "direct_evolution",
+          "note": "Settlement of Britain by Germanic tribes after Roman collapse"
+        }
+      ],
+      "children": [
+        {
+          "id": "modern_english",
+          "rel": "crossbreed",
+          "note": "1066 Norman Conquest fused Anglo-Saxon grammar with 10,000+ Norman French / Latin words"
+        }
+      ]
+    },
+    {
+      "id": "modern_english",
+      "name": "Modern English",
+      "year": 1500,
+      "year_display": "c. 1500 CE",
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "family": "Germanic (with heavy Romance lexicon)",
+      "script": "Latin script (26 letters)",
+      "speakers": "~1.5 Billion (First global lingua franca)",
+      "desc": "A unique hybrid: West Germanic core grammatical structure fused with massive Norman French and Latin lexical layers; international language of computing, aviation, and science.",
+      "parents": [
+        {
+          "id": "old_english",
+          "rel": "direct_evolution",
+          "note": "Core syntax, common verbs, prepositions, and grammatical backbone"
+        },
+        {
+          "id": "romance_french",
+          "rel": "crossbreed",
+          "note": "Norman Conquest (1066) injected court, law, culinary, and military vocabulary"
+        },
+        {
+          "id": "italic_latin",
+          "rel": "inspired_by",
+          "note": "Renaissance influx of scholarly and scientific technical terms"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "old_chinese",
+      "name": "Old Chinese (Archaic Sinitic)",
+      "year": -1250,
+      "year_display": "c. 1250 BCE",
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "family": "Sino-Tibetan / Sinitic",
+      "script": "Oracle Bone Script -> Bronze Inscriptions -> Seal Script",
+      "speakers": "Extinct Classical",
+      "desc": "Language of the Shang and Zhou dynasties; Shijing (Classic of Poetry) and I Ching; phonologically non-tonal with consonant clusters.",
+      "parents": [
+        {
+          "id": "proto_sino_tibetan",
+          "rel": "direct_evolution",
+          "note": "Central Plains Neolithic settlement"
+        }
+      ],
+      "children": [
+        {
+          "id": "middle_chinese",
+          "rel": "direct_evolution",
+          "note": "Qieyun rhyming dictionary and tonal phonology under Sui & Tang dynasties"
+        }
+      ]
+    },
+    {
+      "id": "middle_chinese",
+      "name": "Middle Chinese",
+      "year": 600,
+      "year_display": "c. 600 CE",
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "family": "Sino-Tibetan / Sinitic",
+      "script": "Regular Script (Kaishu) Hanzi",
+      "speakers": "Extinct Classical (Evolved into modern Sinitic varieties)",
+      "desc": "The Tang dynasty prestige language; phonological baseline recorded in the Qieyun rhyming dictionary; source of Sino-Japanese (Kanji), Sino-Korean (Hanja), and Sino-Vietnamese loanwords.",
+      "parents": [
+        {
+          "id": "old_chinese",
+          "rel": "direct_evolution",
+          "note": "Evolution through Warring States and Han dynasty Chinese"
+        }
+      ],
+      "children": [
+        {
+          "id": "mandarin",
+          "rel": "direct_evolution",
+          "note": "Northern Chinese variety, becoming Standard Chinese"
+        },
+        {
+          "id": "cantonese",
+          "rel": "direct_evolution",
+          "note": "Southern Yue branch retaining Middle Chinese final stop consonants (-p, -t, -k)"
+        }
+      ]
+    },
+    {
+      "id": "mandarin",
+      "name": "Standard Mandarin Chinese",
+      "year": 1912,
+      "year_display": "Modern (Standardized 1912)",
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "family": "Sino-Tibetan / Sinitic",
+      "script": "Simplified & Traditional Chinese Characters (Hanzi), Pinyin",
+      "speakers": "~1.1 Billion native speakers",
+      "desc": "Prestige dialect based on Beijing phonology; tonal language (4 tones); official language of China and Taiwan.",
+      "parents": [
+        {
+          "id": "middle_chinese",
+          "rel": "direct_evolution",
+          "note": "Phonological simplification of Middle Chinese in northern China"
+        }
+      ],
+      "children": []
+    }
+  ],
+  "tree": [
+    {
+      "id": "pie",
+      "name": "Proto-Indo-European (PIE)",
+      "year": -4000,
+      "year_display": "c. 4000 BCE",
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "family": "Indo-European",
+      "script": "Unwritten (Reconstructed Kurgan / Steppe hypothesis)",
+      "speakers": "Extinct ancestral speech community",
+      "desc": "The reconstructed linguistic ancestor of over 400 languages spoken by nearly 3 billion people today.",
+      "parents": [],
+      "children": [
+        {
+          "id": "proto_germanic",
+          "rel": "direct_evolution",
+          "note": "Grimm's Law consonant shifts"
+        },
+        {
+          "id": "italic_latin",
+          "rel": "direct_evolution",
+          "note": "Italic branch in Italian peninsula"
+        },
+        {
+          "id": "hellenic_greek",
+          "rel": "direct_evolution",
+          "note": "Mycenaean & Ancient Greek branch"
+        },
+        {
+          "id": "indo_iranian",
+          "rel": "direct_evolution",
+          "note": "Sanskrit, Avestan and Persian branch"
+        },
+        {
+          "id": "balto_slavic",
+          "rel": "direct_evolution",
+          "note": "Slavic and Baltic language trunk"
+        }
+      ]
+    },
+    {
+      "id": "proto_afroasiatic",
+      "name": "Proto-Afroasiatic",
+      "year": -8000,
+      "year_display": "c. 8000 BCE",
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "family": "Afroasiatic",
+      "script": "Unwritten (Reconstructed North / East African origin)",
+      "speakers": "Extinct ancestral speech community",
+      "desc": "One of the oldest phyla on earth; gave birth to Ancient Egyptian, Semitic (Akkadian, Arabic, Hebrew), and Berber.",
+      "parents": [],
+      "children": [
+        {
+          "id": "ancient_egyptian",
+          "rel": "direct_evolution",
+          "note": "Earliest written hieroglyphic branch"
+        },
+        {
+          "id": "proto_semitic",
+          "rel": "direct_evolution",
+          "note": "Triconsonantal root Semitic lineage"
+        }
+      ]
+    },
+    {
+      "id": "proto_sino_tibetan",
+      "name": "Proto-Sino-Tibetan",
+      "year": -5000,
+      "year_display": "c. 5000 BCE",
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "family": "Sino-Tibetan",
+      "script": "Unwritten (Yellow River basin Neolithic culture)",
+      "speakers": "Extinct ancestral speech community",
+      "desc": "Ancestral language giving rise to the Sinitic (Chinese) languages and Tibeto-Burman families.",
+      "parents": [],
+      "children": [
+        {
+          "id": "old_chinese",
+          "rel": "direct_evolution",
+          "note": "Oracle bone and Bronze inscription Sinitic trunk"
+        }
+      ]
+    },
+    {
+      "id": "sumerian",
+      "name": "Sumerian",
+      "year": -3200,
+      "year_display": "c. 3200 BCE",
+      "lineage_type": "Fresh Root",
+      "badge_class": "badge-root",
+      "family": "Language Isolate",
+      "script": "Cuneiform (First true writing system in history)",
+      "speakers": "Extinct (Liturgical use until 1st c. CE)",
+      "desc": "Invented wedge-shaped cuneiform writing on clay tablets in southern Mesopotamia; completely isolated from all known families.",
+      "parents": [],
+      "children": []
+    },
+    {
+      "id": "ancient_egyptian",
+      "name": "Ancient Egyptian",
+      "year": -3100,
+      "year_display": "c. 3100 BCE",
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "family": "Afroasiatic",
+      "script": "Hieroglyphic, Hieratic, Demotic, Coptic alphabet",
+      "speakers": "Extinct (Coptic liturgical survivor)",
+      "desc": "Recorded over 3,000 continuous years of writing from Old Kingdom pyramid texts to Coptic Christian manuscripts.",
+      "parents": [
+        {
+          "id": "proto_afroasiatic",
+          "rel": "direct_evolution",
+          "note": "Oldest recorded Afroasiatic language"
+        }
+      ],
+      "children": [
+        {
+          "id": "phoenician",
+          "rel": "inspired_by",
+          "note": "Proto-Sinaitic script adapted Egyptian hieroglyphs into first phonetic alphabet"
+        }
+      ]
+    },
+    {
+      "id": "proto_semitic",
+      "name": "Proto-Semitic",
+      "year": -3500,
+      "year_display": "c. 3500 BCE",
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "family": "Afroasiatic / Semitic",
+      "script": "Reconstructed",
+      "speakers": "Extinct",
+      "desc": "Origin of the triconsonantal root system (e.g. k-t-b for writing) and Semitic phonology.",
+      "parents": [
+        {
+          "id": "proto_afroasiatic",
+          "rel": "direct_evolution",
+          "note": "Levant / Arabian peninsula branch"
+        }
+      ],
+      "children": [
+        {
+          "id": "akkadian",
+          "rel": "direct_evolution",
+          "note": "East Semitic Mesopotamian branch in cuneiform"
+        },
+        {
+          "id": "phoenician",
+          "rel": "direct_evolution",
+          "note": "Northwest Semitic maritime alphabet origin"
+        },
+        {
+          "id": "arabic",
+          "rel": "direct_evolution",
+          "note": "Central Semitic peninsular branch"
+        }
+      ]
+    },
+    {
+      "id": "phoenician",
+      "name": "Phoenician",
+      "year": -1200,
+      "year_display": "c. 1200 BCE",
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "family": "Semitic / Canaanite",
+      "script": "Phoenician Abjad (Ancestor of nearly all modern alphabets)",
+      "speakers": "Extinct (Punic in Carthage until 6th c. CE)",
+      "desc": "Maritime traders who popularized the 22-letter phonetic abjad, which directly gave birth to Greek, Latin, Cyrillic, Aramaic, Hebrew, and Arabic scripts.",
+      "parents": [
+        {
+          "id": "proto_semitic",
+          "rel": "direct_evolution",
+          "note": "Canaanite coastal language"
+        },
+        {
+          "id": "ancient_egyptian",
+          "rel": "inspired_by",
+          "note": "Phonetic script derived from Proto-Sinaitic glyphs"
+        }
+      ],
+      "children": [
+        {
+          "id": "hellenic_greek",
+          "rel": "inspired_by",
+          "note": "Greeks adapted Phoenician letters, inventing true vowel glyphs (Alpha, Epsilon, etc.)"
+        },
+        {
+          "id": "aramaic",
+          "rel": "direct_evolution",
+          "note": "Aramaic script evolved from Phoenician abjad"
+        }
+      ]
+    },
+    {
+      "id": "hellenic_greek",
+      "name": "Ancient Greek",
+      "year": -1400,
+      "year_display": "c. 1400 BCE",
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "family": "Indo-European / Hellenic",
+      "script": "Linear B -> Greek Alphabet",
+      "speakers": "Extinct Classical (Evolved into Modern Greek)",
+      "desc": "Language of Homer, Plato, Aristotle, and Euclid; foundation of Western philosophy, mathematics, logic, and scientific vocabulary.",
+      "parents": [
+        {
+          "id": "pie",
+          "rel": "direct_evolution",
+          "note": "Hellenic migration into Balkan peninsula"
+        },
+        {
+          "id": "phoenician",
+          "rel": "inspired_by",
+          "note": "Adopted Phoenician alphabet and added explicit vowel letters"
+        }
+      ],
+      "children": [
+        {
+          "id": "italic_latin",
+          "rel": "inspired_by",
+          "note": "Western Greek alphabet adapted by Etruscans into Latin alphabet"
+        },
+        {
+          "id": "modern_greek",
+          "rel": "direct_evolution",
+          "note": "Koine Greek evolved into Byzantine and Modern Greek"
+        }
+      ]
+    },
+    {
+      "id": "italic_latin",
+      "name": "Latin (Classical)",
+      "year": -700,
+      "year_display": "c. 700 BCE",
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "family": "Indo-European / Italic",
+      "script": "Latin / Roman Alphabet",
+      "speakers": "Extinct Classical (Liturgical / Ecclesiastical survivor)",
+      "desc": "Language of the Roman Republic and Empire; survived as Europe's universal scientific and literary lingua franca for 2,000 years and birthed the Romance languages.",
+      "parents": [
+        {
+          "id": "pie",
+          "rel": "direct_evolution",
+          "note": "Italic branch in Latium along the Tiber river"
+        },
+        {
+          "id": "hellenic_greek",
+          "rel": "inspired_by",
+          "note": "Alphabet adopted via Cumae Greek & Etruscan mediation"
+        }
+      ],
+      "children": [
+        {
+          "id": "romance_french",
+          "rel": "direct_evolution",
+          "note": "Vulgar Latin with Gaulish Celtic substrate & Frankish Germanic superstrate"
+        },
+        {
+          "id": "romance_spanish",
+          "rel": "direct_evolution",
+          "note": "Iberian Vulgar Latin with Mozarabic Arabic influence"
+        },
+        {
+          "id": "romance_italian",
+          "rel": "direct_evolution",
+          "note": "Tuscan dialect direct literary descendant of Latin"
+        }
+      ]
+    },
+    {
+      "id": "proto_germanic",
+      "name": "Proto-Germanic",
+      "year": -500,
+      "year_display": "c. 500 BCE",
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "family": "Indo-European / Germanic",
+      "script": "Elder Futhark Runes",
+      "speakers": "Extinct ancestral speech community",
+      "desc": "Defined by Grimm's Law and Verner's Law of systematic consonant shifts; ancestor of English, German, Dutch, and Scandinavian languages.",
+      "parents": [
+        {
+          "id": "pie",
+          "rel": "direct_evolution",
+          "note": "Jastorf culture and Nordic Bronze Age branch"
+        }
+      ],
+      "children": [
+        {
+          "id": "old_english",
+          "rel": "direct_evolution",
+          "note": "North Sea Germanic Ingvaeonic dialects of Angles, Saxons, and Jutes"
+        },
+        {
+          "id": "german",
+          "rel": "direct_evolution",
+          "note": "High German consonant shift branch"
+        }
+      ]
+    },
+    {
+      "id": "old_english",
+      "name": "Old English (Anglo-Saxon)",
+      "year": 450,
+      "year_display": "c. 450 CE",
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "family": "Germanic / West Germanic",
+      "script": "Anglo-Saxon Futhorc Runes -> Insular Latin script",
+      "speakers": "Extinct (Evolved through Middle English)",
+      "desc": "Inflected Germanic language of Beowulf; heavily influenced by Old Norse during Danelaw Viking settlements.",
+      "parents": [
+        {
+          "id": "proto_germanic",
+          "rel": "direct_evolution",
+          "note": "Settlement of Britain by Germanic tribes after Roman collapse"
+        }
+      ],
+      "children": [
+        {
+          "id": "modern_english",
+          "rel": "crossbreed",
+          "note": "1066 Norman Conquest fused Anglo-Saxon grammar with 10,000+ Norman French / Latin words"
+        }
+      ]
+    },
+    {
+      "id": "modern_english",
+      "name": "Modern English",
+      "year": 1500,
+      "year_display": "c. 1500 CE",
+      "lineage_type": "Crossbreed",
+      "badge_class": "badge-crossbreed",
+      "family": "Germanic (with heavy Romance lexicon)",
+      "script": "Latin script (26 letters)",
+      "speakers": "~1.5 Billion (First global lingua franca)",
+      "desc": "A unique hybrid: West Germanic core grammatical structure fused with massive Norman French and Latin lexical layers; international language of computing, aviation, and science.",
+      "parents": [
+        {
+          "id": "old_english",
+          "rel": "direct_evolution",
+          "note": "Core syntax, common verbs, prepositions, and grammatical backbone"
+        },
+        {
+          "id": "romance_french",
+          "rel": "crossbreed",
+          "note": "Norman Conquest (1066) injected court, law, culinary, and military vocabulary"
+        },
+        {
+          "id": "italic_latin",
+          "rel": "inspired_by",
+          "note": "Renaissance influx of scholarly and scientific technical terms"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "old_chinese",
+      "name": "Old Chinese (Archaic Sinitic)",
+      "year": -1250,
+      "year_display": "c. 1250 BCE",
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "family": "Sino-Tibetan / Sinitic",
+      "script": "Oracle Bone Script -> Bronze Inscriptions -> Seal Script",
+      "speakers": "Extinct Classical",
+      "desc": "Language of the Shang and Zhou dynasties; Shijing (Classic of Poetry) and I Ching; phonologically non-tonal with consonant clusters.",
+      "parents": [
+        {
+          "id": "proto_sino_tibetan",
+          "rel": "direct_evolution",
+          "note": "Central Plains Neolithic settlement"
+        }
+      ],
+      "children": [
+        {
+          "id": "middle_chinese",
+          "rel": "direct_evolution",
+          "note": "Qieyun rhyming dictionary and tonal phonology under Sui & Tang dynasties"
+        }
+      ]
+    },
+    {
+      "id": "middle_chinese",
+      "name": "Middle Chinese",
+      "year": 600,
+      "year_display": "c. 600 CE",
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "family": "Sino-Tibetan / Sinitic",
+      "script": "Regular Script (Kaishu) Hanzi",
+      "speakers": "Extinct Classical (Evolved into modern Sinitic varieties)",
+      "desc": "The Tang dynasty prestige language; phonological baseline recorded in the Qieyun rhyming dictionary; source of Sino-Japanese (Kanji), Sino-Korean (Hanja), and Sino-Vietnamese loanwords.",
+      "parents": [
+        {
+          "id": "old_chinese",
+          "rel": "direct_evolution",
+          "note": "Evolution through Warring States and Han dynasty Chinese"
+        }
+      ],
+      "children": [
+        {
+          "id": "mandarin",
+          "rel": "direct_evolution",
+          "note": "Northern Chinese variety, becoming Standard Chinese"
+        },
+        {
+          "id": "cantonese",
+          "rel": "direct_evolution",
+          "note": "Southern Yue branch retaining Middle Chinese final stop consonants (-p, -t, -k)"
+        }
+      ]
+    },
+    {
+      "id": "mandarin",
+      "name": "Standard Mandarin Chinese",
+      "year": 1912,
+      "year_display": "Modern (Standardized 1912)",
+      "lineage_type": "Direct Evolution",
+      "badge_class": "badge-direct",
+      "family": "Sino-Tibetan / Sinitic",
+      "script": "Simplified & Traditional Chinese Characters (Hanzi), Pinyin",
+      "speakers": "~1.1 Billion native speakers",
+      "desc": "Prestige dialect based on Beijing phonology; tonal language (4 tones); official language of China and Taiwan.",
+      "parents": [
+        {
+          "id": "middle_chinese",
+          "rel": "direct_evolution",
+          "note": "Phonological simplification of Middle Chinese in northern China"
+        }
+      ],
+      "children": []
+    }
+  ]
+}
